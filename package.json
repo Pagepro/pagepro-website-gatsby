@@ -39,7 +39,8 @@
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
     "styled-components": "^4.0.3",
-    "styled-reset-advanced": "^1.0.0"
+    "styled-reset-advanced": "^1.0.0",
+    "styled-system": "^5.1.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^4.0.2",

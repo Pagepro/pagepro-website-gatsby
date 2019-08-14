@@ -14,5 +14,101 @@ export default {
   },
   size: {
     colorBg: '64px',
+  },
+  breakpoints: ['768px', '1025px'],
+  textStyles: {
+    heading1: {
+      fontSize: ['2rem', '3.25rem'], // 32px / 52px
+      lineHeight: 1.1,
+    },
+    heading2: {
+      fontSize: ['1.625rem', '2.5rem'], // 26px / 40px
+      lineHeight: 1.4,
+    },
+    heading3: {
+      fontSize: ['1.375rem', '2.25rem'], // 22px / 36px
+      lineHeight: 1.055,
+    },
+    heading4: {
+      fontSize: ['1.875rem'], // 30px
+      lineHeight: 1.2,
+    },
+    heading5: {
+      fontSize: ['2rem', '1.875rem'], // 32px //  30px
+      lineHeight: 1.5,
+    },
+    heading6: {
+      fontSize: ['1.75rem', '1.875rem'], // 28px / 30px
+      lineHeight: 1.25,
+    },
+    heading7: {
+      fontSize: ['1.75rem'], // 28px
+      lineHeight: 1.1,
+    },
+    heading8: {
+      fontSize: ['1.625rem'], // 26px
+      lineHeight: 1.1,
+    },
+    heading9: {
+      fontSize: ['1.5rem'], // 24px
+      lineHeight: 1.15,
+    },
+    heading10: {
+      fontSize: ['1.125rem', '1.5rem'], // 18px / 24px
+      lineHeight: 1.12,
+    },
+    heading11: {
+      fontSize: ['1rem'], // 16px
+      lineHeight: 1.25,
+    },
+    typo1: {
+      fontSize: ['1.625rem'], // 26px
+      lineHeight: 1.1,
+    },
+    typo2: {
+      fontSize: ['1.375rem'], // 22px
+      lineHeight: 1.45,
+    },
+    typo3: {
+      fontSize: ['1.25rem'], // 20px
+      lineHeight: 1.15,
+    },
+    typo4: {
+      fontSize: ['1.125rem'], // 18px
+      lineHeight: 1.4,
+    },
+    typo5: {
+      fontSize: ['1rem'], // 16px
+      lineHeight: 1.25,
+    },
+    typo6: {
+      fontSize: ['1rem', '1.125rem'], // 16px / 18px
+      lineHeight: 1.35,
+    },
+    typo7: {
+      fontSize: ['0.9375rem'], // 15px
+      lineHeight: 1.4,
+    },
+    typo8: {
+      fontSize: ['0.875rem'], // 14px
+      lineHeight: 1.4,
+    },
+    typo9: {
+      fontSize: ['0.75rem'], // 12px
+      lineHeight: 1.4,
+    },
+    typo10: {
+      fontSize: ['0.6875rem', '0.875rem'], // 11px / 14px
+      lineHeight: 1.4,
+    },
+    typo11: {
+      fontSize: ['0.6875rem', '0.75rem'], // 11px / 12px
+      lineHeight: 1.4,
+    },
+  },
+  fontWeights: {
+    regular: 400,
+    semiBold: 600,
+    bold: 700,
   }
 }
