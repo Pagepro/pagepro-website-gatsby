@@ -21,9 +21,12 @@ const StyledDynamicComponent = styled(tag)`
   ${textAlign}
 `
 
-const DynamicComponent = ({ tag = 'p', children, ...props }) => {
-  const WithComponent = StyledDynamicComponent.withComponent(tag)
-  return <WithComponent {...props}>{children}</WithComponent>
+const DynamicComponent = ({
+  tag,
+  children,
+  ...props }) => {
+    const WithComponent = StyledDynamicComponent.withComponent(tag)
+    return <WithComponent {...props}>{children}</WithComponent>
 }
 
 DynamicComponent.defaultProps = {

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import PropTypes from 'prop-types'
 import {
@@ -10,48 +10,43 @@ import GitHub from '../../assets/svg/GitHub'
 import ArrowRight from '../../assets/svg/ArrowRight'
 
 
-class Link extends Component {
-  render () {
-    const {
-      withArrow,
-      withGithub,
-      alt,
-      linkUrl,
-      linkLabel,
-    } = this.props
-    return (
-      <LinkStyled
-        href={linkUrl}
-        alt={alt}
-      >
-        {withGithub &&
-          <LinkIconStyled>
-            <GitHub
-              fontSize="16px"
-            />
-          </LinkIconStyled>
-        }
-        <LinkLabelStyled>
-          {linkLabel}
-        </LinkLabelStyled>
-        {withArrow &&
-          <LinkIconStyled>
-            <ArrowRight
-              fontSize="7px"
-            />
-          </LinkIconStyled>
-        }
-      </LinkStyled>
-    )
-  }
-}
-
-export default Link
+const Link = ({
+  light,
+  linkUrl,
+  withGithub,
+  linkLabel,
+  withArrow,
+}) => (
+  <LinkStyled
+    href={linkUrl}
+    light={light}
+  >
+    {withGithub &&
+      <LinkIconStyled>
+        <GitHub
+          fontSize="16px"
+        />
+      </LinkIconStyled>
+    }
+    <LinkLabelStyled>
+      {linkLabel}
+    </LinkLabelStyled>
+    {withArrow &&
+      <LinkIconStyled>
+        <ArrowRight
+          fontSize="7px"
+        />
+      </LinkIconStyled>
+    }
+  </LinkStyled>
+)
 
 Link.propTypes = {
   linkUrl: PropTypes.string,
   linkLabel: PropTypes.string,
   withArrow: PropTypes.bool,
   withGithub: PropTypes.bool,
-  alt: PropTypes.bool
+  light: PropTypes.bool
 }
+
+export default Link

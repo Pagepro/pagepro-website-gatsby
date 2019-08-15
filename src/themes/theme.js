@@ -13,11 +13,15 @@ export default {
     navy3: '#103347',
     navy4: '#19425a',
     navy5: '#26536c',
+    navy6: '#5d90ab',
     lightBlue: '#e1ecf2',
   },
   size: {
     gutter: '16px',
     colorBg: '64px',
+  },
+  form: {
+    fieldHeight: '54px',
   },
   btn: {
     width: '168px',
