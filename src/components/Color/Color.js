@@ -2,31 +2,31 @@ import React from 'react'
 import _map from 'lodash/map'
 
 import {
-  ColorsList,
-  ColorsListItem,
-  ColorBg,
-  ColorLabel,
+  ColorsListStyled,
+  ColorsListItemStyled,
+  ColorBgStyled,
+  ColorLabelStyled,
 } from './ColorStyledComponents'
 import theme from '../../themes/theme'
 
 const Color = () => (
-  <ColorsList>
+  <ColorsListStyled>
     {_map(theme.color, (value, key) => (
-      <ColorsListItem
+      <ColorsListItemStyled
         key={key}
       >
-        <ColorBg
+        <ColorBgStyled
           style={{backgroundColor: value}}
         />
-          <ColorLabel>
+          <ColorLabelStyled>
             {key}
-          </ColorLabel>
-          <ColorLabel>
+          </ColorLabelStyled>
+          <ColorLabelStyled>
             {value}
-          </ColorLabel>
-      </ColorsListItem>
+          </ColorLabelStyled>
+      </ColorsListItemStyled>
     ))}
-  </ColorsList>
+  </ColorsListStyled>
 )
 
 export default Color

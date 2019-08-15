@@ -6,14 +6,25 @@ export default {
     grey: '#9e9e9e',
     lightGrey: '#f4f4f4',
     red: '#f33540',
+    red2: '#e72934',
     navy: '#061f2d',
     navy2: '#0a2b3d',
     navy3: '#103347',
     navy4: '#19425a',
     navy5: '#26536c',
+    lightBlue: '#e1ecf2',
+  },
+  default: {
+    transitionDuration: '370ms',
   },
   size: {
+    gutter: '10px',
     colorBg: '64px',
+  },
+  btn: {
+    width: '168px',
+    heightMedium: '54px',
+    heightBig: '60px',
   },
   breakpoints: ['768px', '1025px'],
   textStyles: {
@@ -106,7 +117,7 @@ export default {
       lineHeight: 1.4,
     },
   },
-  fontWeights: {
+  fontWeight: {
     regular: 400,
     semiBold: 600,
     bold: 700,
