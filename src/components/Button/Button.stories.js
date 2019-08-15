@@ -21,3 +21,11 @@ storiesOf('Button', module)
       btnLabel="Join us"
     />
   ))
+  .add('wide', () => (
+    <Button
+      wide
+      big
+      btnUrl="#"
+      btnLabel="See All on GitHub"
+    />
+  ))

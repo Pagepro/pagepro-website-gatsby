@@ -4,6 +4,7 @@ export default {
     darkGrey: '#171717',
     darkGrey2: '#585858',
     grey: '#9e9e9e',
+    grey2: '#eee',
     lightGrey: '#f4f4f4',
     red: '#f33540',
     red2: '#e72934',
@@ -14,11 +15,8 @@ export default {
     navy5: '#26536c',
     lightBlue: '#e1ecf2',
   },
-  default: {
-    transitionDuration: '370ms',
-  },
   size: {
-    gutter: '10px',
+    gutter: '16px',
     colorBg: '64px',
   },
   btn: {
@@ -119,6 +117,7 @@ export default {
   },
   fontWeight: {
     regular: 400,
+    medium: 500,
     semiBold: 600,
     bold: 700,
   }

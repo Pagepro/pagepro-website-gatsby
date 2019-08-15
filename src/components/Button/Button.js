@@ -13,6 +13,7 @@ class Button extends Component {
       secondary,
       big,
       medium,
+      wide,
       left,
       btnUrl,
       btnLabel,
@@ -24,7 +25,8 @@ class Button extends Component {
         secondary={secondary}
         big={big}
         medium={medium}
-        left={left}     
+        wide={wide}
+        left={left}
         href={btnUrl}
         onClick={func}
       >
@@ -43,6 +45,7 @@ Button.propTypes = {
   secondary: PropTypes.bool,
   big: PropTypes.bool,
   medium: PropTypes.bool,
+  wide: PropTypes.bool,
   left: PropTypes.bool,
   btnUrl: PropTypes.string,
   btnLabel: PropTypes.string,

@@ -7,7 +7,7 @@ const ColorsListStyled = styled.ul`
 `
 
 const ColorsListItemStyled = styled.li`
-  margin: calc(${props => props.theme.size.gutter} * 2.2);
+  margin: calc(${props => props.theme.size.gutter} * 1.5);
   text-align: center;
 `
 
