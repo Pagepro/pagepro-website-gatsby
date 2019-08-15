@@ -2,11 +2,11 @@ import styled from "styled-components"
 
 import { decorLink, checkbox } from "../../../common/mixins"
 
-const CheckboxGroupStyled = styled.div`
+const RadioGroupStyled = styled.div`
   ${checkbox}
 `
 
-const CheckboxLabelStyled = styled.label`
+const RadioLabelStyled = styled.label`
   color: ${props => props.theme.color.navy6};
   font-weight: ${props => props.theme.fontWeight.semiBold};
   padding-left: calc(${props => props.theme.form.checkboxSize} * .95
@@ -21,27 +21,27 @@ const CheckboxLabelStyled = styled.label`
     border: 2px solid ${props => props.theme.color.navy5};
     width: ${props => props.theme.form.checkboxSize};
     height: ${props => props.theme.form.checkboxSize};
+    border-radius: 50px;
   }
 
   &::after {
-    top: 3px;
-    left: 7px;
-    width: ${props => props.theme.form.checkboxMarkWidth};
-    height: ${props => props.theme.form.checkboxMarkHeight};
-    transform: rotate(45deg);
-    border: solid transparent;
-    border-width: 0 2px 2px 0;
+    top: 6px;
+    left: 6px;
+    width: ${props => props.theme.form.radioMarkSize};
+    height: ${props => props.theme.form.radioMarkSize};
+    background: transparent;
+    border-radius: 50px;
   }
 `
 
-const CheckboxInputStyled = styled.input`
-  &:checked + ${CheckboxLabelStyled}::after {
-    border-color: ${props => props.theme.color.white};
+const RadioInputStyled = styled.input`
+  &:checked + ${RadioLabelStyled}::after {
+    background: ${props => props.theme.color.white};
   }
 `
 
 export {
-  CheckboxGroupStyled,
-  CheckboxInputStyled,
-  CheckboxLabelStyled
+  RadioGroupStyled,
+  RadioInputStyled,
+  RadioLabelStyled
 }

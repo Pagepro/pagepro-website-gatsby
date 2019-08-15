@@ -24,7 +24,7 @@ const Checkbox = ({
 
 Checkbox.propTypes = {
   inputId: PropTypes.string,
-  label: PropTypes.string,
+  label: PropTypes.object,
 }
 
 export default Checkbox

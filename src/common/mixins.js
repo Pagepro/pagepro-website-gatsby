@@ -49,3 +49,34 @@ export const fieldReset = `
     -webkit-animation-fill-mode: both;
   }
 `
+
+export const checkbox = `
+  display: flex;
+  flex-wrap: wrap;
+
+  label {
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      position: absolute;
+      display: flex;
+      flex-shrink: 0;
+      content: '';
+      ${transition}
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+  }
+`

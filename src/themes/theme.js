@@ -25,6 +25,7 @@ export default {
     checkboxSize: '20px',
     checkboxMarkWidth: '6px',
     checkboxMarkHeight: '11px',
+    radioMarkSize: '8px',
   },
   btn: {
     width: '168px',
