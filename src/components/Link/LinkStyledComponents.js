@@ -4,6 +4,7 @@ import { decorLink } from '../../common/mixins'
 
 const LinkLabelStyled = styled.span`
   ${decorLink}
+  font-size: 14px;
 `
 
 const LinkStyled = styled.a`
@@ -15,7 +16,7 @@ const LinkStyled = styled.a`
   font-weight: ${props => props.theme.fontWeight.semiBold};
   cursor: pointer;
 
-  ${props => props.alt && css`
+  ${props => props.light && css`
     text-transform: lowercase;
     color: ${props => props.theme.color.white};
     font-weight: ${props => props.theme.fontWeight.regular};

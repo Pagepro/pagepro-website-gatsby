@@ -27,3 +27,25 @@ export const decorLink = `
     }
   }
 `
+
+export const fieldReset = `
+  width: 100%;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:-webkit-autofill {
+    -webkit-animation-name: autofill;
+
+    background: transparent;
+    box-shadow: none;
+
+    -webkit-animation-fill-mode: both;
+  }
+`

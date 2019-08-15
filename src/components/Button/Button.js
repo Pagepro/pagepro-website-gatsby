@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import PropTypes from 'prop-types'
 import {
@@ -6,39 +6,22 @@ import {
   ButtonLabelStyled,
 } from './ButtonStyledComponents'
 
-class Button extends Component {
-  render () {
-    const {
-      primary,
-      secondary,
-      big,
-      medium,
-      wide,
-      left,
-      btnUrl,
-      btnLabel,
-      func,
-    } = this.props
-    return (
-      <ButtonStyled
-        primary={primary}
-        secondary={secondary}
-        big={big}
-        medium={medium}
-        wide={wide}
-        left={left}
-        href={btnUrl}
-        onClick={func}
-      >
-        <ButtonLabelStyled>
-          {btnLabel}
-        </ButtonLabelStyled>
-      </ButtonStyled>
-    )
-  }
-}
-
-export default Button
+const Button = ({
+  btnLabel,
+  btnUrl,
+  func,
+  ...otherProps,
+}) => (
+  <ButtonStyled
+    href={btnUrl}
+    onClick={func}
+    {...otherProps}
+  >
+    <ButtonLabelStyled>
+      {btnLabel}
+    </ButtonLabelStyled>
+  </ButtonStyled>
+)
 
 Button.propTypes = {
   primary: PropTypes.bool,
@@ -50,3 +33,5 @@ Button.propTypes = {
   btnUrl: PropTypes.string,
   btnLabel: PropTypes.string,
 }
+
+export default Button

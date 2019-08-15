@@ -24,10 +24,10 @@ storiesOf('Link', module)
       linkLabel="Github"
     />
   ))
-  .add('alt', () => (
+  .add('light', () => (
     <div style={{background: '#000', padding: '5px'}}>
       <Link
-        alt
+        light
         withArrow
         linkUrl="#"
         linkLabel="More"
