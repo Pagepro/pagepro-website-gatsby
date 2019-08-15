@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {
   ButtonStyled,
-  ButtonLabelStyled,
+  ButtonLabelStyled
 } from './ButtonStyledComponents'
 
 const Button = ({

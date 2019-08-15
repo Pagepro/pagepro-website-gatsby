@@ -23,19 +23,13 @@ const Link = ({
   >
     {withGithub &&
       <LinkIconStyled>
-        <GitHub
-          fontSize="16px"
-        />
+        <GitHub fontSize="16px"/>
       </LinkIconStyled>
     }
-    <LinkLabelStyled>
-      {linkLabel}
-    </LinkLabelStyled>
+    <LinkLabelStyled>{linkLabel}</LinkLabelStyled>
     {withArrow &&
       <LinkIconStyled>
-        <ArrowRight
-          fontSize="7px"
-        />
+        <ArrowRight fontSize="7px"/>
       </LinkIconStyled>
     }
   </LinkStyled>

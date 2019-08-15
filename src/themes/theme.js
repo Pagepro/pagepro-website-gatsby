@@ -22,6 +22,9 @@ export default {
   },
   form: {
     fieldHeight: '54px',
+    checkboxSize: '20px',
+    checkboxMarkWidth: '6px',
+    checkboxMarkHeight: '11px',
   },
   btn: {
     width: '168px',

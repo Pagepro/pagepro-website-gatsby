@@ -5,7 +5,7 @@ import {
   ColorsListStyled,
   ColorsListItemStyled,
   ColorBgStyled,
-  ColorLabelStyled,
+  ColorLabelStyled
 } from './ColorStyledComponents'
 import theme from '../../themes/theme'
 
@@ -15,15 +15,9 @@ const Color = () => (
       <ColorsListItemStyled
         key={key}
       >
-        <ColorBgStyled
-          style={{backgroundColor: value}}
-        />
-          <ColorLabelStyled>
-            {key}
-          </ColorLabelStyled>
-          <ColorLabelStyled>
-            {value}
-          </ColorLabelStyled>
+        <ColorBgStyled style={{backgroundColor: value}}/>
+          <ColorLabelStyled>{key}</ColorLabelStyled>
+          <ColorLabelStyled>{value}</ColorLabelStyled>
       </ColorsListItemStyled>
     ))}
   </ColorsListStyled>
