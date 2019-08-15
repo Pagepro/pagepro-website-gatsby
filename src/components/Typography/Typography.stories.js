@@ -31,7 +31,7 @@ storiesOf('Typography', module)
   .add('headings', () => (
     <Fragment>
       <Heading1
-        fontWeight={theme.fontWeights.semiBold}
+        fontWeight={theme.fontWeight.semiBold}
         style={{marginBottom: '10px'}}>
         Projects
       </Heading1>
@@ -43,7 +43,7 @@ storiesOf('Typography', module)
 
       <Heading2
         style={{marginBottom: '10px'}}
-        fontWeight={theme.fontWeights.semiBold}>
+        fontWeight={theme.fontWeight.semiBold}>
         What is React?
       </Heading2>
       <p style={{marginBottom: '30px',
@@ -53,7 +53,7 @@ storiesOf('Typography', module)
       </p>
 
       <Heading3
-        fontWeight={theme.fontWeights.semiBold}
+        fontWeight={theme.fontWeight.semiBold}
         style={{marginBottom: '10px'}}>
         React Developers who deliver.
       </Heading3>
@@ -64,7 +64,7 @@ storiesOf('Typography', module)
       </p>
 
       <Heading4
-        fontWeight={theme.fontWeights.semiBold}
+        fontWeight={theme.fontWeight.semiBold}
         style={{marginBottom: '10px'}}>
         Learn something new every day Working together
       </Heading4>
@@ -76,7 +76,7 @@ storiesOf('Typography', module)
 
       <Heading5
         style={{marginBottom: '10px'}}
-        fontWeight={theme.fontWeights.semiBold}>
+        fontWeight={theme.fontWeight.semiBold}>
         Why us?
       </Heading5>
       <p style={{marginBottom: '30px',
@@ -87,7 +87,7 @@ storiesOf('Typography', module)
 
       <Heading6
         style={{marginBottom: '10px'}}
-        fontWeight={theme.fontWeights.semiBold}>
+        fontWeight={theme.fontWeight.semiBold}>
         We are a community of high-class developers
         specialized in building user interfaces.
       </Heading6>
@@ -99,7 +99,7 @@ storiesOf('Typography', module)
 
       <Heading7
         style={{marginBottom: '10px'}}
-        fontWeight={theme.fontWeights.semiBold}>
+        fontWeight={theme.fontWeight.semiBold}>
         Newsletter
       </Heading7>
       <p style={{marginBottom: '30px',
@@ -110,7 +110,7 @@ storiesOf('Typography', module)
 
       <Heading8
         style={{marginBottom: '10px'}}
-        fontWeight={theme.fontWeights.semiBold}>
+        fontWeight={theme.fontWeight.semiBold}>
         Gated talent
       </Heading8>
       <p style={{marginBottom: '30px',
@@ -121,7 +121,7 @@ storiesOf('Typography', module)
 
       <Heading9
         style={{marginBottom: '10px'}}
-        fontWeight={theme.fontWeights.semiBold}>
+        fontWeight={theme.fontWeight.semiBold}>
         At PagePro, we are developing the web in the heart of Europe.
       </Heading9>
       <p style={{marginBottom: '30px',
@@ -132,18 +132,18 @@ storiesOf('Typography', module)
 
       <Heading10
         style={{marginBottom: '10px'}}
-        fontWeight={theme.fontWeights.semiBold}>
+        fontWeight={theme.fontWeight.semiBold}>
         Front-end Development
       </Heading10>
       <p style={{marginBottom: '30px',
         textTransform: 'uppercase',
-        fontSize: '12px'}}>Heading 10:
-        18px / 24px
+        fontSize: '12px'}}>
+        Heading 10: 18px / 24px
        </p>
 
       <Heading11
         style={{marginBottom: '10px'}}
-        fontWeight={theme.fontWeights.semiBold}>
+        fontWeight={theme.fontWeight.semiBold}>
         Experienced Consultants
       </Heading11>
       <p style={{marginBottom: '30px',
