@@ -8,9 +8,9 @@ import {
 } from './RadioStyledComponents'
 
 const Radio = ({
-    inputId,
-    label,
-  }) => (
+  inputId,
+  label,
+}) => (
   <RadioGroupStyled>
     <RadioInputStyled
       type="radio"

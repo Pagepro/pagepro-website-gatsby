@@ -8,9 +8,9 @@ import {
 } from './CheckboxStyledComponents'
 
 const Checkbox = ({
-    inputId,
-    label
-  }) => (
+  inputId,
+  label
+}) => (
   <CheckboxGroupStyled>
     <CheckboxInputStyled
       type="checkbox"
