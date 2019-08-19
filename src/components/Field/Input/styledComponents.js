@@ -6,9 +6,9 @@ import theme from '../../../themes/theme'
 const InputStyled = styled.input`
   ${fieldReset}
   color: ${theme.color.white};
-  font-size: 14px;
+  font-size: ${theme.fontSize14};
   font-weight: ${theme.fontWeight.regular};
-  padding: 0 calc(${props => props.theme.size.gutter} * 1.125);
+  padding: ${theme.size.gutter};
   background: ${theme.color.navy4};
   height: ${theme.form.fieldHeight};
 

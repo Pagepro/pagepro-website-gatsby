@@ -3,25 +3,18 @@ import styled, { css } from 'styled-components'
 import { transition } from '../../common/mixins'
 import theme from '../../themes/theme'
 
-const ButtonLabelStyled = styled.span`
-  width: 100%;
-  font-weight: ${theme.fontWeight.semiBold};
-  text-align: center;
-`
-
-const ButtonStyled = styled.a`
+const ButtonLinkStyled = styled.a`
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
   width: auto;
   min-width: ${theme.btn.width};
-  padding: 0 calc(${props => props.theme.size.gutter} * 1.5);
+  font-size: ${theme.fontSize16};
+  font-weight: ${theme.fontWeight.semiBold};
+  justify-content: center;
+  padding: 0 calc(${theme.size.gutter} * 1.5);
   cursor: pointer;
   ${transition}
-
-  ${ButtonLabelStyled} {
-    font-size: 16px;
-  }
 
   /* Primary */
   ${props => props.primary && css`
@@ -46,7 +39,7 @@ const ButtonStyled = styled.a`
   /* Wide */
   ${props => props.wide && css`
     background-color: ${theme.color.white};
-    border: 1px solid ${props => props.theme.color.grey2};
+    border: 1px solid ${theme.color.grey2};
     min-width: 100%;
 
     &:hover {
@@ -66,13 +59,10 @@ const ButtonStyled = styled.a`
 
   /* Left */
   ${props => props.left && css`
-    ${ButtonLabelStyled} {
-      text-align: left;
-    }
+    justify-content: flex-start;
   `}
 `
 
 export {
-  ButtonStyled,
-  ButtonLabelStyled,
+  ButtonLinkStyled
 }

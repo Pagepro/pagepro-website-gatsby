@@ -123,6 +123,10 @@ export default {
       lineHeight: 1.4,
     },
   },
+  fontSize: {
+    fontSize14: '14px',
+    fontSize16: '16px',
+  },
   fontWeight: {
     regular: 400,
     medium: 500,

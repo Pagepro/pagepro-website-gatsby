@@ -1,11 +1,11 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Button from './Button'
+import ButtonLink from './ButtonLink'
 
-storiesOf('Button', module)
+storiesOf('ButtonLink', module)
   .add('primary medium', () => (
-    <Button
+    <ButtonLink
       primary
       medium
       btnUrl="#"
@@ -13,7 +13,7 @@ storiesOf('Button', module)
     />
   ))
   .add('secondary big left', () => (
-    <Button
+    <ButtonLink
       secondary
       big
       left
@@ -22,7 +22,7 @@ storiesOf('Button', module)
     />
   ))
   .add('wide', () => (
-    <Button
+    <ButtonLink
       wide
       big
       btnUrl="#"

@@ -2,28 +2,26 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 import {
-  ButtonStyled,
-  ButtonLabelStyled
+  ButtonLinkStyled
 } from './styledComponents'
 
-const Button = ({
+
+const ButtonLink = ({
   btnLabel,
   btnUrl,
   func,
   ...otherProps,
 }) => (
-  <ButtonStyled
+  <ButtonLinkStyled
     href={btnUrl}
     onClick={func}
     {...otherProps}
   >
-    <ButtonLabelStyled>
-      {btnLabel}
-    </ButtonLabelStyled>
-  </ButtonStyled>
+    {btnLabel}
+  </ButtonLinkStyled>
 )
 
-Button.propTypes = {
+ButtonLink.propTypes = {
   primary: PropTypes.bool,
   secondary: PropTypes.bool,
   big: PropTypes.bool,
@@ -34,4 +32,4 @@ Button.propTypes = {
   btnLabel: PropTypes.string,
 }
 
-export default Button
+export default ButtonLink
