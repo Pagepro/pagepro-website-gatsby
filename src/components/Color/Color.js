@@ -6,7 +6,7 @@ import {
   ColorsListItemStyled,
   ColorBgStyled,
   ColorLabelStyled
-} from './ColorStyledComponents'
+} from './styledComponents'
 import theme from '../../themes/theme'
 
 const Color = () => (

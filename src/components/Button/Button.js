@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import {
   ButtonStyled,
   ButtonLabelStyled
-} from './ButtonStyledComponents'
+} from './styledComponents'
 
 const Button = ({
   btnLabel,

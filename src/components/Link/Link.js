@@ -5,7 +5,7 @@ import {
   LinkLabelStyled,
   LinkIconStyled,
   LinkStyled
-} from './LinkStyledComponents'
+} from './styledComponents'
 import GitHub from '../../assets/svg/GitHub'
 import ArrowRight from '../../assets/svg/ArrowRight'
 

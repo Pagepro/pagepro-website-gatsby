@@ -5,7 +5,7 @@ import {
   CheckboxGroupStyled,
   CheckboxInputStyled,
   CheckboxLabelStyled,
-} from './CheckboxStyledComponents'
+} from './styledComponents'
 
 const Checkbox = ({
   inputId,

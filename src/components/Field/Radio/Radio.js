@@ -5,7 +5,7 @@ import {
   RadioGroupStyled,
   RadioInputStyled,
   RadioLabelStyled,
-} from './RadioStyledComponents'
+} from './styledComponents'
 
 const Radio = ({
   inputId,
