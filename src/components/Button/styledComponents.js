@@ -1,10 +1,11 @@
 import styled, { css } from 'styled-components'
 
 import { transition } from '../../common/mixins'
+import theme from '../../themes/theme'
 
 const ButtonLabelStyled = styled.span`
   width: 100%;
-  font-weight: ${props => props.theme.fontWeight.semiBold};
+  font-weight: ${theme.fontWeight.semiBold};
   text-align: center;
 `
 
@@ -13,7 +14,7 @@ const ButtonStyled = styled.a`
   align-items: center;
   flex-shrink: 0;
   width: auto;
-  min-width: ${props => props.theme.btn.width};
+  min-width: ${theme.btn.width};
   padding: 0 calc(${props => props.theme.size.gutter} * 1.5);
   cursor: pointer;
   ${transition}
@@ -24,43 +25,43 @@ const ButtonStyled = styled.a`
 
   /* Primary */
   ${props => props.primary && css`
-    background-color: ${props => props.theme.color.red};
-    color: ${props => props.theme.color.white};
+    background-color: ${theme.color.red};
+    color: ${theme.color.white};
 
     &:hover {
-      background-color: ${props => props.theme.color.red2};
+      background-color: ${theme.color.red2};
     }
   `}
 
   /* Secondary */
   ${props => props.secondary && css`
-    background-color: ${props => props.theme.color.white};
-    color: ${props => props.theme.color.red};
+    background-color: ${theme.color.white};
+    color: ${theme.color.red};
 
     &:hover {
-      background-color: ${props => props.theme.color.lightBlue};
+      background-color: ${theme.color.lightBlue};
     }
   `}
 
   /* Wide */
   ${props => props.wide && css`
-    background-color: ${props => props.theme.color.white};
+    background-color: ${theme.color.white};
     border: 1px solid ${props => props.theme.color.grey2};
     min-width: 100%;
 
     &:hover {
-      background-color: ${props => props.theme.color.lightGrey};
+      background-color: ${theme.color.lightGrey};
     }
   `}
 
   /* Medium */
   ${props => props.medium && css`
-    height: ${props => props.theme.btn.heightMedium};
+    height: ${theme.btn.heightMedium};
   `}
 
   /* Big */
   ${props => props.big && css`
-    height: ${props => props.theme.btn.heightBig};
+    height: ${theme.btn.heightBig};
   `}
 
   /* Left */

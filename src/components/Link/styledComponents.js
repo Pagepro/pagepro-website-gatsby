@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 
 import { decorLink } from '../../common/mixins'
+import theme from '../../themes/theme'
 
 const LinkLabelStyled = styled.span`
   ${decorLink}
@@ -12,14 +13,14 @@ const LinkStyled = styled.a`
   display: inline-flex;
   align-items: center;
   line-height: 1;
-  color: ${props => props.theme.color.darkGrey};
-  font-weight: ${props => props.theme.fontWeight.semiBold};
+  color: ${theme.color.darkGrey};
+  font-weight: ${theme.fontWeight.semiBold};
   cursor: pointer;
 
   ${props => props.light && css`
     text-transform: lowercase;
-    color: ${props => props.theme.color.white};
-    font-weight: ${props => props.theme.fontWeight.regular};
+    color: ${theme.color.white};
+    font-weight: ${theme.fontWeight.regular};
   `}
 
   &:hover {
