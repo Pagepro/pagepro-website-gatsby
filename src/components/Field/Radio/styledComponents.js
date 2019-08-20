@@ -7,7 +7,7 @@ const RadioGroupStyled = styled.div`
 `
 
 const RadioLabelStyled = styled.label`
-  color: ${props => props.theme.color.navy6};
+  color: ${props => props.theme.form.labelColor};
   font-weight: ${props => props.theme.fontWeight.semiBold};
   padding-left: calc(${props => props.theme.form.checkboxSize} * .95
   + ${props => props.theme.size.gutter});

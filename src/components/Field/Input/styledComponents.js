@@ -12,7 +12,7 @@ const InputStyled = styled.input`
   height: ${props => props.theme.form.fieldHeight};
 
   &::placeholder {
-    color: ${props => props.theme.color.navy6};
+    color: ${props => props.theme.form.placeholderColor};
   }
 `
 
