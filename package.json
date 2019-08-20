@@ -21,7 +21,7 @@
     "develop": "gatsby develop -H 0.0.0.0",
     "build": "gatsby build",
     "storybook": "start-storybook -p 9000 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook -o storybook"
+    "build-storybook": "yarn run build && build-storybook -c .storybook -o storybook"
   },
   "dependencies": {
     "gatsby": "^2.0.19",
