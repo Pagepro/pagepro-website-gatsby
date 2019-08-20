@@ -35,6 +35,7 @@ export const fieldReset = `
   border-radius: 0;
   background: transparent;
   box-shadow: none;
+  font-size: 14px;
 
   &::-ms-expand {
     display: none;
