@@ -28,14 +28,14 @@ export const decorLink = `
   }
 `
 
-export const fieldReset = `
+export const fieldReset = props => `
   width: 100%;
   appearance: none;
   border: 0;
   border-radius: 0;
   background: transparent;
   box-shadow: none;
-  font-size: 14px;
+  font-size: ${props.theme.fontSize.fontSize14};
 
   &::-ms-expand {
     display: none;
@@ -51,13 +51,13 @@ export const fieldReset = `
   }
 `
 
-export const checkbox = `
+export const checkbox = props => `
   display: flex;
   flex-wrap: wrap;
 
   label {
     position: relative;
-    font-size: 14px;
+    font-size: ${props.theme.fontSize.fontSize14};
     cursor: pointer;
 
     &::before,
