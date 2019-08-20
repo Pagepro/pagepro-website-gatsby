@@ -11,22 +11,20 @@ import ArrowRight from '../../assets/svg/ArrowRight'
 
 
 const Link = ({
-  light,
-  linkUrl,
   withGithub,
-  linkLabel,
+  label,
   withArrow,
+  ...rest
 }) => (
   <LinkStyled
-    href={linkUrl}
-    light={light}
+    {...rest}
   >
     {withGithub &&
       <LinkIconStyled>
         <GitHub fontSize="16px"/>
       </LinkIconStyled>
     }
-    <LinkLabelStyled>{linkLabel}</LinkLabelStyled>
+    <LinkLabelStyled>{label}</LinkLabelStyled>
     {withArrow &&
       <LinkIconStyled>
         <ArrowRight fontSize="7px"/>

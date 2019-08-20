@@ -6,22 +6,22 @@ import Link from './Link'
 storiesOf('Link', module)
   .add('default', () => (
     <Link
-      linkUrl="#"
-      linkLabel="Read more"
+      href="#"
+      label="Read more"
     />
 	))
   .add('with arrow', () => (
 		<Link
       withArrow
-      linkUrl="#"
-      linkLabel="More"
+      href="#"
+      label="More"
     />
   ))
   .add('with github', () => (
     <Link
       withGithub
-      linkUrl="#"
-      linkLabel="Github"
+      href="#"
+      label="Github"
     />
   ))
   .add('light', () => (
@@ -29,8 +29,8 @@ storiesOf('Link', module)
       <Link
         light
         withArrow
-        linkUrl="#"
-        linkLabel="More"
+        href="#"
+        label="More"
       />
     </div>
   ))

@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 
 import { transition } from '../../common/mixins'
 import theme from '../../themes/theme'
+import { types, sizes } from './ButtonLink'
 
 const ButtonLinkStyled = styled.a`
   display: inline-flex;
@@ -17,7 +18,7 @@ const ButtonLinkStyled = styled.a`
   ${transition}
 
   /* Primary */
-  ${props => props.primary && css`
+  ${({ type }) => type === types.primary && css`
     background-color: ${theme.color.red};
     color: ${theme.color.white};
 
@@ -27,13 +28,23 @@ const ButtonLinkStyled = styled.a`
   `}
 
   /* Secondary */
-  ${props => props.secondary && css`
+  ${({ type }) => type === types.secondary && css`
     background-color: ${theme.color.white};
     color: ${theme.color.red};
 
     &:hover {
       background-color: ${theme.color.lightBlue};
     }
+  `}
+
+  /* Medium */
+  ${({ size }) => size === sizes.medium && css`
+    height: ${theme.btn.heightMedium};
+  `}
+
+  /* Big */
+  ${({ size }) => size === sizes.big && css`
+    height: ${theme.btn.heightBig};
   `}
 
   /* Wide */
@@ -45,16 +56,6 @@ const ButtonLinkStyled = styled.a`
     &:hover {
       background-color: ${theme.color.lightGrey};
     }
-  `}
-
-  /* Medium */
-  ${props => props.medium && css`
-    height: ${theme.btn.heightMedium};
-  `}
-
-  /* Big */
-  ${props => props.big && css`
-    height: ${theme.btn.heightBig};
   `}
 
   /* Left */

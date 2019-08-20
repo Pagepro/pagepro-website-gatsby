@@ -1,21 +1,21 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import ButtonLink from './ButtonLink'
+import ButtonLink, { types, sizes } from './ButtonLink'
 
 storiesOf('ButtonLink', module)
   .add('primary medium', () => (
     <ButtonLink
-      primary
-      medium
+      type={types.primary}
+      size={sizes.medium}
       btnUrl="#"
       btnLabel="Hire us"
     />
   ))
   .add('secondary big left', () => (
     <ButtonLink
-      secondary
-      big
+      type={types.secondary}
+      size={sizes.big}
       left
       btnUrl="#"
       btnLabel="Join us"
@@ -24,7 +24,7 @@ storiesOf('ButtonLink', module)
   .add('wide', () => (
     <ButtonLink
       wide
-      big
+      size={sizes.big}
       btnUrl="#"
       btnLabel="See All on GitHub"
     />

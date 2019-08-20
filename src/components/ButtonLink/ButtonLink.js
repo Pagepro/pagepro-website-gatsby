@@ -5,27 +5,30 @@ import {
   ButtonLinkStyled
 } from './styledComponents'
 
+export const types = {
+  primary: 'primary',
+  secondary: 'secondary'
+}
+
+export const sizes = {
+  medium: 'medium',
+  big: 'big'
+}
 
 const ButtonLink = ({
   btnLabel,
-  btnUrl,
-  func,
-  ...otherProps,
+  ...rest
 }) => (
   <ButtonLinkStyled
-    href={btnUrl}
-    onClick={func}
-    {...otherProps}
+    {...rest}
   >
     {btnLabel}
   </ButtonLinkStyled>
 )
 
 ButtonLink.propTypes = {
-  primary: PropTypes.bool,
-  secondary: PropTypes.bool,
-  big: PropTypes.bool,
-  medium: PropTypes.bool,
+  type: PropTypes.oneOf(Object.keys(types)),
+  size: PropTypes.oneOf(Object.keys(sizes)),
   wide: PropTypes.bool,
   left: PropTypes.bool,
   btnUrl: PropTypes.string,
