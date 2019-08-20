@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Input from './Input'
-import Checkbox from './Checkbox'
+import Input from './Input/Input'
+import Checkbox from './Checkbox/Checkbox'
+import Radio from './Radio/Radio'
 
 storiesOf('Field', module)
   .add('input', () => (
@@ -12,12 +13,22 @@ storiesOf('Field', module)
     />
   ))
   .add('checkbox', () => (
-    <Checkbox
-      inputId="1"
-      label={(
-        <Fragment>
-          I read and I accepted <a href="#">Privacy Policy</a>
-        </Fragment>
-     )}
-    />
+    <div style={{ background: "#000", padding: "5px" }}>
+      <Checkbox
+        inputId="chbx1"
+        label={(
+          <Fragment>
+            I read and I accepted <a href="#">Privacy Policy</a>
+          </Fragment>
+        )}
+      />
+    </div>
+  ))
+  .add('radio', () => (
+    <div style={{ background: "#000", padding: "5px" }}>
+      <Radio
+        inputId="rb1"
+        label="Radio"
+      />
+    </div>
   ))

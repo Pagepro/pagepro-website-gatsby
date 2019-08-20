@@ -5,37 +5,29 @@ import {
   LinkLabelStyled,
   LinkIconStyled,
   LinkStyled
-} from './LinkStyledComponents'
+} from './styledComponents'
 import GitHub from '../../assets/svg/GitHub'
 import ArrowRight from '../../assets/svg/ArrowRight'
 
 
 const Link = ({
-  light,
-  linkUrl,
   withGithub,
-  linkLabel,
+  label,
   withArrow,
+  ...rest
 }) => (
   <LinkStyled
-    href={linkUrl}
-    light={light}
+    {...rest}
   >
     {withGithub &&
       <LinkIconStyled>
-        <GitHub
-          fontSize="16px"
-        />
+        <GitHub fontSize="16px"/>
       </LinkIconStyled>
     }
-    <LinkLabelStyled>
-      {linkLabel}
-    </LinkLabelStyled>
+    <LinkLabelStyled>{label}</LinkLabelStyled>
     {withArrow &&
       <LinkIconStyled>
-        <ArrowRight
-          fontSize="7px"
-        />
+        <ArrowRight fontSize="7px"/>
       </LinkIconStyled>
     }
   </LinkStyled>

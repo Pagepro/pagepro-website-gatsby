@@ -17,11 +17,14 @@ export default {
     lightBlue: '#e1ecf2',
   },
   size: {
-    gutter: '16px',
-    colorBg: '64px',
+    gutter: '16px'
   },
   form: {
     fieldHeight: '54px',
+    checkboxSize: '20px',
+    checkboxMarkWidth: '6px',
+    checkboxMarkHeight: '11px',
+    radioMarkSize: '8px',
   },
   btn: {
     width: '168px',
@@ -118,6 +121,10 @@ export default {
       fontSize: ['0.6875rem', '0.75rem'], // 11px / 12px
       lineHeight: 1.4,
     },
+  },
+  fontSize: {
+    fontSize14: '14px',
+    fontSize16: '16px',
   },
   fontWeight: {
     regular: 400,

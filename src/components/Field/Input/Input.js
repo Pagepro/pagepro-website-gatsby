@@ -1,16 +1,10 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
-import {
-  FieldInputStyled,
-} from './FieldStyledComponents'
+import { InputStyled } from './styledComponents'
 
-const Input = ({
-  ...props
-}) => (
-  <FieldInputStyled
-    {...props}
-  />
+const Input = ({ ...props }) => (
+  <InputStyled {...props}/>
 )
 
 Input.propTypes = {

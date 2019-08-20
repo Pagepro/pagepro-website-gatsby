@@ -1,29 +1,23 @@
 import styled, { css } from 'styled-components'
 
 import { transition } from '../../common/mixins'
+import { types, sizes } from './ButtonLink'
 
-const ButtonLabelStyled = styled.span`
-  width: 100%;
-  font-weight: ${props => props.theme.fontWeight.semiBold};
-  text-align: center;
-`
-
-const ButtonStyled = styled.a`
+const ButtonLinkStyled = styled.a`
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
   width: auto;
   min-width: ${props => props.theme.btn.width};
+  font-size: ${props => props.theme.fontSize16};
+  font-weight: ${props => props.theme.fontWeight.semiBold};
+  justify-content: center;
   padding: 0 calc(${props => props.theme.size.gutter} * 1.5);
   cursor: pointer;
   ${transition}
 
-  ${ButtonLabelStyled} {
-    font-size: 16px;
-  }
-
   /* Primary */
-  ${props => props.primary && css`
+  ${({ type }) => type === types.primary && css`
     background-color: ${props => props.theme.color.red};
     color: ${props => props.theme.color.white};
 
@@ -33,7 +27,7 @@ const ButtonStyled = styled.a`
   `}
 
   /* Secondary */
-  ${props => props.secondary && css`
+  ${({ type }) => type === types.secondary && css`
     background-color: ${props => props.theme.color.white};
     color: ${props => props.theme.color.red};
 
@@ -42,8 +36,18 @@ const ButtonStyled = styled.a`
     }
   `}
 
+  /* Medium */
+  ${({ size }) => size === sizes.medium && css`
+    height: ${props => props.theme.btn.heightMedium};
+  `}
+
+  /* Big */
+  ${({ size }) => size === sizes.big && css`
+    height: ${props => props.theme.btn.heightBig};
+  `}
+
   /* Wide */
-  ${props => props.wide && css`
+  ${({ wide }) => wide && css`
     background-color: ${props => props.theme.color.white};
     border: 1px solid ${props => props.theme.color.grey2};
     min-width: 100%;
@@ -53,25 +57,12 @@ const ButtonStyled = styled.a`
     }
   `}
 
-  /* Medium */
-  ${props => props.medium && css`
-    height: ${props => props.theme.btn.heightMedium};
-  `}
-
-  /* Big */
-  ${props => props.big && css`
-    height: ${props => props.theme.btn.heightBig};
-  `}
-
   /* Left */
   ${props => props.left && css`
-    ${ButtonLabelStyled} {
-      text-align: left;
-    }
+    justify-content: flex-start;
   `}
 `
 
 export {
-  ButtonStyled,
-  ButtonLabelStyled,
+  ButtonLinkStyled
 }

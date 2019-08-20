@@ -28,13 +28,14 @@ export const decorLink = `
   }
 `
 
-export const fieldReset = `
+export const fieldReset = props => `
   width: 100%;
   appearance: none;
   border: 0;
   border-radius: 0;
   background: transparent;
   box-shadow: none;
+  font-size: ${props.theme.fontSize.fontSize14};
 
   &::-ms-expand {
     display: none;
@@ -47,5 +48,36 @@ export const fieldReset = `
     box-shadow: none;
 
     -webkit-animation-fill-mode: both;
+  }
+`
+
+export const checkbox = props => `
+  display: flex;
+  flex-wrap: wrap;
+
+  label {
+    position: relative;
+    font-size: ${props.theme.fontSize.fontSize14};
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      position: absolute;
+      display: flex;
+      flex-shrink: 0;
+      content: '';
+      ${transition}
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
   }
 `
