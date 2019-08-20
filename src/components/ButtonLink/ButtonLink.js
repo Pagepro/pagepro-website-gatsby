@@ -29,7 +29,7 @@ const ButtonLink = ({
 ButtonLink.propTypes = {
   type: PropTypes.oneOf(Object.keys(types)),
   size: PropTypes.oneOf(Object.keys(sizes)),
-  wide: PropTypes.bool,
+  outline: PropTypes.bool,
   left: PropTypes.bool,
   btnUrl: PropTypes.string,
   btnLabel: PropTypes.string,

@@ -30,7 +30,7 @@ export default {
     heightBig: '60px',
     primaryBgHover: '#e72934',
     secondaryBgHover: '#e1ecf2',
-    wideColor: '#eee',
+    outlineColor: '#eee',
   },
   breakpoints: ['768px', '1025px'],
   textStyles: {

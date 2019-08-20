@@ -46,10 +46,10 @@ const ButtonLinkStyled = styled.a`
     height: ${props => props.theme.btn.heightBig};
   `}
 
-  /* Wide */
-  ${({ wide }) => wide && css`
+  /* Outline */
+  ${({ outline }) => outline && css`
     background-color: ${props => props.theme.color.white};
-    border: 1px solid ${props => props.theme.btn.wideColor};
+    border: 1px solid ${props => props.theme.btn.outlineColor};
     min-width: 100%;
 
     &:hover {

@@ -21,9 +21,9 @@ storiesOf('ButtonLink', module)
       btnLabel="Join us"
     />
   ))
-  .add('wide', () => (
+  .add('outline', () => (
     <ButtonLink
-      wide
+      outline
       size={sizes.big}
       btnUrl="#"
       btnLabel="See All on GitHub"
