@@ -17,8 +17,7 @@ export default {
     lightBlue: '#e1ecf2',
   },
   size: {
-    gutter: '16px',
-    colorBg: '64px',
+    gutter: '16px'
   },
   form: {
     fieldHeight: '54px',

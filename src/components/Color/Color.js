@@ -1,26 +1,43 @@
 import React from 'react'
 import _map from 'lodash/map'
 
-import {
-  ColorsListStyled,
-  ColorsListItemStyled,
-  ColorBgStyled,
-  ColorLabelStyled
-} from './styledComponents'
 import theme from '../../themes/theme'
 
 const Color = () => (
-  <ColorsListStyled>
+  <ul style={{
+    display: 'flex',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    flexShrink: '0',
+    width: 'auto'
+  }}>
     {_map(theme.color, (value, key) => (
-      <ColorsListItemStyled
+      <li style={{
+          display: 'flex',
+          alignItems: 'center',
+          flexDirection: 'column',
+          margin: '16px',
+          textAlign: 'center',
+          fontSize: '12px',
+          textTransform: 'uppercase',
+          fontWeight: '500'
+        }}
         key={key}
       >
-        <ColorBgStyled style={{backgroundColor: value}}/>
-          <ColorLabelStyled>{key}</ColorLabelStyled>
-          <ColorLabelStyled>{value}</ColorLabelStyled>
-      </ColorsListItemStyled>
+        <div
+          style={{
+            backgroundColor: value,
+            width: '100px',
+            height: '64px',
+            marginBottom: '16px',
+            borderRadius: '6px'
+          }}
+        />
+          <p>{key}</p>
+          <p>{value}</p>
+      </li>
     ))}
-  </ColorsListStyled>
+  </ul>
 )
 
 export default Color
