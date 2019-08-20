@@ -22,7 +22,7 @@ const ButtonLinkStyled = styled.a`
     color: ${props => props.theme.color.white};
 
     &:hover {
-      background-color: ${props => props.theme.color.red2};
+      background-color: ${props => props.theme.btn.primaryBgHover};
     }
   `}
 
@@ -32,7 +32,7 @@ const ButtonLinkStyled = styled.a`
     color: ${props => props.theme.color.red};
 
     &:hover {
-      background-color: ${props => props.theme.color.lightBlue};
+      background-color: ${props => props.theme.btn.secondaryBgHover};
     }
   `}
 
@@ -49,7 +49,7 @@ const ButtonLinkStyled = styled.a`
   /* Wide */
   ${({ wide }) => wide && css`
     background-color: ${props => props.theme.color.white};
-    border: 1px solid ${props => props.theme.color.grey2};
+    border: 1px solid ${props => props.theme.btn.wideColor};
     min-width: 100%;
 
     &:hover {
