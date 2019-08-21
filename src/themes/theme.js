@@ -32,6 +32,9 @@ export default {
     secondaryBgHover: '#e1ecf2',
     outlineColor: '#eee',
   },
+  ctaBox: {
+    width: '560px',
+  },
   breakpoints: ['768px', '1025px'],
   textStyles: {
     heading1: {
@@ -44,7 +47,7 @@ export default {
     },
     heading3: {
       fontSize: ['1.375rem', '2.25rem'], // 22px / 36px
-      lineHeight: 1.055,
+      lineHeight: 1.25,
     },
     heading4: {
       fontSize: ['1.875rem'], // 30px
