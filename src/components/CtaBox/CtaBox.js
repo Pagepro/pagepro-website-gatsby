@@ -30,7 +30,6 @@ const CtaBox = () => (
           btnUrl="#"
           btnLabel="Hire us"
         />
-
         <ButtonLink
           className="button"
           type={types.secondary}
