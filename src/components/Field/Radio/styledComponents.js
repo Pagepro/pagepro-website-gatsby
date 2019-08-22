@@ -18,7 +18,7 @@ const RadioLabelStyled = styled.label`
   }
 
   &::before {
-    border: 2px solid ${props => props.theme.color.navy5};
+    border: 2px solid ${props => props.theme.color.navy3};
     width: ${props => props.theme.form.checkboxSize};
     height: ${props => props.theme.form.checkboxSize};
     border-radius: 50px;

@@ -7,10 +7,8 @@ export default {
     lightGrey: '#f4f4f4',
     red: '#f33540',
     navy: '#061f2d',
-    navy2: '#0a2b3d',
-    navy3: '#103347',
-    navy4: '#19425a',
-    navy5: '#26536c',
+    navy2: '#19425a',
+    navy3: '#26536c',
   },
   size: {
     gutter: '16px'
