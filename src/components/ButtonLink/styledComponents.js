@@ -49,7 +49,7 @@ const ButtonLinkStyled = styled.a`
   /* Outline */
   ${({ outline }) => outline && css`
     background-color: ${props => props.theme.color.white};
-    border: 1px solid ${props => props.theme.btn.outlineColor};
+    border: 2px solid ${props => props.theme.btn.outlineColor};
     min-width: 100%;
 
     &:hover {

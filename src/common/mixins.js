@@ -2,7 +2,10 @@ export const transition = `
   transition: 270ms ease;
 `
 
-export const decorLink = `
+export const decorLink = ({
+  height = '1px',
+  hoverUnderlineBg = 'currentColor'
+}) =>`
   position: relative;
 
   &::after {
@@ -12,7 +15,7 @@ export const decorLink = `
     left: 0;
     display: block;
     width: 100%;
-    height: 1px;
+    height: ${height};
     content: '';
     transition: transform .3s;
     transform: scaleX(0);
@@ -24,6 +27,7 @@ export const decorLink = `
     &::after {
       transform: scaleX(1);
       transform-origin: bottom left;
+      background: ${hoverUnderlineBg};
     }
   }
 `

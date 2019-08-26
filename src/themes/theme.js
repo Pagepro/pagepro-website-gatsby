@@ -7,10 +7,8 @@ export default {
     lightGrey: '#f4f4f4',
     red: '#f33540',
     navy: '#061f2d',
-    navy2: '#0a2b3d',
-    navy3: '#103347',
-    navy4: '#19425a',
-    navy5: '#26536c',
+    navy2: '#19425a',
+    navy3: '#26536c',
   },
   size: {
     gutter: '16px'
@@ -35,6 +33,9 @@ export default {
   infoBox: {
     iconFontSize: '58px',
   },
+  ctaBox: {
+    width: '560px',
+  },
   breakpoints: ['768px', '1025px'],
   textStyles: {
     heading1: {
@@ -47,7 +48,7 @@ export default {
     },
     heading3: {
       fontSize: ['1.375rem', '2.25rem'], // 22px / 36px
-      lineHeight: 1.055,
+      lineHeight: 1.25,
     },
     heading4: {
       fontSize: ['1.875rem'], // 30px
