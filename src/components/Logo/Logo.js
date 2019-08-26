@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import LogoSvg from '../../assets/images/logo.svg'
 import { LogoLinkStyled } from './styledComponents'
 
-const Logo = ({...props}) => (
+const Logo = props => (
   <LogoLinkStyled {...props}>
     <img src={LogoSvg} alt="Pagepro" />
   </LogoLinkStyled>
