@@ -12,7 +12,10 @@ storiesOf('Field', module)
       type="text"
     />
   ))
-  .addDecorator(storyFn => <div style={{ background: '#000', padding: '5px' }}>{storyFn()}</div>)
+  .addDecorator(storyFn => <div style={{
+    background: '#000',
+    padding: '5px'
+  }}>{storyFn()}</div>)
   .add('checkbox', () => (
     <Checkbox
       inputId="chbx1"
