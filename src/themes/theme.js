@@ -15,23 +15,6 @@ export default {
   size: {
     gutter: '16px'
   },
-  form: {
-    fieldHeight: '54px',
-    checkboxSize: '20px',
-    checkboxMarkWidth: '6px',
-    checkboxMarkHeight: '11px',
-    radioMarkSize: '8px',
-    labelColor: '#5d90ab',
-    placeholderColor: '#5d90ab',
-  },
-  btn: {
-    width: '168px',
-    heightMedium: '54px',
-    heightBig: '60px',
-    primaryBgHover: '#e72934',
-    secondaryBgHover: '#e1ecf2',
-    outlineColor: '#eee',
-  },
   breakpoints: ['768px', '1025px'],
   textStyles: {
     heading1: {
@@ -132,5 +115,25 @@ export default {
     medium: 500,
     semiBold: 600,
     bold: 700,
+  },
+  form: {
+    fieldHeight: '54px',
+    checkboxSize: '20px',
+    checkboxMarkWidth: '6px',
+    checkboxMarkHeight: '11px',
+    radioMarkSize: '8px',
+    labelColor: '#5d90ab',
+    placeholderColor: '#5d90ab',
+  },
+  btn: {
+    width: '168px',
+    heightMedium: '54px',
+    heightBig: '60px',
+    primaryBgHover: '#e72934',
+    secondaryBgHover: '#e1ecf2',
+    outlineColor: '#eee',
+  },
+  testimonials: {
+    decorWidth: '20px',
   }
 }
