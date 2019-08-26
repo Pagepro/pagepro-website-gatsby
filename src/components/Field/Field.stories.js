@@ -12,23 +12,20 @@ storiesOf('Field', module)
       type="text"
     />
   ))
+  .addDecorator(storyFn => <div style={{ background: '#000', padding: '5px' }}>{storyFn()}</div>)
   .add('checkbox', () => (
-    <div style={{ background: "#000", padding: "5px" }}>
-      <Checkbox
-        inputId="chbx1"
-        label={(
-          <Fragment>
-            I read and I accepted <a href="#">Privacy Policy</a>
-          </Fragment>
-        )}
-      />
-    </div>
+    <Checkbox
+      inputId="chbx1"
+      label={(
+        <Fragment>
+          I read and I accepted <a href="#">Privacy Policy</a>
+        </Fragment>
+      )}
+    />
   ))
   .add('radio', () => (
-    <div style={{ background: "#000", padding: "5px" }}>
-      <Radio
-        inputId="rb1"
-        label="Radio"
-      />
-    </div>
+    <Radio
+      inputId="rb1"
+      label="Radio"
+    />
   ))

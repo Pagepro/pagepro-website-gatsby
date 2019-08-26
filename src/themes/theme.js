@@ -32,6 +32,9 @@ export default {
     secondaryBgHover: '#e1ecf2',
     outlineColor: '#eee',
   },
+  infoBox: {
+    iconFontSize: '58px',
+  },
   breakpoints: ['768px', '1025px'],
   textStyles: {
     heading1: {

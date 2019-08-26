@@ -5,7 +5,7 @@ import theme from '../../themes/theme'
 
 const LinkLabelStyled = styled.span`
   ${decorLink}
-  font-size: ${theme.fontSize14};
+  font-size: ${props => props.theme.fontSize.fontSize14};
 `
 
 const LinkStyled = styled.a`
