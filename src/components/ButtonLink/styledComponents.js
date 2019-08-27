@@ -58,7 +58,7 @@ const ButtonLinkStyled = styled.a`
   `}
 
   /* Left */
-  ${props => props.left && css`
+  ${({ left }) => left && css`
     justify-content: flex-start;
   `}
 `
