@@ -5,7 +5,7 @@ import {
   BulletListStyled,
   BulletListItemStyled
 } from './styledComponents'
-import { Typo8 } from '../Typography/Typography'
+import { Typo6 } from '../Typography/Typography'
 
 const BulletList = (props) => {
   const {
@@ -15,7 +15,7 @@ const BulletList = (props) => {
     <BulletListStyled>
       {_map(itemsArray, (value, key) => (
         <BulletListItemStyled key={key}>
-          <Typo8>{value.text}</Typo8>
+          <Typo6>{value.text}</Typo6>
         </BulletListItemStyled>
       ))}
     </BulletListStyled>

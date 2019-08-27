@@ -39,7 +39,7 @@ export const fieldReset = props => `
   border-radius: 0;
   background: transparent;
   box-shadow: none;
-  font-size: ${props.theme.fontSize.fontSize14};
+  font-size: ${props.theme.fontSize.fontSize15};
 
   &::-ms-expand {
     display: none;
@@ -61,7 +61,7 @@ export const checkbox = props => `
 
   label {
     position: relative;
-    font-size: ${props.theme.fontSize.fontSize14};
+    font-size: ${props.theme.fontSize.fontSize15};
     cursor: pointer;
 
     &::before,

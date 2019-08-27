@@ -10,7 +10,7 @@ import {
   TestimonialsDetailsStyled,
   TestimonialsQuoteStyled,
 } from '../Testimonials/styledComponents'
-import { Typo3, Typo5, Typo8 } from '../Typography/Typography'
+import { Typo3, Typo5, Typo6 } from '../Typography/Typography'
 
 const Testimonials = ({
   name,
@@ -29,13 +29,13 @@ const Testimonials = ({
       </TestimonialsNameStyled>
       <TestimonialsDetailsStyled>
         <Typo5>{profession}</Typo5>
-        <Typo8 className="agency">{agency}</Typo8>
+        <Typo6 className="agency">{agency}</Typo6>
       </TestimonialsDetailsStyled>
     </TestimonialsHeaderStyled>
     <TestimonialsQuoteStyled>
-      <Typo8>
+      <Typo6>
         {quote}
-      </Typo8>
+      </Typo6>
     </TestimonialsQuoteStyled>
   </TestimonialsStyled>
 )
