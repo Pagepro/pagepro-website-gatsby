@@ -8,6 +8,7 @@ const CtaBoxStyled = styled.div`
 const CtaBoxHeaderStyled = styled.div`
   color: ${props => props.theme.color.lightGrey};
   font-weight: ${props => props.theme.fontWeight.semiBold};
+  line-height: ${props => props.theme.lineHeight.small};
   margin-bottom: calc(${props => props.theme.size.gutter} * 3.5);
 `
 
@@ -18,6 +19,7 @@ const CtaBoxMarkStyled = styled.span`
 
 const CtaBoxTextStyled = styled.div`
   color: ${props => props.theme.color.lightGrey};
+  line-height: ${props => props.theme.lineHeight.big};
   margin-bottom: calc(${props => props.theme.size.gutter} * 3.5);
 `
 

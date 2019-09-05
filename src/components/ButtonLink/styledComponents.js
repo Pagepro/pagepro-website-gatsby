@@ -9,7 +9,7 @@ const ButtonLinkStyled = styled.a`
   flex-shrink: 0;
   width: auto;
   min-width: ${props => props.theme.btn.width};
-  font-size: ${props => props.theme.fontSize16};
+  font-size: ${props => props.theme.fontSize15};
   font-weight: ${props => props.theme.fontWeight.semiBold};
   justify-content: center;
   padding: 0 calc(${props => props.theme.size.gutter} * 1.5);

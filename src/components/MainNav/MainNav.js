@@ -6,7 +6,7 @@ import {
   MainNavItemStyled,
   MainNavLinkStyled
 } from './styledComponents'
-import { Typo9 } from '../Typography/Typography'
+import { Typo7 } from '../Typography/Typography'
 
 const MainNav = () => {
   const items = [
@@ -40,7 +40,7 @@ const MainNav = () => {
       {_map(items, (value, key) => (
         <MainNavItemStyled key={key}>
           <MainNavLinkStyled href={value.href}>
-            <Typo9>{value.label}</Typo9>
+            <Typo7>{value.label}</Typo7>
           </MainNavLinkStyled>
         </MainNavItemStyled>
       ))}

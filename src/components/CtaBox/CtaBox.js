@@ -7,19 +7,19 @@ import {
   CtaBoxTextStyled,
   CtaBoxActionsStyled
 } from './styledComponents'
-import { Typo2, Heading3 } from '../Typography/Typography'
+import { Typo2, Typo4 } from '../Typography/Typography'
 import ButtonLink, { types, sizes } from '../ButtonLink/ButtonLink'
 
 const CtaBox = () => (
   <CtaBoxStyled>
     <CtaBoxHeaderStyled>
-      <Heading3 tag="h1">
+      <Typo2 tag="h1">
         React Developers <CtaBoxMarkStyled>who deliver.</CtaBoxMarkStyled>
-      </Heading3>
+      </Typo2>
     </CtaBoxHeaderStyled>
     <CtaBoxTextStyled>
-      <Typo2>We provide startups and scale up businesses with hands-on technical
-      leadership and high-performing engeneering teams.</Typo2>
+      <Typo4>We provide startups and scale up businesses with hands-on technical
+      leadership and high-performing engeneering teams.</Typo4>
     </CtaBoxTextStyled>
     <CtaBoxActionsStyled>
         <ButtonLink

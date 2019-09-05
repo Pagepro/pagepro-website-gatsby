@@ -37,105 +37,44 @@ export default {
     width: '560px',
   },
   breakpoints: ['768px', '1025px'],
+  // Visual TypeScale / Major Third (1.25) / Base Size: 15px
   textStyles: {
-    heading1: {
-      fontSize: ['2rem', '3.25rem'], // 32px / 52px
-      lineHeight: 1.1,
-    },
-    heading2: {
-      fontSize: ['1.625rem', '2.5rem'], // 26px / 40px
-      lineHeight: 1.4,
-    },
-    heading3: {
-      fontSize: ['1.375rem', '2.25rem'], // 22px / 36px
-      lineHeight: 1.25,
-    },
-    heading4: {
-      fontSize: ['1.875rem'], // 30px
-      lineHeight: 1.2,
-    },
-    heading5: {
-      fontSize: ['2rem', '1.875rem'], // 32px //  30px
-      lineHeight: 1.5,
-    },
-    heading6: {
-      fontSize: ['1.75rem', '1.875rem'], // 28px / 30px
-      lineHeight: 1.25,
-    },
-    heading7: {
-      fontSize: ['1.75rem'], // 28px
-      lineHeight: 1.1,
-    },
-    heading8: {
-      fontSize: ['1.625rem'], // 26px
-      lineHeight: 1.1,
-    },
-    heading9: {
-      fontSize: ['1.5rem'], // 24px
-      lineHeight: 1.15,
-    },
-    heading10: {
-      fontSize: ['1.125rem', '1.5rem'], // 18px / 24px
-      lineHeight: 1.12,
-    },
-    heading11: {
-      fontSize: ['1rem'], // 16px
-      lineHeight: 1.25,
-    },
     typo1: {
-      fontSize: ['1.625rem'], // 26px
-      lineHeight: 1.1,
+      fontSize: ['3.052rem'] // 45.78px
     },
     typo2: {
-      fontSize: ['1.375rem'], // 22px
-      lineHeight: 1.45,
+      fontSize: ['2.441rem'] // 36.62px
     },
     typo3: {
-      fontSize: ['1.25rem'], // 20px
-      lineHeight: 1.15,
+      fontSize: ['1.953rem'] // 29.30px
     },
     typo4: {
-      fontSize: ['1.125rem'], // 18px
-      lineHeight: 1.4,
+      fontSize: ['1.563rem'] // 23.44px
     },
     typo5: {
-      fontSize: ['1rem'], // 16px
-      lineHeight: 1.25,
+      fontSize: ['1.25rem'] // 18.75px
     },
     typo6: {
-      fontSize: ['1rem', '1.125rem'], // 16px / 18px
-      lineHeight: 1.35,
+      fontSize: ['1rem'] // 15px
     },
     typo7: {
-      fontSize: ['0.9375rem'], // 15px
-      lineHeight: 1.4,
-    },
-    typo8: {
-      fontSize: ['0.875rem'], // 14px
-      lineHeight: 1.4,
-    },
-    typo9: {
-      fontSize: ['0.75rem'], // 12px
-      lineHeight: 1.4,
-    },
-    typo10: {
-      fontSize: ['0.6875rem', '0.875rem'], // 11px / 14px
-      lineHeight: 1.4,
-    },
-    typo11: {
-      fontSize: ['0.6875rem', '0.75rem'], // 11px / 12px
-      lineHeight: 1.4,
-    },
+      fontSize: ['0.8rem'] // 12px
+    }
   },
   fontSize: {
-    fontSize14: '14px',
-    fontSize16: '16px',
+    fontSize15: '15px',
   },
   fontWeight: {
     regular: 400,
     medium: 500,
     semiBold: 600,
     bold: 700,
+  },
+  lineHeight: {
+    big: 1.5,
+    medium: 1.25,
+    small: 1.15,
+    1: 1,
   },
   form: {
     fieldHeight: '54px',
