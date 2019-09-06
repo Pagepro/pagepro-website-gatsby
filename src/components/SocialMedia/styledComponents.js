@@ -31,7 +31,7 @@ const SocialMediaItemStyled = styled.li`
 
 const SocialMediaIconStyled = styled.span`
   display: flex;
-  font-size: ${props => props.theme.fontSize.fontSize16};
+  font-size: ${props => props.theme.fontSize.fontSize15};
 `
 
 export{

@@ -4,20 +4,22 @@ import { storiesOf } from '@storybook/react'
 import InfoBox from './InfoBox'
 import ReactIcon from '../../assets/images/svg/react.svg'
 import ReactNativeIcon from '../../assets/images/svg/react-native.svg'
-import WordpressIcon from '../../assets/images/svg/wordpress.svg'
+import WordPressIcon from '../../assets/images/svg/word-press.svg'
 import BulletList from '../BulletList/BulletList'
-import { Typo8 } from '../Typography/Typography'
+import { Typo6 } from '../Typography/Typography'
 
 storiesOf('InfoBox', module)
-  .addDecorator(storyFn => <div style={{ maxWidth: '240px' }}>{storyFn()}</div>)
+  .addDecorator(storyFn => <div style={{
+    maxWidth: '240px'
+  }}>{storyFn()}</div>)
   .add('default', () => (
     <InfoBox
       heading="Web & Mobile Development"
       src={ReactIcon}
       alt="React"
     >
-      <Typo8>Gain access to our senior leaders and benefit from their
-      insights into the technology and business domains.</Typo8>
+      <Typo6>Gain access to our senior leaders and benefit from their
+      insights into the technology and business domains.</Typo6>
     </InfoBox>
 ))
   .add('with background', () => (
@@ -27,8 +29,8 @@ storiesOf('InfoBox', module)
       src={ReactNativeIcon}
       alt="React"
     >
-      <Typo8>Gain access to our senior leaders and benefit from their
-      insights into the technology and business domains.</Typo8>
+      <Typo6>Gain access to our senior leaders and benefit from their
+      insights into the technology and business domains.</Typo6>
     </InfoBox>
   ))
   .add('with list', () => (
@@ -58,10 +60,10 @@ storiesOf('InfoBox', module)
     <InfoBox
       centered
       heading="Web & Mobile Development"
-      src={WordpressIcon}
+      src={WordPressIcon}
       alt="React"
     >
-      <Typo8>Gain access to our senior leaders and benefit from their
-      insights into the technology and business domains.</Typo8>
+      <Typo6>Gain access to our senior leaders and benefit from their
+      insights into the technology and business domains.</Typo6>
     </InfoBox>
   ))

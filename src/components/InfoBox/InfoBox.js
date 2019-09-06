@@ -12,7 +12,7 @@ import {
 } from './styledComponents'
 import theme from '../../themes/theme'
 import Link from '../Link/Link'
-import { Heading11, Typo8 } from '../Typography/Typography'
+import { Typo5, Typo6 } from '../Typography/Typography'
 
 const InfoBox = ({
   heading,
@@ -26,22 +26,22 @@ const InfoBox = ({
       </InfoBoxIconStyled>
     </InfoBoxIconWrapperStyled>
     <InfoBoxHeadingStyled>
-      <Heading11
-        tag='h3'
+      <Typo5
+        tag="h3"
         fontWeight={theme.fontWeight.bold}
       >
         {heading}
-      </Heading11>
+      </Typo5>
     </InfoBoxHeadingStyled>
     <InfoBoxDescStyled>
     {title ?
       <InfoBoxTitleStyled>
-        <Typo8
+        <Typo6
           fontWeight={theme.fontWeight.bold}
           color={theme.color.darkGrey2}
           >
           {title}
-        </Typo8>
+        </Typo6>
       </InfoBoxTitleStyled>
     : null }
       {children}
