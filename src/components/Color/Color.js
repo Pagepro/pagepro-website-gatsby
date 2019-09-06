@@ -27,8 +27,8 @@ const Color = () => (
         <div
           style={{
             backgroundColor: value,
-            width: '100px',
-            height: '64px',
+            width: '120px',
+            height: '72px',
             marginBottom: '16px',
             borderRadius: '6px'
           }}

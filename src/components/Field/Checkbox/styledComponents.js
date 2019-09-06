@@ -7,7 +7,7 @@ const CheckboxGroupStyled = styled.div`
 `
 
 const CheckboxLabelStyled = styled.label`
-  color: ${props => props.theme.form.labelColor};
+  color: ${props => props.theme.color.blue};
   font-weight: ${props => props.theme.fontWeight.semiBold};
   padding-left: calc(${props => props.theme.form.checkboxSize} * .95
   + ${props => props.theme.size.gutter});
@@ -18,7 +18,7 @@ const CheckboxLabelStyled = styled.label`
   }
 
   &::before {
-    border: 2px solid ${props => props.theme.color.navy3};
+    border: 2px solid ${props => props.theme.color.navy};
     width: ${props => props.theme.form.checkboxSize};
     height: ${props => props.theme.form.checkboxSize};
   }

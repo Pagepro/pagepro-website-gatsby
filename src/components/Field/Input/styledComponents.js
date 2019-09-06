@@ -8,11 +8,11 @@ const InputStyled = styled.input`
   font-size: ${props => props.theme.fontSize14};
   font-weight: ${props => props.theme.fontWeight.regular};
   padding: ${props => props.theme.size.gutter};
-  background: ${props => props.theme.color.navy2};
+  background: ${props => props.theme.color.navy};
   height: ${props => props.theme.form.fieldHeight};
 
   &::placeholder {
-    color: ${props => props.theme.form.placeholderColor};
+    color: ${props => props.theme.color.blue};
   }
 `
 

@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { rgba } from 'polished'
 
 import { transition } from '../../common/mixins'
 import { types, sizes } from './ButtonLink'
@@ -22,8 +23,9 @@ const ButtonLinkStyled = styled.a`
     color: ${props => props.theme.color.white};
 
     &:hover {
-      background-color: ${props => props.theme.btn.primaryBgHover};
-    }
+      background-color: ${props => rgba(props.theme.color.red,
+        props.theme.opacities.opacity85)};
+      }
   `}
 
   /* Secondary */
@@ -32,8 +34,9 @@ const ButtonLinkStyled = styled.a`
     color: ${props => props.theme.color.red};
 
     &:hover {
-      background-color: ${props => props.theme.btn.secondaryBgHover};
-    }
+      background-color: ${props => rgba(props.theme.color.blue,
+        props.theme.opacities.opacity14)};
+      }
   `}
 
   /* Medium */
@@ -49,7 +52,7 @@ const ButtonLinkStyled = styled.a`
   /* Outline */
   ${({ outline }) => outline && css`
     background-color: ${props => props.theme.color.white};
-    border: 2px solid ${props => props.theme.btn.outlineColor};
+    border: 2px solid ${props => props.theme.color.lightGrey};
     min-width: 100%;
 
     &:hover {
