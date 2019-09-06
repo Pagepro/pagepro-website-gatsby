@@ -7,7 +7,8 @@ import {
 
 export const types = {
   primary: 'primary',
-  secondary: 'secondary'
+  secondary: 'secondary',
+  outline: 'outline'
 }
 
 export const sizes = {
@@ -29,9 +30,8 @@ const ButtonLink = ({
 ButtonLink.propTypes = {
   type: PropTypes.oneOf(Object.keys(types)),
   size: PropTypes.oneOf(Object.keys(sizes)),
-  outline: PropTypes.bool,
   left: PropTypes.bool,
-  btnUrl: PropTypes.string,
+  href: PropTypes.string,
   btnLabel: PropTypes.string,
 }
 
