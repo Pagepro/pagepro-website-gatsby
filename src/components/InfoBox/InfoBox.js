@@ -62,7 +62,6 @@ InfoBox.propTypes = {
   children: PropTypes.node,
   src: PropTypes.string,
   alt: PropTypes.string,
-  withBg: PropTypes.bool,
   centered: PropTypes.bool,
 }
 

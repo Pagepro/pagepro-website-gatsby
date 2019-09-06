@@ -10,8 +10,12 @@ export default {
     navy2: '#19425a',
     navy3: '#26536c',
   },
-  size: {
-    gutter: '16px'
+  gutter: {
+    gutter8: '8px',
+    gutter16: '16px',
+    gutter24: '24px',
+    gutter32: '32px',
+    gutter48: '48px',
   },
   form: {
     fieldHeight: '54px',
