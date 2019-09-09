@@ -1,6 +1,6 @@
 import React from 'react'
-import _map from 'lodash/map'
 
+import PropTypes from 'prop-types'
 import {
   BulletListStyled,
   BulletListItemStyled
@@ -13,13 +13,19 @@ const BulletList = (props) => {
   } = props
   return (
     <BulletListStyled>
-      {_map(itemsArray, (value, key) => (
+      {itemsArray.map(({ text }, key) => (
         <BulletListItemStyled key={key}>
-          <Typo6>{value.text}</Typo6>
+          <Typo6>{text}</Typo6>
         </BulletListItemStyled>
       ))}
     </BulletListStyled>
   )
+}
+
+BulletList.propTypes = {
+  itemsArray: PropTypes.arrayOf(PropTypes.shape({
+    text: PropTypes.string,
+  }))
 }
 
 export default BulletList
