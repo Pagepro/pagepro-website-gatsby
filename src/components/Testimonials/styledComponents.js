@@ -41,7 +41,7 @@ const TestimonialsDetailsStyled = styled.div`
   font-weight: ${props => props.theme.fontWeight.semiBold};
 
   .agency {
-    margin-top: calc(${props => props.theme.size.gutter} / 8);
+    margin-top: calc(${props => props.theme.gutter.gutter16} / 8);
     color: ${props => rgba(
       props.theme.color.mediumGrey,
       props.theme.opacities.opacity60

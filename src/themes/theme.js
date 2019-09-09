@@ -5,13 +5,12 @@ export default {
     mediumGrey: '#585858',
     lightGrey: '#f4f4f4',
     red: '#f33540',
+    darkNavy: '#061F2d',
     navy: '#19425a',
     blue: '#5d90ab',
   },
   opacities: {
-    opacity14: .14,
     opacity60: .6,
-    opacity85: .85
   },
   gutter: {
     gutter8: '8px',
@@ -84,6 +83,8 @@ export default {
     width: '168px',
     heightMedium: '54px',
     heightBig: '60px',
+    primaryBgHover: '#e72934',
+    secondaryBgHover: '#e1ecF2',
   },
   testimonials: {
     decorWidth: '20px',
