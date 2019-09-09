@@ -12,7 +12,7 @@ const ButtonLinkStyled = styled.a`
   font-size: ${props => props.theme.fontSize15};
   font-weight: ${props => props.theme.fontWeight.semiBold};
   justify-content: center;
-  padding: 0 calc(${props => props.theme.size.gutter} * 1.5);
+  padding: 0 calc(${props => props.theme.gutter.gutter24});
   cursor: pointer;
   ${transition}
 

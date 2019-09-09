@@ -37,11 +37,11 @@ const LinkIconStyled = styled.span`
   flex-shrink: 0;
 
   & + ${LinkLabelStyled} {
-    margin-left: calc(${props => props.theme.size.gutter} * .375)
+    margin-left: calc(${props => props.theme.gutter.gutter16} * .375)
   }
 
   ${LinkLabelStyled} + & {
-    margin-left: calc(${props => props.theme.size.gutter} * .375)
+    margin-left: calc(${props => props.theme.gutter.gutter16} * .375)
   }
 `
 

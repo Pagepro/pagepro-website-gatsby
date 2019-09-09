@@ -6,6 +6,8 @@ import ReactIcon from '../../assets/images/svg/react.svg'
 import ReactNativeIcon from '../../assets/images/svg/react-native.svg'
 import WordPressIcon from '../../assets/images/svg/word-press.svg'
 import BulletList from '../BulletList/BulletList'
+import Wrapper from '../Wrapper/Wrapper'
+import theme from '../../themes/theme'
 import { Typo6 } from '../Typography/Typography'
 
 storiesOf('InfoBox', module)
@@ -16,17 +18,6 @@ storiesOf('InfoBox', module)
     <InfoBox
       heading="Web & Mobile Development"
       src={ReactIcon}
-      alt="React"
-    >
-      <Typo6>Gain access to our senior leaders and benefit from their
-      insights into the technology and business domains.</Typo6>
-    </InfoBox>
-))
-  .add('with background', () => (
-    <InfoBox
-      withBg
-      heading="React Development"
-      src={ReactNativeIcon}
       alt="React"
     >
       <Typo6>Gain access to our senior leaders and benefit from their
@@ -55,6 +46,21 @@ storiesOf('InfoBox', module)
         ]
       }/>
     </InfoBox>
+  ))
+  .add('with wrapper (bg and padding)', () => (
+    <Wrapper
+      background={theme.color.white}
+      padding={theme.gutter.gutter24}
+    >
+      <InfoBox
+        heading="React Development"
+        src={ReactNativeIcon}
+        alt="React"
+      >
+        <Typo6>Gain access to our senior leaders and benefit from their
+        insights into the technology and business domains.</Typo6>
+      </InfoBox>
+    </Wrapper>
   ))
   .add('centered', () => (
     <InfoBox

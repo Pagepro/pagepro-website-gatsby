@@ -9,12 +9,13 @@ rules:
   no-plusplus: 0
   no-multi-assign: 0
   no-nested-ternary: 0
-  no-unneeded-ternary: 0
+  no-unneeded-ternary: 1
   no-param-reassign: 0
   no-unused-expressions:
     - error
     - allowShortCircuit: true
   max-len:
+    - code: 80
     - error
     - ignoreComments: true
   comma-dangle:
@@ -35,13 +36,15 @@ rules:
       peerDependencies: true
   no-await-in-loop: 0
   function-paren-newline: 0
-  indent: 0
+  indent: 2
   prefer-destructuring: 0
-  react/prop-types: 0
+  react/prop-types: 1
   react/no-multi-comp: 0
   react/sort-comp: 0
   react/jsx-key: 1
-  react/jsx-indent: 0
+  react/jsx-indent: 2
   jsx-a11y/anchor-is-valid: 0
   class-methods-use-this: 0
   object-curly-newline: 0
+  semi: [warn, never]
+  quotes: [warn, single]
