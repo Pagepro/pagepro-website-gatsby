@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { rgba } from 'polished'
 
 const InfoBoxStyled = styled.div`
   display: flex;
@@ -32,8 +33,11 @@ const InfoBoxTitleStyled = styled.div`
 
 const InfoBoxDescStyled = styled.div`
   flex-grow: 1;
-  color: ${props => props.theme.color.grey};
-  margin-bottom: calc(${props => props.theme.gutter.gutter24});
+  color: ${props => rgba(
+    props.theme.color.mediumGrey,
+    props.theme.opacities.opacity60
+  )};
+  margin-bottom: calc(${props => props.theme.size.gutter} * 1.5);
 `
 
 const InfoBoxActionStyled = styled.div`
