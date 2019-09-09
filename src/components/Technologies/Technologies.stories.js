@@ -13,7 +13,7 @@ import Css3 from '../../assets/images/svg/css3.svg'
 
 storiesOf('Technologies', module)
   .add('default', () => (
-    <Technologies itemsArray={
+    <Technologies itemsArray = {
       [
         {
           src: Angular,

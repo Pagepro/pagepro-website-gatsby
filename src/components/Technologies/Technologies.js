@@ -1,5 +1,4 @@
 import React from 'react'
-import _map from 'lodash/map'
 
 import PropTypes from 'prop-types'
 import {
@@ -7,13 +6,11 @@ import {
   TechnologiesItemStyled
 } from './styledComponents'
 
-const Technologies = ({
-  itemsArray
-}) => (
+const Technologies = ({ itemsArray }) => (
   <TechnologiesStyled>
-    {_map(itemsArray, (value, key) => (
+    {itemsArray.map(({ src, alt }, key) => (
       <TechnologiesItemStyled key={key}>
-        <img src={value.src} alt={value.alt} />
+        <img src={src} alt={alt} />
       </TechnologiesItemStyled>
     ))}
   </TechnologiesStyled>
@@ -21,7 +18,7 @@ const Technologies = ({
 
 Technologies.propTypes = {
   itemsArray: PropTypes.arrayOf(PropTypes.shape({
-    src: PropTypes.string,
+    src: PropTypes.node,
     alt: PropTypes.string,
   }))
 }

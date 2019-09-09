@@ -1,5 +1,4 @@
 import React from 'react'
-import _map from 'lodash/map'
 
 import PropTypes from 'prop-types'
 import {
@@ -9,18 +8,16 @@ import {
   SocialMediaIconStyled
 } from './styledComponents'
 
-const SocialMedia = ({
-  itemsArray
-}) => (
+const SocialMedia = ({ itemsArray }) => (
   <SocialMediaListStyled>
-    {_map(itemsArray, (value, key) => (
+    {itemsArray.map(({ href, icon }, key) => (
       <SocialMediaItemStyled key={key}>
         <SocialMediaLinkStyled
-          href={value.href}
+          href={href}
           target="_blank"
         >
           <SocialMediaIconStyled>
-            {value.icon}
+            {icon}
           </SocialMediaIconStyled>
         </SocialMediaLinkStyled>
       </SocialMediaItemStyled>
