@@ -99,5 +99,8 @@ export default {
   },
   testimonials: {
     decorWidth: '20px',
+  },
+  technologies: {
+    width: '50px',
   }
 }

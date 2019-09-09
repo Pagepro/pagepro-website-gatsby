@@ -1,6 +1,6 @@
 import React from 'react'
-import _map from 'lodash/map'
 
+import PropTypes from 'prop-types'
 import {
   MainNavStyled,
   MainNavItemStyled,
@@ -37,15 +37,22 @@ const MainNav = () => {
   ]
   return (
     <MainNavStyled>
-      {_map(items, (value, key) => (
+      {items.map(({ label, href }, key) => (
         <MainNavItemStyled key={key}>
-          <MainNavLinkStyled href={value.href}>
-            <Typo7>{value.label}</Typo7>
+          <MainNavLinkStyled href={href}>
+            <Typo7>{label}</Typo7>
           </MainNavLinkStyled>
         </MainNavItemStyled>
       ))}
     </MainNavStyled>
   )
+}
+
+MainNav.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string,
+    href: PropTypes.string,
+  }))
 }
 
 export default MainNav

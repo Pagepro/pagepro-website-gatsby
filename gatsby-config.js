@@ -6,7 +6,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-favicon',
       options: {
-        logo: './src/assets/logos/icon.png',
+        logo: './src/assets/images/svg/logo.svg',
         injectHTML: true,
         // WebApp Manifest Configuration
       },
