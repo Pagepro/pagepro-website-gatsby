@@ -1,31 +1,28 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { text, select, boolean } from '@storybook/addon-knobs'
 
 import ButtonLink, { types, sizes } from './ButtonLink'
 
 storiesOf('ButtonLink', module)
-  .add('primary medium', () => (
-    <ButtonLink
-      type={types.primary}
-      size={sizes.medium}
-      btnUrl="#"
-      btnLabel="Hire us"
-    />
-  ))
-  .add('secondary big left', () => (
-    <ButtonLink
-      type={types.secondary}
-      size={sizes.big}
-      left
-      btnUrl="#"
-      btnLabel="Join us"
-    />
-  ))
-  .add('outline', () => (
-    <ButtonLink
-      outline
-      size={sizes.big}
-      btnUrl="#"
-      btnLabel="See All on GitHub"
-    />
-  ))
+  .add('default', () => {
+    const defaultProps = {
+      btnLabel: text('Button label', 'Hire Us'),
+      type: select('Type', {
+        primary: types.primary,
+        secondary: types.secondary,
+        outline: types.outline,
+      }, 'primary'),
+      size: select('Size', {
+        medium: sizes.medium,
+        big: sizes.big,
+      }, 'medium'),
+      left: boolean('isLeft', false)
+    }
+    return (
+      <ButtonLink
+        { ...defaultProps }
+        href='#'
+      />
+    )
+  })

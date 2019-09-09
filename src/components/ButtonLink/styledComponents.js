@@ -43,6 +43,17 @@ const ButtonLinkStyled = styled.a`
     }
   `}
 
+  /* Outline */
+  ${({ type }) => type === types.outline && css`
+    background-color: ${props => props.theme.color.white};
+    border: 2px solid ${props => props.theme.color.lightGrey};
+    min-width: 100%;
+
+    &:hover {
+      background-color: ${props => props.theme.color.lightGrey};
+    }
+  `}
+
   /* Medium */
   ${({ size }) => size === sizes.medium && css`
     height: ${props => props.theme.btn.heightMedium};
@@ -51,17 +62,6 @@ const ButtonLinkStyled = styled.a`
   /* Big */
   ${({ size }) => size === sizes.big && css`
     height: ${props => props.theme.btn.heightBig};
-  `}
-
-  /* Outline */
-  ${({ outline }) => outline && css`
-    background-color: ${props => props.theme.color.white};
-    border: 2px solid ${props => props.theme.color.lightGrey};
-    min-width: 100%;
-
-    &:hover {
-      background-color: ${props => props.theme.color.lightGrey};
-    }
   `}
 
   /* Left */
