@@ -40,8 +40,10 @@ const InfoBoxTitleStyled = styled.div`
 
 const InfoBoxDescStyled = styled.div`
   flex-grow: 1;
-  color: ${props => rgba(props.theme.color.mediumGrey,
-    props.theme.opacities.opacity60)};
+  color: ${props => rgba(
+    props.theme.color.mediumGrey,
+    props.theme.opacities.opacity60
+  )};
   margin-bottom: calc(${props => props.theme.size.gutter} * 1.5);
 `
 

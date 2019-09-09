@@ -42,15 +42,19 @@ const TestimonialsDetailsStyled = styled.div`
 
   .agency {
     margin-top: calc(${props => props.theme.size.gutter} / 8);
-    color: ${props => rgba(props.theme.color.mediumGrey,
-      props.theme.opacities.opacity60)};
+    color: ${props => rgba(
+      props.theme.color.mediumGrey,
+      props.theme.opacities.opacity60
+    )};
   }
 `
 
 const TestimonialsQuoteStyled = styled.blockquote`
   font-style: italic;
-  color: ${props => rgba(props.theme.color.mediumGrey,
-    props.theme.opacities.opacity60)};
+  color: ${props => rgba(
+    props.theme.color.mediumGrey,
+    props.theme.opacities.opacity60
+  )};
 `
 
 export {
