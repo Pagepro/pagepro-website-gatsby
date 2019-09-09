@@ -93,6 +93,10 @@ export default {
     secondaryBgHover: '#e1ecf2',
     outlineColor: '#eee',
   },
+  statsNumber: {
+    bgBoxWidth: '140px',
+    bgBoxHeight: '114px',
+  },
   testimonials: {
     decorWidth: '20px',
   }
