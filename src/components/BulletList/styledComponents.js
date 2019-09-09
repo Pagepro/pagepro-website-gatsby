@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const BulletListStyled = styled.ul`
-  padding-left: calc(${props => props.theme.size.gutter} * .75);
+  padding-left: calc(${props => props.theme.gutter.gutter16} * .75);
 `
 
 const BulletListItemStyled = styled.li`
@@ -10,7 +10,7 @@ const BulletListItemStyled = styled.li`
   &::before {
     position: absolute;
     top: .5rem;
-    left: calc(-${props => props.theme.size.gutter} * .75);
+    left: calc(-${props => props.theme.gutter.gutter16} * .75);
     display: flex;
     flex-shrink: 0;
     content: '';
@@ -21,7 +21,7 @@ const BulletListItemStyled = styled.li`
   }
 
   &:not(:last-child) {
-    margin-bottom: ${props => props.theme.size.gutter};
+    margin-bottom: ${props => props.theme.gutter.gutter16};
   }
 `
 

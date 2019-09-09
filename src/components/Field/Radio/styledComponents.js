@@ -10,7 +10,7 @@ const RadioLabelStyled = styled.label`
   color: ${props => props.theme.color.blue};
   font-weight: ${props => props.theme.fontWeight.semiBold};
   padding-left: calc(${props => props.theme.form.checkboxSize} * .95
-  + ${props => props.theme.size.gutter});
+  + ${props => props.theme.gutter.gutter16});
 
   a {
     color: ${props => props.theme.color.white};

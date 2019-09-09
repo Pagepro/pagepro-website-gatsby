@@ -9,7 +9,7 @@ const MainNavStyled = styled.ul`
 
 const MainNavItemStyled = styled.li`
   &:not(:last-child) {
-    margin-right: calc(${props => props.theme.size.gutter} * 2.25);
+    margin-right: ${props => props.theme.gutter.gutter32};
   }
 `
 

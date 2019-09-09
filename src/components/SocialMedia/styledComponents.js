@@ -6,14 +6,14 @@ const SocialMediaLinkStyled = styled.a`
   align-items: center;
   flex-shrink: 0;
   color: ${props => props.theme.color.white};
-  padding-left: calc(${props => props.theme.size.gutter} / 2);
-  padding-right: calc(${props => props.theme.size.gutter} / 2);
+  padding-left: calc(${props => props.theme.gutter.gutter8});
+  padding-right: calc(${props => props.theme.gutter.gutter8});
   ${transition}
 `
 
 const SocialMediaListStyled = styled.ul`
   display: flex;
-  margin-left: calc(-${props => props.theme.size.gutter} / 2);
+  margin-left: calc(-${props => props.theme.gutter.gutter8});
 
   &:hover {
     ${SocialMediaLinkStyled} {
@@ -26,8 +26,7 @@ const SocialMediaListStyled = styled.ul`
   }
 `
 
-const SocialMediaItemStyled = styled.li`
-`
+const SocialMediaItemStyled = styled.li``
 
 const SocialMediaIconStyled = styled.span`
   display: flex;

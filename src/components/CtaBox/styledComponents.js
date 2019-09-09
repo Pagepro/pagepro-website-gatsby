@@ -9,7 +9,7 @@ const CtaBoxHeaderStyled = styled.div`
   color: ${props => props.theme.color.lightGrey};
   font-weight: ${props => props.theme.fontWeight.semiBold};
   line-height: ${props => props.theme.lineHeight.small};
-  margin-bottom: calc(${props => props.theme.size.gutter} * 3.5);
+  margin-bottom: calc(${props => props.theme.gutter.gutter16} * 3.5);
 `
 
 const CtaBoxMarkStyled = styled.span`
@@ -20,13 +20,13 @@ const CtaBoxMarkStyled = styled.span`
 const CtaBoxTextStyled = styled.div`
   color: ${props => props.theme.color.lightGrey};
   line-height: ${props => props.theme.lineHeight.big};
-  margin-bottom: calc(${props => props.theme.size.gutter} * 3.5);
+  margin-bottom: calc(${props => props.theme.gutter.gutter16} * 3.5);
 `
 
 const CtaBoxActionsStyled = styled.div`
   display: flex;
   .button:not(:last-child) {
-    margin-right: calc(${props => props.theme.size.gutter} * 2);
+    margin-right: calc(${props => props.theme.gutter.gutter32});
   }
 `
 

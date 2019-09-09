@@ -13,8 +13,12 @@ export default {
     opacity60: .6,
     opacity85: .85
   },
-  size: {
-    gutter: '16px'
+  gutter: {
+    gutter8: '8px',
+    gutter16: '16px',
+    gutter24: '24px',
+    gutter32: '32px',
+    gutter48: '48px',
   },
   form: {
     fieldHeight: '54px',
