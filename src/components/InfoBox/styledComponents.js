@@ -37,7 +37,7 @@ const InfoBoxDescStyled = styled.div`
     props.theme.color.mediumGrey,
     props.theme.opacities.opacity60
   )};
-  margin-bottom: calc(${props => props.theme.size.gutter} * 1.5);
+  margin-bottom: ${props => props.theme.gutter.gutter24};
 `
 
 const InfoBoxActionStyled = styled.div`

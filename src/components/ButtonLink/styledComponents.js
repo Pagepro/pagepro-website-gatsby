@@ -23,10 +23,7 @@ const ButtonLinkStyled = styled.a`
     color: ${props => props.theme.color.white};
 
     &:hover {
-      background-color: ${props => rgba(
-        props.theme.color.red,
-        props.theme.opacities.opacity85
-      )};
+      background-color: ${props => props.theme.btn.primaryBgHover};
     }
   `}
 
@@ -36,10 +33,7 @@ const ButtonLinkStyled = styled.a`
     color: ${props => props.theme.color.red};
 
     &:hover {
-      background-color: ${props => rgba(
-        props.theme.color.blue,
-        props.theme.opacities.opacity14
-      )};
+      background-color: ${props => props.theme.btn.secondaryBgHover};
     }
   `}
 
