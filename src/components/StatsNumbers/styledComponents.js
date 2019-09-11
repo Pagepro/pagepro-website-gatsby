@@ -7,8 +7,6 @@ const StatsNumbersStyled = styled.div`
   padding-bottom: ${props => props.theme.gutter.gutter8};
   text-align: left;
 
-  position: relative;
-
   &::before {
     position: absolute;
     z-index: -1;
