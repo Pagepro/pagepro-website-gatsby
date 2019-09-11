@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 const StatsNumbersStyled = styled.div`
-  padding-top: calc(${props => props.theme.size.gutter} * 1.5);
-  padding-bottom: calc(${props => props.theme.size.gutter} / 2);
+  padding-top: calc(${props => props.theme.gutter.gutter16} * 1.5);
+  padding-bottom: calc(${props => props.theme.gutter.gutter16} / 2);
   width: 100%;
   text-align: left;
   position: relative;
