@@ -6,7 +6,7 @@ import {
   StatsNumbersDescriptionStyled,
   StatsNumbersNumberStyled,
 } from '../StatsNumbers/styledComponents'
-import { Typo1, Typo6 } from '../Typography/Typography'
+import { Typo6 } from '../Typography/Typography'
 
 const StatsNumbers = ({
   description,

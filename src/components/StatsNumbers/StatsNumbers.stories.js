@@ -9,7 +9,7 @@ storiesOf('StatsNumbers', module)
   }}>{storyFn()}</div>)
   .add('default', () => (
     <StatsNumbers
-      description="Projects done in 2018w"
+      description="Projects done in 2018"
       number="176"
     />
   ))
