@@ -38,7 +38,7 @@ const InfoBox = ({
       <InfoBoxTitleStyled>
         <Typo6
           fontWeight={theme.fontWeight.bold}
-          color={theme.color.darkGrey2}
+          color={theme.color.mediumGrey}
           >
           {title}
         </Typo6>
@@ -62,7 +62,6 @@ InfoBox.propTypes = {
   children: PropTypes.node,
   src: PropTypes.string,
   alt: PropTypes.string,
-  withBg: PropTypes.bool,
   centered: PropTypes.bool,
 }
 

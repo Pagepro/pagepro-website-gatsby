@@ -2,6 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import Link from './Link'
+import theme from '../../themes/theme'
 
 storiesOf('Link', module)
   .add('default', () => (
@@ -13,6 +14,7 @@ storiesOf('Link', module)
   .add('with arrow', () => (
 		<Link
       withArrow
+      iconColor={theme.color.red}
       href="#"
       label="More"
     />
@@ -29,8 +31,20 @@ storiesOf('Link', module)
       <Link
         light
         withArrow
+        iconColor={theme.color.red}
         href="#"
-        label="More"
+        label="more"
+      />
+    </div>
+  ))
+  .add('light with white arrow', () => (
+    <div style={{background: '#000', padding: '5px'}}>
+      <Link
+        lightAlt
+        withArrow
+        iconColor={theme.color.white}
+        href="#"
+        label="case study"
       />
     </div>
   ))

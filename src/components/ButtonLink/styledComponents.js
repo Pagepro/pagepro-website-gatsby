@@ -12,7 +12,7 @@ const ButtonLinkStyled = styled.a`
   font-size: ${props => props.theme.fontSize15};
   font-weight: ${props => props.theme.fontWeight.semiBold};
   justify-content: center;
-  padding: 0 calc(${props => props.theme.size.gutter} * 1.5);
+  padding: 0 calc(${props => props.theme.gutter.gutter24});
   cursor: pointer;
   ${transition}
 
@@ -36,6 +36,17 @@ const ButtonLinkStyled = styled.a`
     }
   `}
 
+  /* Outline */
+  ${({ type }) => type === types.outline && css`
+    background-color: ${props => props.theme.color.white};
+    border: 2px solid ${props => props.theme.color.lightGrey};
+    min-width: 100%;
+
+    &:hover {
+      background-color: ${props => props.theme.color.lightGrey};
+    }
+  `}
+
   /* Medium */
   ${({ size }) => size === sizes.medium && css`
     height: ${props => props.theme.btn.heightMedium};
@@ -44,17 +55,6 @@ const ButtonLinkStyled = styled.a`
   /* Big */
   ${({ size }) => size === sizes.big && css`
     height: ${props => props.theme.btn.heightBig};
-  `}
-
-  /* Outline */
-  ${({ outline }) => outline && css`
-    background-color: ${props => props.theme.color.white};
-    border: 2px solid ${props => props.theme.btn.outlineColor};
-    min-width: 100%;
-
-    &:hover {
-      background-color: ${props => props.theme.color.lightGrey};
-    }
   `}
 
   /* Left */

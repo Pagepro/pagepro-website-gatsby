@@ -1,6 +1,6 @@
 import React from 'react'
-import _map from 'lodash/map'
 
+import PropTypes from 'prop-types'
 import {
   SocialMediaListStyled,
   SocialMediaItemStyled,
@@ -8,26 +8,28 @@ import {
   SocialMediaIconStyled
 } from './styledComponents'
 
-const SocialMedia = (props) => {
-  const {
-    itemsArray
-  } = props
-  return (
-    <SocialMediaListStyled>
-      {_map(itemsArray, (value, key) => (
-        <SocialMediaItemStyled key={key}>
-          <SocialMediaLinkStyled
-            href={value.href}
-            target="_blank"
-          >
-            <SocialMediaIconStyled>
-              {value.icon}
-            </SocialMediaIconStyled>
-          </SocialMediaLinkStyled>
-        </SocialMediaItemStyled>
-      ))}
-    </SocialMediaListStyled>
-  )
+const SocialMedia = ({ itemsArray }) => (
+  <SocialMediaListStyled>
+    {itemsArray.map(({ href, icon }, key) => (
+      <SocialMediaItemStyled key={key}>
+        <SocialMediaLinkStyled
+          href={href}
+          target="_blank"
+        >
+          <SocialMediaIconStyled>
+            {icon}
+          </SocialMediaIconStyled>
+        </SocialMediaLinkStyled>
+      </SocialMediaItemStyled>
+    ))}
+  </SocialMediaListStyled>
+)
+
+SocialMedia.propTypes = {
+  itemsArray: PropTypes.arrayOf(PropTypes.shape({
+    href: PropTypes.string,
+    icon: PropTypes.node,
+  }))
 }
 
 export default SocialMedia

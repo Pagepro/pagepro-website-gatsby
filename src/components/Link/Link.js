@@ -13,6 +13,7 @@ const Link = ({
   withGithub,
   label,
   withArrow,
+  iconColor,
   ...rest
 }) => (
   <LinkStyled
@@ -26,7 +27,7 @@ const Link = ({
     <LinkLabelStyled>{label}</LinkLabelStyled>
     {withArrow &&
       <LinkIconStyled>
-        <ArrowRight fontSize="7px"/>
+        <ArrowRight fontSize="8px" fill={iconColor} />
       </LinkIconStyled>
     }
   </LinkStyled>
@@ -37,7 +38,8 @@ Link.propTypes = {
   linkLabel: PropTypes.string,
   withArrow: PropTypes.bool,
   withGithub: PropTypes.bool,
-  light: PropTypes.bool
+  light: PropTypes.bool,
+  iconColor: PropTypes.string
 }
 
 export default Link

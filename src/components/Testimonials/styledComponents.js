@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { rgba } from 'polished'
 
 const TestimonialsStyled = styled.div`
   display: flex;
@@ -8,7 +9,7 @@ const TestimonialsStyled = styled.div`
 `
 
 const TestimonialsImgWrapperStyled = styled.div`
-  margin-bottom: calc(${props => props.theme.size.gutter} * 1.25);
+  margin-bottom: calc(${props => props.theme.gutter.gutter16} * 1.25);
 `
 
 const TestimonialsImgStyled = styled.img`
@@ -17,7 +18,7 @@ const TestimonialsImgStyled = styled.img`
 
 const TestimonialsHeaderStyled = styled.div`
   position: relative;
-  margin-bottom: calc(${props => props.theme.size.gutter} * 1.25);
+  margin-bottom: calc(${props => props.theme.gutter.gutter16} * 1.25);
   flex-grow: 1;
 
   &::after {
@@ -26,28 +27,34 @@ const TestimonialsHeaderStyled = styled.div`
     width: ${props => props.theme.testimonials.decorWidth};
     height: 1px;
     background: ${props => props.theme.color.red};
-    margin: calc(${props => props.theme.size.gutter} * 1.25) auto 0;
+    margin: calc(${props => props.theme.gutter.gutter16} * 1.25) auto 0;
   }
 `
 
 const TestimonialsNameStyled = styled.div`
   font-weight: ${props => props.theme.fontWeight.semiBold};
   color: ${props => props.theme.color.darkGrey};
-  margin: ${props => props.theme.size.gutter};
+  margin: ${props => props.theme.gutter.gutter16};
 `
 
 const TestimonialsDetailsStyled = styled.div`
   font-weight: ${props => props.theme.fontWeight.semiBold};
 
   .agency {
-    margin-top: calc(${props => props.theme.size.gutter} / 8);
-    color: ${props => props.theme.color.grey};
+    margin-top: calc(${props => props.theme.gutter.gutter16} / 8);
+    color: ${props => rgba(
+      props.theme.color.mediumGrey,
+      props.theme.opacities.opacity60
+    )};
   }
 `
 
 const TestimonialsQuoteStyled = styled.blockquote`
   font-style: italic;
-  color: ${props => props.theme.color.grey};
+  color: ${props => rgba(
+    props.theme.color.mediumGrey,
+    props.theme.opacities.opacity60
+  )};
 `
 
 export {

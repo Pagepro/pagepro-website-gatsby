@@ -1,8 +1,8 @@
 import React from 'react'
 
 const ArrowRight = props => (
-  <svg width="1em" height="1em" viewBox="0 0 5 7" fill="none" {...props}>
-    <path d="M1 .5l3 3-3 3" stroke="#F33540" />
+  <svg width="1em" height="1em" viewBox="0 0 5 7" {...props}>
+    <path d="M1.2 6.9l-.8-.8L3 3.5.4.9l.8-.8 3.4 3.4z" />
   </svg>
 )
 
