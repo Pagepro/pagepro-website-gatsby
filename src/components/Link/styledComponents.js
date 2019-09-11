@@ -14,13 +14,11 @@ const LinkStyled = styled.a`
   align-items: center;
   line-height: 1;
   color: ${theme.color.darkGrey};
-  font-weight: ${theme.fontWeight.semiBold};
+  font-weight: ${theme.fontWeight.medium};
   cursor: pointer;
 
   ${props => props.light && css`
-    text-transform: lowercase;
     color: ${theme.color.white};
-    font-weight: ${theme.fontWeight.regular};
   `}
 
   &:hover {
@@ -43,10 +41,6 @@ const LinkIconStyled = styled.span`
   ${LinkLabelStyled} + & {
     margin-left: calc(${props => props.theme.gutter.gutter16} * .3);
     margin-top: 2px;
-  }
-
-  svg {
-    fill: currentColor;
   }
 `
 

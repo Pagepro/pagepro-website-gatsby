@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components'
-import { rgba } from 'polished'
 
 import { transition } from '../../common/mixins'
 import { types, sizes } from './ButtonLink'
