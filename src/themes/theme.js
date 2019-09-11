@@ -70,7 +70,7 @@ export default {
     big: 1.5,
     medium: 1.25,
     small: 1.15,
-    1: 1,
+    normal: 1,
   },
   form: {
     fieldHeight: '54px',
@@ -87,8 +87,9 @@ export default {
     secondaryBgHover: '#e1ecF2',
   },
   statsNumber: {
-    bgBoxWidth: '140px',
-    bgBoxHeight: '114px',
+    bgDecorWidth: '140px',
+    bgDecorHeight: '114px',
+    countFontSize: '68px',
   },
   testimonials: {
     decorWidth: '20px',

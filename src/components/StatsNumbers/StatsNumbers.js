@@ -4,14 +4,13 @@ import PropTypes from 'prop-types'
 import {
   StatsNumbersStyled,
   StatsNumbersDescriptionStyled,
-  StatsNumbersNumberStyled,
-} from '../StatsNumbers/styledComponents'
+  StatsNumbersCountStyled,
+} from './styledComponents'
 import { Typo6 } from '../Typography/Typography'
 
 const StatsNumbers = ({
   description,
-  number,
-  ...otherProps
+  number
 }) => (
   <StatsNumbersStyled>
     <StatsNumbersDescriptionStyled>
@@ -19,9 +18,9 @@ const StatsNumbers = ({
         {description}
       </Typo6>
     </StatsNumbersDescriptionStyled>
-    <StatsNumbersNumberStyled>
+    <StatsNumbersCountStyled>
       {number}
-    </StatsNumbersNumberStyled>
+    </StatsNumbersCountStyled>
   </StatsNumbersStyled>
 )
 

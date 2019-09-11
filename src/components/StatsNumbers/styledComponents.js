@@ -1,39 +1,41 @@
 import styled from 'styled-components'
 
 const StatsNumbersStyled = styled.div`
-  padding-top: calc(${props => props.theme.gutter.gutter16} * 1.5);
-  padding-bottom: calc(${props => props.theme.gutter.gutter16} / 2);
+  position: relative;
   width: 100%;
+  padding-top: ${props => props.theme.gutter.gutter24};
+  padding-bottom: ${props => props.theme.gutter.gutter8};
   text-align: left;
+
   position: relative;
 
   &::before {
+    position: absolute;
     z-index: -1;
-    content: '';
     top: 0;
     left: 10px;
     display: block;
-    position: absolute;
     height: 100%;
-    width: ${props => props.theme.statsNumber.bgBoxWidth};
-    min-height: ${props => props.theme.statsNumber.bgBoxHeight};
+    width: ${props => props.theme.statsNumber.bgDecorWidth};
+    min-height: ${props => props.theme.statsNumber.bgDecorHeight};
+    content: '';
     background: ${props => props.theme.color.lightGrey};
   }
 `
 
 const StatsNumbersDescriptionStyled = styled.div`
-  line-height: 1;
+  line-height: ${props => props.theme.lineHeight.normal};
 `
 
-const StatsNumbersNumberStyled = styled.div`
-  font-size: 68px;
-  line-height: 1;
+const StatsNumbersCountStyled = styled.div`
+  font-size: ${props => props.theme.statsNumber.countFontSize};
   font-weight: ${props => props.theme.fontWeight.semiBold};
+  line-height: ${props => props.theme.lineHeight.normal};
   color: ${props => props.theme.color.red};
 `
 
 export {
   StatsNumbersStyled,
   StatsNumbersDescriptionStyled,
-  StatsNumbersNumberStyled,
+  StatsNumbersCountStyled,
 }
