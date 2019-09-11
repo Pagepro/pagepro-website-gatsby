@@ -86,11 +86,6 @@ export default {
     primaryBgHover: '#e72934',
     secondaryBgHover: '#e1ecF2',
   },
-  statsNumber: {
-    bgDecorWidth: '140px',
-    bgDecorHeight: '114px',
-    countFontSize: '68px',
-  },
   testimonials: {
     decorWidth: '20px',
   },

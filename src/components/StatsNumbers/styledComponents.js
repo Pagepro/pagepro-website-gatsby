@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 
+const variables = {
+  bgDecorWidth: '140px',
+  bgDecorHeight: '114px',
+  countFontSize: '68px',
+}
+
 const StatsNumbersStyled = styled.div`
   position: relative;
   width: 100%;
@@ -14,8 +20,8 @@ const StatsNumbersStyled = styled.div`
     left: 10px;
     display: block;
     height: 100%;
-    width: ${props => props.theme.statsNumber.bgDecorWidth};
-    min-height: ${props => props.theme.statsNumber.bgDecorHeight};
+    width: ${variables.bgDecorWidth};
+    min-height: ${variables.bgDecorHeight};
     content: '';
     background: ${props => props.theme.color.lightGrey};
   }
@@ -26,7 +32,7 @@ const StatsNumbersDescriptionStyled = styled.div`
 `
 
 const StatsNumbersCountStyled = styled.div`
-  font-size: ${props => props.theme.statsNumber.countFontSize};
+  font-size: ${variables.countFontSize};
   font-weight: ${props => props.theme.fontWeight.semiBold};
   line-height: ${props => props.theme.lineHeight.normal};
   color: ${props => props.theme.color.red};

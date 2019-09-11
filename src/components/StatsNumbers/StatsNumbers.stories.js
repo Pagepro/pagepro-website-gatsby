@@ -10,6 +10,6 @@ storiesOf('StatsNumbers', module)
   .add('default', () => (
     <StatsNumbers
       description="Projects done in 2018"
-      number="176"
+      count="176"
     />
   ))
