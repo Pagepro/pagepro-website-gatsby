@@ -72,8 +72,5 @@ export default {
     heightBig: '60px',
     primaryBgHover: '#e72934',
     secondaryBgHover: '#e1ecF2',
-  },
-  technologies: {
-    width: '50px',
   }
 }
