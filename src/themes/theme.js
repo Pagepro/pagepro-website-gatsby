@@ -70,7 +70,7 @@ export default {
     big: 1.5,
     medium: 1.25,
     small: 1.15,
-    1: 1,
+    normal: 1,
   },
   form: {
     fieldHeight: '54px',
