@@ -11,7 +11,6 @@ const StatNumberStyled = styled.div`
   width: 100%;
   padding-top: ${props => props.theme.gutter.gutter24};
   padding-bottom: ${props => props.theme.gutter.gutter8};
-  text-align: left;
 
   &::before {
     position: absolute;
