@@ -48,10 +48,10 @@ const InfoBox = ({
     </InfoBoxDescStyled>
     <InfoBoxActionStyled>
       <Link
-          withArrow
-          iconColor={theme.color.red}
-          href="#"
-          label="More"
+        withArrow
+        iconColor={theme.color.red}
+        href="#"
+        label="More"
       />
     </InfoBoxActionStyled>
   </InfoBoxStyled>
