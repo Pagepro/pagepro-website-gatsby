@@ -1,7 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { text } from '@storybook/addon-knobs'
-
 import Step from './Step'
 
 storiesOf('Step', module)
@@ -11,6 +10,7 @@ storiesOf('Step', module)
       subtitle: text('Subtitle', 'Materials gathering'),
       desc: text('Description', 'At the beginning of our project, we received specification with design in Sketch. Our first move was to prepare a Style Guide for reusable components starting from Form Styles and plan for Grid system.'),
     }
+
     return (
       <Step
         {...defaultProps}
