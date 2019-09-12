@@ -26,9 +26,6 @@ export default {
     checkboxMarkHeight: '11px',
     radioMarkSize: '8px',
   },
-  infoBox: {
-    iconFontSize: '58px',
-  },
   ctaBox: {
     width: '560px',
   },
