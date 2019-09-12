@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
     line-height: 1.42;
-    color: #2f2f2f;
+    color: #061f2d;
   }
 
   iframe,

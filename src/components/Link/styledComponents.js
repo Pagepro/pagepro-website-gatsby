@@ -13,7 +13,7 @@ const LinkStyled = styled.a`
   display: inline-flex;
   align-items: center;
   line-height: 1;
-  color: ${theme.color.darkGrey};
+  color: ${theme.color.darkNavy};
   font-weight: ${theme.fontWeight.medium};
   cursor: pointer;
 

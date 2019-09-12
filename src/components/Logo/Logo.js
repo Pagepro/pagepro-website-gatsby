@@ -1,5 +1,4 @@
 import React from 'react'
-
 import PropTypes from 'prop-types'
 import LogoSvg from '../../assets/images/svg/logo.svg'
 import { LogoLinkStyled } from './styledComponents'

@@ -40,7 +40,7 @@ storiesOf('Link', module)
   .add('light with white arrow', () => (
     <div style={{background: '#000', padding: '5px'}}>
       <Link
-        lightAlt
+        light
         withArrow
         iconColor={theme.color.white}
         href="#"

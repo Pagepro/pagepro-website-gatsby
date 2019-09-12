@@ -1,5 +1,4 @@
 import React from 'react'
-
 import PropTypes from 'prop-types'
 import {
   InfoBoxStyled,
@@ -48,9 +47,10 @@ const InfoBox = ({
     </InfoBoxDescStyled>
     <InfoBoxActionStyled>
       <Link
-          withArrow
-          href="#"
-          label="More"
+        withArrow
+        iconColor={theme.color.red}
+        href="#"
+        label="More"
       />
     </InfoBoxActionStyled>
   </InfoBoxStyled>
