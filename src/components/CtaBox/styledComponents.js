@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 
+const variables = {
+  width: '560px',
+}
+
 const CtaBoxStyled = styled.div`
-  max-width: ${props => props.theme.ctaBox.width};
+  max-width: ${variables.width};
   width: 100%;
 `
 

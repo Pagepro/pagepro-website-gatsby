@@ -26,9 +26,6 @@ export default {
     checkboxMarkHeight: '11px',
     radioMarkSize: '8px',
   },
-  ctaBox: {
-    width: '560px',
-  },
   breakpoints: ['768px', '1025px'],
   // Visual TypeScale / Major Third (1.25) / Base Size: 15px
   textStyles: {
