@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 import { rgba } from 'polished'
 
+const variables = {
+  decorWidth: '20px',
+}
+
 const TestimonialsStyled = styled.div`
   display: flex;
   flex-direction: column;
@@ -24,7 +28,7 @@ const TestimonialsHeaderStyled = styled.div`
   &::after {
     display: block;
     content: '';
-    width: ${props => props.theme.testimonials.decorWidth};
+    width: ${variables.decorWidth};
     height: 1px;
     background: ${props => props.theme.color.red};
     margin: calc(${props => props.theme.gutter.gutter16} * 1.25) auto 0;
