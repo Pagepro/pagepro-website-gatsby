@@ -1,6 +1,10 @@
 import styled, { css } from 'styled-components'
 import { rgba } from 'polished'
 
+const variables = {
+  iconFontSize: '58px',
+}
+
 const InfoBoxStyled = styled.div`
   display: flex;
   flex-direction: column;
@@ -15,7 +19,7 @@ const InfoBoxStyled = styled.div`
 const InfoBoxIconWrapperStyled = styled.figure`
   display: inline-block;
   line-height: 1em;
-  font-size: ${props => props.theme.infoBox.iconFontSize};
+  font-size: ${variables.iconFontSize};
   margin-bottom: calc(${props => props.theme.gutter.gutter32});
 `
 

@@ -29,12 +29,6 @@ export default {
     checkboxMarkHeight: '11px',
     radioMarkSize: '8px',
   },
-  infoBox: {
-    iconFontSize: '58px',
-  },
-  ctaBox: {
-    width: '560px',
-  },
   breakpoints: ['768px', '1025px'],
   // Visual TypeScale / Major Third (1.25) / Base Size: 15px
   textStyles: {
@@ -75,24 +69,11 @@ export default {
     small: 1.15,
     normal: 1,
   },
-  form: {
-    fieldHeight: '54px',
-    checkboxSize: '20px',
-    checkboxMarkWidth: '6px',
-    checkboxMarkHeight: '11px',
-    radioMarkSize: '8px',
-  },
   btn: {
     width: '168px',
     heightMedium: '54px',
     heightBig: '60px',
     primaryBgHover: '#e72934',
     secondaryBgHover: '#e1ecF2',
-  },
-  testimonials: {
-    decorWidth: '20px',
-  },
-  technologies: {
-    width: '50px',
   }
 }
