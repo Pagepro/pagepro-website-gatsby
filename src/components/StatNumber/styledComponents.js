@@ -6,7 +6,7 @@ const variables = {
   countFontSize: '68px',
 }
 
-const StatsNumbersStyled = styled.div`
+const StatNumberStyled = styled.div`
   position: relative;
   width: 100%;
   padding-top: ${props => props.theme.gutter.gutter24};
@@ -27,11 +27,11 @@ const StatsNumbersStyled = styled.div`
   }
 `
 
-const StatsNumbersDescriptionStyled = styled.div`
+const StatNumberDescriptionStyled = styled.div`
   line-height: ${props => props.theme.lineHeight.normal};
 `
 
-const StatsNumbersCountStyled = styled.div`
+const StatNumberCountStyled = styled.div`
   font-size: ${variables.countFontSize};
   font-weight: ${props => props.theme.fontWeight.semiBold};
   line-height: ${props => props.theme.lineHeight.normal};
@@ -39,7 +39,7 @@ const StatsNumbersCountStyled = styled.div`
 `
 
 export {
-  StatsNumbersStyled,
-  StatsNumbersDescriptionStyled,
-  StatsNumbersCountStyled,
+  StatNumberStyled,
+  StatNumberDescriptionStyled,
+  StatNumberCountStyled,
 }

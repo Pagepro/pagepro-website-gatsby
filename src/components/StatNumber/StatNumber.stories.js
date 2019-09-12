@@ -1,13 +1,13 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import StatsNumbers from './StatsNumbers'
+import StatNumber from './StatNumber'
 
-storiesOf('StatsNumbers', module)
+storiesOf('StatNumber', module)
   .addDecorator(storyFn => <div style={{
      maxWidth: '400px'
   }}>{storyFn()}</div>)
   .add('default', () => (
-    <StatsNumbers
+    <StatNumber
       description="Projects done in 2018"
       count="176"
     />

@@ -1,0 +1,31 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import {
+  StatNumberStyled,
+  StatNumberDescriptionStyled,
+  StatNumberCountStyled,
+} from './styledComponents'
+import { Typo6 } from '../Typography/Typography'
+
+const StatNumber = ({
+  description,
+  count
+}) => (
+  <StatNumberStyled>
+    <StatNumberDescriptionStyled>
+      <Typo6>
+        {description}
+      </Typo6>
+    </StatNumberDescriptionStyled>
+    <StatNumberCountStyled>
+      {count}
+    </StatNumberCountStyled>
+  </StatNumberStyled>
+)
+
+StatNumber.propTypes = {
+  description: PropTypes.string,
+  count: PropTypes.string,
+}
+
+export default StatNumber
