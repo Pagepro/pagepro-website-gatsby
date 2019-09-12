@@ -39,6 +39,7 @@ const TestimonialsNameStyled = styled.div`
 
 const TestimonialsDetailsStyled = styled.div`
   font-weight: ${props => props.theme.fontWeight.semiBold};
+  color: ${props => props.theme.color.darkGrey};
 
   .agency {
     margin-top: calc(${props => props.theme.gutter.gutter16} / 8);

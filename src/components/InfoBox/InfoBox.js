@@ -49,6 +49,7 @@ const InfoBox = ({
     <InfoBoxActionStyled>
       <Link
           withArrow
+          iconColor={theme.color.red}
           href="#"
           label="More"
       />

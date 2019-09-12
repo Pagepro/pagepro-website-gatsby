@@ -1,5 +1,6 @@
 export default {
   color: {
+    black: '#000',
     white: '#fff',
     darkGrey: '#171717',
     mediumGrey: '#585858',
@@ -10,6 +11,7 @@ export default {
     blue: '#5d90ab',
   },
   opacities: {
+    opacity20: .2,
     opacity60: .6,
   },
   gutter: {
@@ -18,6 +20,7 @@ export default {
     gutter24: '24px',
     gutter32: '32px',
     gutter48: '48px',
+    gutter64: '64px',
   },
   form: {
     fieldHeight: '54px',

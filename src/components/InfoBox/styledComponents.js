@@ -25,6 +25,7 @@ const InfoBoxIconStyled = styled.img`
 
 const InfoBoxHeadingStyled = styled.div`
   margin-bottom: calc(${props => props.theme.gutter.gutter24});
+  color: ${props => props.theme.color.darkGrey};
 `
 
 const InfoBoxTitleStyled = styled.div`
@@ -40,8 +41,7 @@ const InfoBoxDescStyled = styled.div`
   margin-bottom: ${props => props.theme.gutter.gutter24};
 `
 
-const InfoBoxActionStyled = styled.div`
-`
+const InfoBoxActionStyled = styled.div``
 
 export {
   InfoBoxStyled,

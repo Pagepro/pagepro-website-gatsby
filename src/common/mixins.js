@@ -85,3 +85,20 @@ export const checkbox = props => `
     overflow: hidden;
   }
 `
+
+export const decorLine = ({
+  backgroundColor = `currentColor`
+}) =>`
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    width: 54px;
+    height: 1px;
+    background: ${backgroundColor};
+  }
+`
