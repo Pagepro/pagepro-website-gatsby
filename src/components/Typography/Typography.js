@@ -1,5 +1,4 @@
 import React from 'react'
-
 import DynamicComponent from '../../common/DynamicComponent'
 import theme from '../../themes/theme'
 
