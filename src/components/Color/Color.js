@@ -25,12 +25,13 @@ const Color = () => {
           }}
           key={key}
         >
-        { colors[key] === 'white' ?
+        { colors[key] === '#fff' ?
           <div
             style={{
               backgroundColor: colors[key],
               width: '100px',
               height: '64px',
+              border: '1px solid #eee',
               marginBottom: '16px',
               borderRadius: '6px'
             }}
@@ -39,7 +40,6 @@ const Color = () => {
             style={{
               backgroundColor: colors[key],
               width: '100px',
-              border: '1px solid #eee',
               height: '64px',
               marginBottom: '16px',
               borderRadius: '6px'
