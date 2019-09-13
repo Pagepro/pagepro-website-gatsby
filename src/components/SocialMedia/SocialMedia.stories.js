@@ -1,5 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import theme from '../../../.storybook/theme'
 
 import SocialMedia from './SocialMedia'
 import Instagram from '../../assets/svg/Instagram'
@@ -9,10 +10,7 @@ import Facebook from '../../assets/svg/Facebook'
 import YouTube from '../../assets/svg/YouTube'
 
 storiesOf('SocialMedia', module)
-  .addDecorator(storyFn => <div style={{
-    background: '#f33540',
-    padding: '5px',
-  }}>{storyFn()}</div>)
+  .addParameters({ options: { theme: theme } })
   .add('default', () => (
     <SocialMedia itemsArray = {
       [
