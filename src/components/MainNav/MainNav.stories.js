@@ -1,10 +1,10 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import theme from '../../../.storybook/theme'
+import darkWrapperDecorator from '../../../.storybook/decorators/darkWrapperDecorator'
 import MainNav from './MainNav'
 
 storiesOf('MainNav', module)
-  .addParameters({ options: { theme: theme } })
+  .addDecorator(darkWrapperDecorator)
   .add('default', () => (
     <MainNav/>
   ))

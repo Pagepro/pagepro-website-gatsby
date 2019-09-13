@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
-import { configure, addDecorator, addParameters } from '@storybook/react'
-import { themes } from '@storybook/theming';
+import { configure, addDecorator } from '@storybook/react'
 import theme from '../src/themes/theme'
 import { action } from '@storybook/addon-actions'
 import { withKnobs } from '@storybook/addon-knobs';
@@ -15,12 +14,6 @@ addDecorator((story) => (
     </Fragment>
   </ThemeProvider>
 ))
-
-addParameters({
-  options: {
-    theme: themes.light,
-  },
-})
 
 addDecorator(withKnobs)
 

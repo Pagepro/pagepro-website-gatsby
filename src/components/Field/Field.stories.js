@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { storiesOf } from '@storybook/react'
-import theme from '../../../.storybook/theme'
+import darkWrapperDecorator from '../../../.storybook/decorators/darkWrapperDecorator'
 import Input from './Input/Input'
 import Checkbox from './Checkbox/Checkbox'
 import Radio from './Radio/Radio'
@@ -12,7 +12,7 @@ storiesOf('Field', module)
       type="text"
     />
   ))
-  .addParameters({ options: { theme: theme } })
+  .addDecorator(darkWrapperDecorator)
   .add('checkbox', () => (
     <Checkbox
       inputId="chbx1"

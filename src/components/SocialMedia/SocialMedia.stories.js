@@ -1,7 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import theme from '../../../.storybook/theme'
-
+import darkWrapperDecorator from '../../../.storybook/decorators/darkWrapperDecorator'
 import SocialMedia from './SocialMedia'
 import Instagram from '../../assets/svg/Instagram'
 import Twitter from '../../assets/svg/Twitter'
@@ -10,7 +9,7 @@ import Facebook from '../../assets/svg/Facebook'
 import YouTube from '../../assets/svg/YouTube'
 
 storiesOf('SocialMedia', module)
-  .addParameters({ options: { theme: theme } })
+  .addDecorator(darkWrapperDecorator)
   .add('default', () => (
     <SocialMedia itemsArray = {
       [
