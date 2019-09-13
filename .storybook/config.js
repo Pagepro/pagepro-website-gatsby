@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 import { configure, addDecorator } from '@storybook/react'
+import theme from '../src/themes/theme'
 import { action } from '@storybook/addon-actions'
 import { withKnobs } from '@storybook/addon-knobs';
-import theme from '../src/themes/theme'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from '../src/common/GlobalStyles'
 

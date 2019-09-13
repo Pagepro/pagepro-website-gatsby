@@ -25,6 +25,7 @@ const Color = () => {
           }}
           key={key}
         >
+        { colors[key] === 'white' ?
           <div
             style={{
               backgroundColor: colors[key],
@@ -33,7 +34,18 @@ const Color = () => {
               marginBottom: '16px',
               borderRadius: '6px'
             }}
+          /> :
+          <div
+            style={{
+              backgroundColor: colors[key],
+              width: '100px',
+              border: '1px solid #eee',
+              height: '64px',
+              marginBottom: '16px',
+              borderRadius: '6px'
+            }}
           />
+        }
             <p>{key}</p>
             <p>{colors[key]}</p>
         </li>

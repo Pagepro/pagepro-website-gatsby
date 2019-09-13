@@ -4,9 +4,6 @@ import { text } from '@storybook/addon-knobs'
 import StatNumber from './StatNumber'
 
 storiesOf('StatNumber', module)
-  .addDecorator(story => <div style={{
-     maxWidth: '400px'
-  }}>{story()}</div>)
   .add('default', () => {
     const defaultProps = {
       description: text('Description', 'Projects done in 2018'),
