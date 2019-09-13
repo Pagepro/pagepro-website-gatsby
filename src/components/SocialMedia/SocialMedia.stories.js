@@ -9,10 +9,10 @@ import Facebook from '../../assets/svg/Facebook'
 import YouTube from '../../assets/svg/YouTube'
 
 storiesOf('SocialMedia', module)
-  .addDecorator(storyFn => <div style={{
+  .addDecorator(story => <div style={{
     background: '#f33540',
     padding: '5px',
-  }}>{storyFn()}</div>)
+  }}>{story()}</div>)
   .add('default', () => (
     <SocialMedia itemsArray = {
       [

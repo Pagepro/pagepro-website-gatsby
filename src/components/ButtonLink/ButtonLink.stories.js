@@ -19,6 +19,7 @@ storiesOf('ButtonLink', module)
       }, 'medium'),
       left: boolean('isLeft', false)
     }
+
     return (
       <ButtonLink
         { ...defaultProps }

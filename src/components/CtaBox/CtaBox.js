@@ -21,22 +21,22 @@ const CtaBox = () => (
       leadership and high-performing engeneering teams.</Typo4>
     </CtaBoxTextStyled>
     <CtaBoxActionsStyled>
-        <ButtonLink
-          className="button"
-          type={types.primary}
-          size={sizes.big}
-          left
-          btnUrl="#"
-          btnLabel="Hire us"
-        />
-        <ButtonLink
-          className="button"
-          type={types.secondary}
-          size={sizes.big}
-          left
-          btnUrl="#"
-          btnLabel="Join us"
-        />
+      <ButtonLink
+        className="button"
+        type={types.primary}
+        size={sizes.big}
+        left
+        btnUrl="#"
+        btnLabel="Hire us"
+      />
+      <ButtonLink
+        className="button"
+        type={types.secondary}
+        size={sizes.big}
+        left
+        btnUrl="#"
+        btnLabel="Join us"
+      />
     </CtaBoxActionsStyled>
   </CtaBoxStyled>
 )
