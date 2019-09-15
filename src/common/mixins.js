@@ -4,8 +4,8 @@ export const transition = `
 
 export const decorLink = ({
   height = '1px',
-  hoverUnderlineBg = 'currentColor'
-}) =>`
+  hoverUnderlineBg = 'currentColor',
+}) => `
   position: relative;
 
   &::after {
@@ -87,8 +87,8 @@ export const checkbox = props => `
 `
 
 export const decorLine = ({
-  backgroundColor = `currentColor`
-}) =>`
+  backgroundColor = 'currentColor',
+}) => `
   position: relative;
 
   &::before {

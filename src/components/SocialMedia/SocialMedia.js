@@ -4,7 +4,7 @@ import {
   SocialMediaListStyled,
   SocialMediaItemStyled,
   SocialMediaLinkStyled,
-  SocialMediaIconStyled
+  SocialMediaIconStyled,
 } from './styledComponents'
 
 const SocialMedia = ({ itemsArray }) => (
@@ -26,9 +26,9 @@ const SocialMedia = ({ itemsArray }) => (
 
 SocialMedia.propTypes = {
   itemsArray: PropTypes.arrayOf(PropTypes.shape({
-    href: PropTypes.string,
-    icon: PropTypes.node,
-  }))
+    href: PropTypes.string.isRequired,
+    icon: PropTypes.node.isRequired,
+  })).isRequired,
 }
 
 export default SocialMedia

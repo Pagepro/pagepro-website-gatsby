@@ -8,11 +8,11 @@ import {
   ProjectHeaderStyled,
   ProjectDescStyled,
   ProjectTechnologiesStyled,
-  ProjectActionStyled
+  ProjectActionStyled,
 } from './styledComponents'
 import theme from '../../themes/theme'
 import Link from '../Link/Link'
-import { Typo4 } from '../../components/Typography/Typography'
+import { Typo4 } from '../Typography/Typography'
 
 const Project = ({
   reversed,
@@ -36,21 +36,23 @@ const Project = ({
         <ProjectImgStyled {...otherProps} />
       </ProjectMediaStyled>
       <ProjectActionStyled>
-        {reversed ?
-          <Link
-            light
-            withArrow
-            iconColor={theme.color.white}
-            href="#"
-            label="Read more"
-          /> :
-          <Link
-            withArrow
-            iconColor={theme.color.red}
-            href="#"
-            label="Read more"
-          />
-        }
+        {reversed
+          ? (
+            <Link
+              light
+              withArrow
+              iconColor={theme.color.white}
+              href="#"
+              label="Read more"
+            />
+          ) : (
+            <Link
+              withArrow
+              iconColor={theme.color.red}
+              href="#"
+              label="Read more"
+            />
+          )}
       </ProjectActionStyled>
     </ProjectContentStyled>
   </ProjectStyled>
@@ -58,11 +60,15 @@ const Project = ({
 
 Project.propTypes = {
   reversed: PropTypes.bool,
-  label: PropTypes.string,
-  desc: PropTypes.string,
-  technologies: PropTypes.string,
-  src: PropTypes.string,
-  alt: PropTypes.string,
+  label: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  technologies: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+}
+
+Project.defaultProps = {
+  reversed: false,
 }
 
 export default Project

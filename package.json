@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-storybook",
-  "description": "Gatsby Storybook Starter",
+  "name": "pagepro-website-storybook",
+  "description": "Pagepro Website Storybook",
   "version": "1.0.0",
   "author": "Marko Radak <mail@markoradak.com>",
   "license": "MIT",
@@ -54,6 +54,7 @@
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3"
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0"
   }
 }

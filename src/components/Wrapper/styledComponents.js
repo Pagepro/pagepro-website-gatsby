@@ -2,6 +2,4 @@ import styled from 'styled-components'
 
 const WrapperStyled = styled.div``
 
-export {
-  WrapperStyled
-}
+export default WrapperStyled

@@ -1,25 +1,29 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
-import { WrapperStyled } from './styledComponents'
+import WrapperStyled from './styledComponents'
 
 const Wrapper = ({
   children,
   ...otherProps
-}) => {
-  return (
-    <WrapperStyled style={{
-      ...otherProps
-    }}>
-      {children}
-    </WrapperStyled>
-  )
-}
+}) => (
+  <WrapperStyled style={{
+    ...otherProps }}
+  >
+    {children}
+  </WrapperStyled>
+)
+
 
 Wrapper.propTypes = {
   background: PropTypes.string,
   padding: PropTypes.string,
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
+}
+
+Wrapper.defaultProps = {
+  background: '',
+  padding: '',
 }
 
 export default Wrapper

@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {
   TechnologiesStyled,
-  TechnologiesItemStyled
+  TechnologiesItemStyled,
 } from './styledComponents'
 
 const Technologies = ({ itemsArray }) => (
@@ -20,7 +20,7 @@ Technologies.propTypes = {
   itemsArray: PropTypes.arrayOf(PropTypes.shape({
     src: PropTypes.node,
     alt: PropTypes.string,
-  }))
+  })).isRequired,
 }
 
 export default Technologies

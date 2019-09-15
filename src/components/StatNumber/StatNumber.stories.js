@@ -11,7 +11,7 @@ storiesOf('StatNumber', module)
     }
     return (
       <StatNumber
-        { ...defaultProps }
+        {...defaultProps}
       />
     )
   })

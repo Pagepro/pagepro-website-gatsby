@@ -22,8 +22,8 @@ const Radio = ({
 )
 
 Radio.propTypes = {
-  inputId: PropTypes.string,
-  label: PropTypes.string,
+  inputId: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
 }
 
 export default Radio
