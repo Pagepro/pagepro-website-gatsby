@@ -16,7 +16,8 @@ const Benefit = ({
     <BenefitTitleStyled>
       <Typo5
         tag="h3"
-        fontWeight={theme.fontWeight.bold}>
+        fontWeight={theme.fontWeight.bold}
+      >
         {title}
       </Typo5>
     </BenefitTitleStyled>
