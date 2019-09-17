@@ -19,6 +19,7 @@ export default {
     gutter16: '16px',
     gutter24: '24px',
     gutter32: '32px',
+    gutter40: '40px',
     gutter48: '48px',
     gutter64: '64px',
   },
