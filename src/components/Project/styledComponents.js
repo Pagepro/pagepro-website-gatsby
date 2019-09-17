@@ -48,6 +48,7 @@ const ProjectStyled = styled.div`
   position: relative;
   width: 100%;
   padding: ${props => props.theme.gutter.gutter32} ${props => props.theme.gutter.gutter48};
+  margin-top: ${props => props.theme.gutter.gutter16};
   min-height: ${variables.projectMinHeight};
   background: ${props => rgba(
     props.theme.color.mediumGrey,

@@ -11,9 +11,9 @@ import theme from '../../themes/theme'
 import { Typo6 } from '../Typography/Typography'
 
 storiesOf('InfoBox', module)
-  .addDecorator(storyFn => <div style={{
+  .addDecorator(story => <div style={{
     maxWidth: '240px'
-  }}>{storyFn()}</div>)
+  }}>{story()}</div>)
   .add('default', () => (
     <InfoBox
       heading="Web & Mobile Development"
