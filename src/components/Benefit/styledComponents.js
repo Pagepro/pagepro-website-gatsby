@@ -2,9 +2,8 @@ import styled from 'styled-components'
 import { rgba } from 'polished'
 
 const variables = {
+  borderColor: '#0e314',
   descriptionWidth: '228px',
-  bgDecorWidth: '228px',
-  bgDecorHeight: '294px',
 }
 
 const BenefitStyled = styled.div`
@@ -16,32 +15,26 @@ const BenefitStyled = styled.div`
     position: absolute;
     top: 0;
     left: 44px;
-    display: block;
+    display: flex;
     height: 100%;
-    width: ${variables.bgDecorWidth};
-    min-height: ${variables.bgDecorHeight};
+    width: 100%;
     z-index: 0;
     content: '';
-    background: ${props => rgba(
-      props.theme.color.white,
-      props.theme.opacities.opacity20)
-    };
+    background: ${variables.borderColor};
   }
 `
 const BenefitTitleStyled = styled.div`
   position: relative;
   text-transform: uppercase;
   font-weight: ${props => props.theme.fontWeight.semiBold};
-  line-height: ${props => props.theme.lineHeight.small};
   color: ${props => props.theme.color.red};
 `
 
 const BenefitDescriptionStyled = styled.div`
   position: relative;
-  max-width: 196px;
+  max-width: 220px;
   margin-top: ${props => props.theme.gutter.gutter16};
   color: ${props => props.theme.color.white};
-  line-height: ${props => props.theme.lineHeight.medium};
 `
 
 export {
