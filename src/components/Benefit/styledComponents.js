@@ -2,8 +2,9 @@ import styled from 'styled-components'
 import { rgba } from 'polished'
 
 const variables = {
-  borderColor: '#0e314',
+  borderColor: '#0E3145',
   descriptionWidth: '228px',
+  bgDecorWidth: '228px',
 }
 
 const BenefitStyled = styled.div`

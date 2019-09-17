@@ -6,7 +6,7 @@ import Benefit from './Benefit'
 storiesOf('Benefit', module)
   .addDecorator(storyFn => <div style={{
     background: '#061F2d',
-    maxWidth: '272px'
+    maxWidth: '220px'
   }}>{storyFn()}</div>)
   .add('default', () => {
     const defaultProps = {
