@@ -6,10 +6,9 @@ import Project from './Project'
 import ProjectImg from '../../assets/images/project-1.jpg'
 
 storiesOf('Project', module)
-  .addDecorator(storyFn => <div style={{
-    maxWidth: '942px',
-    marginTop: '30px'
-  }}>{storyFn()}</div>)
+  .addDecorator(story => <div style={{
+    maxWidth: '942px'
+  }}>{story()}</div>)
   .add('default', () => {
     const defaultProps = {
       label: text('Label', 'Gated Talent'),
