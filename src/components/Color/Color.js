@@ -13,16 +13,14 @@ const Color = () => {
     >
       {Object.keys(colors).map(key => (
         <li
-          style={{
-            display: 'flex',
+          style={{ display: 'flex',
             alignItems: 'center',
             flexDirection: 'column',
             margin: '16px',
             textAlign: 'center',
             fontSize: '12px',
             textTransform: 'uppercase',
-            fontWeight: '500',
-          }}
+            fontWeight: '500' }}
           key={key}
         >
           { colors[key] === '#fff'
@@ -34,8 +32,7 @@ const Color = () => {
                   height: '64px',
                   border: '1px solid #eee',
                   marginBottom: '16px',
-                  borderRadius: '6px',
-                }}
+                  borderRadius: '6px' }}
               />
             ) : (
               <div
@@ -44,8 +41,7 @@ const Color = () => {
                   width: '100px',
                   height: '64px',
                   marginBottom: '16px',
-                  borderRadius: '6px',
-                }}
+                  borderRadius: '6px' }}
               />
             )}
           <p>{key}</p>

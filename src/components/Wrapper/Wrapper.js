@@ -5,11 +5,9 @@ import WrapperStyled from './styledComponents'
 
 const Wrapper = ({
   children,
-  ...otherProps
+  ...styles
 }) => (
-  <WrapperStyled style={{
-    ...otherProps }}
-  >
+  <WrapperStyled style={styles}>
     {children}
   </WrapperStyled>
 )

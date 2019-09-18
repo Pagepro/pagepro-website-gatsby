@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components'
-
 import { decorLink } from '../../common/mixins'
 import theme from '../../themes/theme'
 

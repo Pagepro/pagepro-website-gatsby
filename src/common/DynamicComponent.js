@@ -24,7 +24,8 @@ const StyledDynamicComponent = styled(tag)`
 const DynamicComponent = ({
   newTag,
   children,
-  ...props }) => {
+  ...props
+}) => {
   const WithComponent = StyledDynamicComponent.withComponent(newTag)
   return <WithComponent {...props}>{children}</WithComponent>
 }

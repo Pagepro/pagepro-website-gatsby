@@ -7,9 +7,7 @@ import {
 import { Typo6 } from '../Typography/Typography'
 
 const BulletList = props => {
-  const {
-    itemsArray,
-  } = props
+  const { itemsArray } = props
   return (
     <BulletListStyled>
       {itemsArray.map(({ text }, key) => (

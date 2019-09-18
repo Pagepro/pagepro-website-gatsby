@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components'
-
 import { transition } from '../../common/mixins'
 
 export const types = {
