@@ -35,8 +35,8 @@ const MainNav = () => {
   ]
   return (
     <MainNavStyled>
-      {items.map(({ label, href }, key) => (
-        <MainNavItemStyled key={key}>
+      {items.map(({ label, href }) => (
+        <MainNavItemStyled key={`id-${label}`}>
           <MainNavLinkStyled href={href}>
             <Typo7>{label}</Typo7>
           </MainNavLinkStyled>

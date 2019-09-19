@@ -9,8 +9,8 @@ import {
 
 const SocialMedia = ({ itemsArray }) => (
   <SocialMediaListStyled>
-    {itemsArray.map(({ href, icon }, key) => (
-      <SocialMediaItemStyled key={key}>
+    {itemsArray.map(({ href, icon }) => (
+      <SocialMediaItemStyled key={`id-${href}`}>
         <SocialMediaLinkStyled
           href={href}
           target="_blank"

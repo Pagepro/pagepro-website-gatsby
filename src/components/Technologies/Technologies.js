@@ -8,8 +8,8 @@ import {
 
 const Technologies = ({ itemsArray }) => (
   <TechnologiesStyled>
-    {itemsArray.map(({ src, alt }, key) => (
-      <TechnologiesItemStyled key={key}>
+    {itemsArray.map(({ src, alt }) => (
+      <TechnologiesItemStyled key={`id-${src}`}>
         <img src={src} alt={alt} />
       </TechnologiesItemStyled>
     ))}
