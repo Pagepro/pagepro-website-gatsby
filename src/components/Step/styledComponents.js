@@ -8,25 +8,21 @@ const StepStyled = styled.div`
   max-width: ${variables.width};
   padding: ${props => props.theme.gutter.gutter32};
   border: 2px solid ${props => props.theme.color.lightGrey};
+  font-weight: ${props => props.theme.fontWeight.semiBold};
 `
 
 const StepTitleStyled = styled.div`
   text-transform: uppercase;
-  line-height: ${props => props.theme.lineHeight.normal};
-  font-weight: ${props => props.theme.fontWeight.semiBold};
+  line-height: ${props => props.theme.lineHeight.medium};
 `
 
 const StepSubtitleStyled = styled.div`
-  margin-top: ${props => props.theme.gutter.gutter32};
+  margin-top: ${props => props.theme.gutter.gutter24};
   color: ${props => props.theme.color.red};
-  line-height: ${props => props.theme.lineHeight.normal};
-  font-weight: ${props => props.theme.fontWeight.semiBold};
 `
 
 const StepDescStyled = styled.div`
-  margin-top: ${props => props.theme.gutter.gutter48};
-  line-height: ${props => props.theme.lineHeight.big};
-  font-weight: ${props => props.theme.fontWeight.semiBold};
+  margin-top: ${props => props.theme.gutter.gutter32};
 `
 
 export {
