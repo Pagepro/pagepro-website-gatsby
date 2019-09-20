@@ -13,64 +13,65 @@ import Css3 from '../../assets/images/svg/css3.svg'
 
 storiesOf('Technologies', module)
   .add('default', () => (
-    <Technologies itemsArray = {
+    <Technologies itemsArray={
       [
         {
           src: Angular,
-          alt: 'Picture'
+          alt: 'Picture',
         },
         {
           src: WordPress,
-          alt: 'Picture'
+          alt: 'Picture',
         },
         {
           src: Html5,
-          alt: 'Picture'
+          alt: 'Picture',
         },
         {
           src: ReactIcon,
-          alt: 'Picture'
+          alt: 'Picture',
         },
         {
           src: Redux,
-          alt: 'Picture'
+          alt: 'Picture',
         },
         {
           src: ReactNative,
-          alt: 'Picture'
+          alt: 'Picture',
         },
         {
           src: Gulp,
-          alt: 'Picture'
+          alt: 'Picture',
         },
         {
           src: Css3,
-          alt: 'Picture'
+          alt: 'Picture',
         },
         {
           src: Angular,
-          alt: 'Picture'
+          alt: 'Picture',
         },
         {
           src: WordPress,
-          alt: 'Picture'
+          alt: 'Picture',
         },
         {
           src: Html5,
-          alt: 'Picture'
+          alt: 'Picture',
         },
         {
           src: ReactIcon,
-          alt: 'Picture'
+          alt: 'Picture',
         },
         {
           src: Redux,
-          alt: 'Picture'
+          alt: 'Picture',
         },
         {
           src: ReactNative,
-          alt: 'Picture'
-        }
+          alt: 'Picture',
+        },
       ]
-    }/>
+    }
+    />
   ))

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {
   LinkLabelStyled,
   LinkIconStyled,
-  LinkStyled
+  LinkStyled,
 } from './styledComponents'
 import GitHub from '../../assets/svg/GitHub'
 import ArrowRight from '../../assets/svg/ArrowRight'
@@ -18,27 +18,34 @@ const Link = ({
   <LinkStyled
     {...rest}
   >
-    {withGithub &&
+    {withGithub && (
       <LinkIconStyled>
-        <GitHub fontSize="16px"/>
+        <GitHub fontSize="16px" />
       </LinkIconStyled>
-    }
+    )}
     <LinkLabelStyled>{label}</LinkLabelStyled>
-    {withArrow &&
+    {withArrow && (
       <LinkIconStyled>
         <ArrowRight fontSize="8px" fill={iconColor} />
       </LinkIconStyled>
-    }
+    )}
   </LinkStyled>
 )
 
 Link.propTypes = {
-  linkUrl: PropTypes.string,
-  linkLabel: PropTypes.string,
+  href: PropTypes.string.isRequired,
   withArrow: PropTypes.bool,
   withGithub: PropTypes.bool,
   light: PropTypes.bool,
-  iconColor: PropTypes.string
+  label: PropTypes.string.isRequired,
+  iconColor: PropTypes.string,
+}
+
+Link.defaultProps = {
+  iconColor: '',
+  light: false,
+  withArrow: false,
+  withGithub: false,
 }
 
 export default Link

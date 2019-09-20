@@ -5,9 +5,11 @@ import Testimonials from './Testimonials'
 import Avatar1 from '../../assets/images/avatar-1.png'
 
 storiesOf('Testimonials', module)
-  .addDecorator(storyFn => <div style={{
-     maxWidth: '232px'
-  }}>{storyFn()}</div>)
+  .addDecorator(story => (
+    <div style={{ maxWidth: '232px' }}>
+      {story()}
+    </div>
+  ))
   .add('default', () => (
     <Testimonials
       name="Ilona Filipi"

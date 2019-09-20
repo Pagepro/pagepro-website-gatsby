@@ -7,7 +7,7 @@ import {
   InfoBoxHeadingStyled,
   InfoBoxTitleStyled,
   InfoBoxDescStyled,
-  InfoBoxActionStyled
+  InfoBoxActionStyled,
 } from './styledComponents'
 import theme from '../../themes/theme'
 import Link from '../Link/Link'
@@ -21,8 +21,7 @@ const InfoBox = ({
 }) => (
   <InfoBoxStyled {...otherProps}>
     <InfoBoxIconWrapperStyled>
-      <InfoBoxIconStyled {...otherProps}>
-      </InfoBoxIconStyled>
+      <InfoBoxIconStyled {...otherProps} />
     </InfoBoxIconWrapperStyled>
     <InfoBoxHeadingStyled>
       <Typo5
@@ -33,16 +32,17 @@ const InfoBox = ({
       </Typo5>
     </InfoBoxHeadingStyled>
     <InfoBoxDescStyled>
-    {title ?
-      <InfoBoxTitleStyled>
-        <Typo6
-          fontWeight={theme.fontWeight.bold}
-          color={theme.color.mediumGrey}
-          >
-          {title}
-        </Typo6>
-      </InfoBoxTitleStyled>
-    : null }
+      {title
+        ? (
+          <InfoBoxTitleStyled>
+            <Typo6
+              fontWeight={theme.fontWeight.bold}
+              color={theme.color.mediumGrey}
+            >
+              {title}
+            </Typo6>
+          </InfoBoxTitleStyled>
+        ) : null }
       {children}
     </InfoBoxDescStyled>
     <InfoBoxActionStyled>
@@ -57,12 +57,17 @@ const InfoBox = ({
 )
 
 InfoBox.propTypes = {
-  heading: PropTypes.string,
+  heading: PropTypes.string.isRequired,
   title: PropTypes.string,
-  children: PropTypes.node,
-  src: PropTypes.string,
-  alt: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
   centered: PropTypes.bool,
+}
+
+InfoBox.defaultProps = {
+  centered: false,
+  title: '',
 }
 
 export default InfoBox

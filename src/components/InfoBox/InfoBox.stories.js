@@ -11,17 +11,23 @@ import theme from '../../themes/theme'
 import { Typo6 } from '../Typography/Typography'
 
 storiesOf('InfoBox', module)
-  .addDecorator(storyFn => <div style={{
-    maxWidth: '240px'
-  }}>{storyFn()}</div>)
+  .addDecorator(
+    story => (
+      <div style={{ maxWidth: '240px' }}>
+        {story()}
+      </div>
+    )
+  )
   .add('default', () => (
     <InfoBox
       heading="Web & Mobile Development"
       src={ReactIcon}
       alt="React"
     >
-      <Typo6>Gain access to our senior leaders and benefit from their
-      insights into the technology and business domains.</Typo6>
+      <Typo6>
+        Gain access to our senior leaders and benefit from their
+        insights into the technology and business domains.
+      </Typo6>
     </InfoBox>
   ))
   .add('with list', () => (
@@ -35,16 +41,19 @@ storiesOf('InfoBox', module)
       <BulletList itemsArray={
         [
           {
-            text: 'we organize internal training courses and workshops'
+            text: 'we organize internal training courses and workshops',
           },
           {
-            text: 'we take part in meetings of the frontend community as participants and speakers'
+            text: `we take part in meetings of the frontend community as
+            participants and speakers`,
           },
           {
-            text: 'we build and share reusable frontend components, libraries, rules and style guides'
-          }
+            text: `we build and share reusable frontend components, libraries,
+            rules and style guides`,
+          },
         ]
-      }/>
+      }
+      />
     </InfoBox>
   ))
   .add('with wrapper (bg and padding)', () => (
@@ -57,8 +66,10 @@ storiesOf('InfoBox', module)
         src={ReactNativeIcon}
         alt="React"
       >
-        <Typo6>Gain access to our senior leaders and benefit from their
-        insights into the technology and business domains.</Typo6>
+        <Typo6>
+          Gain access to our senior leaders and benefit from their
+          insights into the technology and business domains.
+        </Typo6>
       </InfoBox>
     </Wrapper>
   ))
@@ -69,7 +80,9 @@ storiesOf('InfoBox', module)
       src={WordPressIcon}
       alt="React"
     >
-      <Typo6>Gain access to our senior leaders and benefit from their
-      insights into the technology and business domains.</Typo6>
+      <Typo6>
+        Gain access to our senior leaders and benefit from their
+        insights into the technology and business domains.
+      </Typo6>
     </InfoBox>
   ))

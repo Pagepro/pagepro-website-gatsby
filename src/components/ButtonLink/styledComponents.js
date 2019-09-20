@@ -1,7 +1,16 @@
 import styled, { css } from 'styled-components'
-
 import { transition } from '../../common/mixins'
-import { types, sizes } from './ButtonLink'
+
+export const types = {
+  primary: 'primary',
+  secondary: 'secondary',
+  outline: 'outline',
+}
+
+export const sizes = {
+  medium: 'medium',
+  big: 'big',
+}
 
 const ButtonLinkStyled = styled.a`
   display: inline-flex;
@@ -63,6 +72,4 @@ const ButtonLinkStyled = styled.a`
   `}
 `
 
-export {
-  ButtonLinkStyled
-}
+export default ButtonLinkStyled

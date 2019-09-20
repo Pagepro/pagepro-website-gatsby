@@ -1,6 +1,6 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
-import { fieldReset } from "../../../common/mixins"
+import { fieldReset } from '../../../common/mixins'
 
 const InputStyled = styled.input`
   ${fieldReset}
@@ -16,6 +16,4 @@ const InputStyled = styled.input`
   }
 `
 
-export {
-  InputStyled,
-}
+export default InputStyled

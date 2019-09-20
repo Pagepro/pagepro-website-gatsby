@@ -9,7 +9,7 @@ import { Typo6 } from '../Typography/Typography'
 
 const StatNumber = ({
   description,
-  count
+  count,
 }) => (
   <StatNumberStyled>
     <StatNumberDescriptionStyled>
@@ -24,8 +24,8 @@ const StatNumber = ({
 )
 
 StatNumber.propTypes = {
-  description: PropTypes.string,
-  count: PropTypes.string,
+  description: PropTypes.string.isRequired,
+  count: PropTypes.string.isRequired,
 }
 
 export default StatNumber

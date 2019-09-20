@@ -5,7 +5,7 @@ import { decorLine } from '../../common/mixins'
 import theme from '../../themes/theme'
 
 const variables = {
-  projectMinHeight: '294px'
+  projectMinHeight: '294px',
 }
 
 const ProjectContentStyled = styled.div`
@@ -37,7 +37,7 @@ const ProjectDescStyled = styled.div`
 `
 
 const ProjectTechnologiesStyled = styled.div`
-  ${decorLine({backgroundColor: `${theme.color.red}`})}
+  ${decorLine({ backgroundColor: `${theme.color.red}` })}
   padding-top: ${props => props.theme.gutter.gutter24};
   margin-bottom: ${props => props.theme.gutter.gutter16};
 `
@@ -47,12 +47,16 @@ const ProjectActionStyled = styled.div``
 const ProjectStyled = styled.div`
   position: relative;
   width: 100%;
-  padding: ${props => props.theme.gutter.gutter32} ${props => props.theme.gutter.gutter48};
+  padding: (
+    ${props => props.theme.gutter.gutter32}
+    ${props => props.theme.gutter.gutter48}
+  );
+  margin-top: ${props => props.theme.gutter.gutter16};
   min-height: ${variables.projectMinHeight};
   background: ${props => rgba(
     props.theme.color.mediumGrey,
     props.theme.opacities.opacity20)
-  };
+};
 
   /* Reversed */
   ${({ reversed }) => reversed && css`
@@ -81,5 +85,5 @@ export {
   ProjectHeaderStyled,
   ProjectDescStyled,
   ProjectTechnologiesStyled,
-  ProjectActionStyled
+  ProjectActionStyled,
 }

@@ -54,5 +54,5 @@ export {
   InfoBoxHeadingStyled,
   InfoBoxTitleStyled,
   InfoBoxDescStyled,
-  InfoBoxActionStyled
+  InfoBoxActionStyled,
 }

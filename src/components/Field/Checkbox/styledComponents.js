@@ -1,6 +1,6 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
-import { decorLink, checkbox } from "../../../common/mixins"
+import { decorLink, checkbox } from '../../../common/mixins'
 
 const CheckboxGroupStyled = styled.div`
   ${checkbox}
@@ -43,5 +43,5 @@ const CheckboxInputStyled = styled.input`
 export {
   CheckboxGroupStyled,
   CheckboxInputStyled,
-  CheckboxLabelStyled
+  CheckboxLabelStyled,
 }

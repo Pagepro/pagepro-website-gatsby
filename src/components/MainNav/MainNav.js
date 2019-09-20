@@ -1,9 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import {
   MainNavStyled,
   MainNavItemStyled,
-  MainNavLinkStyled
+  MainNavLinkStyled,
 } from './styledComponents'
 import { Typo7 } from '../Typography/Typography'
 
@@ -11,33 +10,33 @@ const MainNav = () => {
   const items = [
     {
       label: 'Projects',
-      href: '#'
+      href: '#',
     },
     {
       label: 'Services',
-      href: '#'
+      href: '#',
     },
     {
       label: 'About',
-      href: '#'
+      href: '#',
     },
     {
       label: 'Career',
-      href: '#'
+      href: '#',
     },
     {
       label: 'Blog',
-      href: '#'
+      href: '#',
     },
     {
       label: 'Contact us',
-      href: '#'
-    }
+      href: '#',
+    },
   ]
   return (
     <MainNavStyled>
-      {items.map(({ label, href }, key) => (
-        <MainNavItemStyled key={key}>
+      {items.map(({ label, href }) => (
+        <MainNavItemStyled key={`id-${label}`}>
           <MainNavLinkStyled href={href}>
             <Typo7>{label}</Typo7>
           </MainNavLinkStyled>
@@ -45,13 +44,6 @@ const MainNav = () => {
       ))}
     </MainNavStyled>
   )
-}
-
-MainNav.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.shape({
-    label: PropTypes.string,
-    href: PropTypes.string,
-  }))
 }
 
 export default MainNav

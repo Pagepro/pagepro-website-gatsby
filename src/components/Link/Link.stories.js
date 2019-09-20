@@ -10,9 +10,9 @@ storiesOf('Link', module)
       href="#"
       label="Read more"
     />
-	))
+  ))
   .add('with arrow', () => (
-		<Link
+    <Link
       withArrow
       iconColor={theme.color.red}
       href="#"
@@ -27,7 +27,7 @@ storiesOf('Link', module)
     />
   ))
   .add('light', () => (
-    <div style={{background: '#000', padding: '5px'}}>
+    <div style={{ background: '#000', padding: '5px' }}>
       <Link
         light
         withArrow
@@ -38,7 +38,7 @@ storiesOf('Link', module)
     </div>
   ))
   .add('light with white arrow', () => (
-    <div style={{background: '#000', padding: '5px'}}>
+    <div style={{ background: '#000', padding: '5px' }}>
       <Link
         light
         withArrow

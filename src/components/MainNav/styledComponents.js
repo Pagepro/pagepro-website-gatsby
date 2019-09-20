@@ -16,7 +16,7 @@ const MainNavItemStyled = styled.li`
 const MainNavLinkStyled = styled.a`
   ${decorLink({
     height: '2px',
-    hoverUnderlineBg: `${theme.color.red}`
+    hoverUnderlineBg: `${theme.color.red}`,
   })}
   display: block;
   color: ${props => props.theme.color.lightGrey};
@@ -26,5 +26,5 @@ const MainNavLinkStyled = styled.a`
 export {
   MainNavStyled,
   MainNavItemStyled,
-  MainNavLinkStyled
+  MainNavLinkStyled,
 }

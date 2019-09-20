@@ -6,23 +6,26 @@ import Project from './Project'
 import ProjectImg from '../../assets/images/project-1.jpg'
 
 storiesOf('Project', module)
-  .addDecorator(storyFn => <div style={{
-    maxWidth: '942px',
-    marginTop: '30px'
-  }}>{storyFn()}</div>)
+  .addDecorator(story => (
+    <div style={{ maxWidth: '942px' }}>
+      {story()}
+    </div>
+  ))
   .add('default', () => {
     const defaultProps = {
       label: text('Label', 'Gated Talent'),
-      desc: text('Description', 'GatedTalent platform meets the needs of executives with exceptional skills seeking to engage with executive recruiters over the course of their career.'),
+      desc: text('Description', `GatedTalent platform meets the needs of 
+      executives with exceptional skills seeking to engage with executive 
+      recruiters over the course of their career.`),
       technologies: text('Technologies', 'Technology: React, Sass'),
-      reversed: boolean('isReversed', false)
+      reversed: boolean('isReversed', false),
     }
 
     return (
       <Project
         src={ProjectImg}
         alt="Picture"
-        { ...defaultProps }
+        {...defaultProps}
       />
     )
   })
