@@ -18,19 +18,17 @@ const Link = ({
   <LinkStyled
     {...rest}
   >
-    {withGithub
-      && (
-        <LinkIconStyled>
-          <GitHub fontSize="16px" />
-        </LinkIconStyled>
-      )}
+    {withGithub && (
+      <LinkIconStyled>
+        <GitHub fontSize="16px" />
+      </LinkIconStyled>
+    )}
     <LinkLabelStyled>{label}</LinkLabelStyled>
-    {withArrow
-      && (
-        <LinkIconStyled>
-          <ArrowRight fontSize="8px" fill={iconColor} />
-        </LinkIconStyled>
-      )}
+    {withArrow && (
+      <LinkIconStyled>
+        <ArrowRight fontSize="8px" fill={iconColor} />
+      </LinkIconStyled>
+    )}
   </LinkStyled>
 )
 

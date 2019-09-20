@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { decorLink, checkbox } from '../../../common/mixins'
 
 const RadioGroupStyled = styled.div`
