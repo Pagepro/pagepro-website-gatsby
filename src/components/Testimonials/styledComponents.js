@@ -48,9 +48,9 @@ const TestimonialsDetailsStyled = styled.div`
   .agency {
     margin-top: calc(${props => props.theme.gutter.gutter16} / 8);
     color: ${props => rgba(
-      props.theme.color.mediumGrey,
-      props.theme.opacities.opacity60
-    )};
+    props.theme.color.mediumGrey,
+    props.theme.opacities.opacity60
+  )};
   }
 `
 

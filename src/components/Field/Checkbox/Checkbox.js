@@ -8,7 +8,7 @@ import {
 
 const Checkbox = ({
   inputId,
-  label
+  label,
 }) => (
   <CheckboxGroupStyled>
     <CheckboxInputStyled
@@ -22,8 +22,8 @@ const Checkbox = ({
 )
 
 Checkbox.propTypes = {
-  inputId: PropTypes.string,
-  label: PropTypes.object,
+  inputId: PropTypes.string.isRequired,
+  label: PropTypes.node.isRequired,
 }
 
 export default Checkbox

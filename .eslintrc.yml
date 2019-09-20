@@ -1,9 +1,8 @@
----
 extends: airbnb
-parser: babel-eslint
 env:
   browser: true
   node: true
+  es6: true
 rules:
   no-underscore-dangle: 0
   no-plusplus: 0
@@ -15,8 +14,8 @@ rules:
     - error
     - allowShortCircuit: true
   max-len:
-    - code: 80
     - error
+    - code: 80
     - ignoreComments: true
   comma-dangle:
     - error
@@ -39,12 +38,15 @@ rules:
   indent: 2
   prefer-destructuring: 0
   react/prop-types: 1
+  react/jsx-props-no-spreading: 0
   react/no-multi-comp: 0
   react/sort-comp: 0
   react/jsx-key: 1
   react/jsx-indent: 2
+  import/no-unresolved: 0
   jsx-a11y/anchor-is-valid: 0
   class-methods-use-this: 0
   object-curly-newline: 0
-  semi: [warn, never]
-  quotes: [warn, single]
+  arrow-parens: [2, "as-needed"]
+  semi: [2, never]
+  quotes: [2, single]

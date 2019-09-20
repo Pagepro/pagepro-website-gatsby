@@ -2,14 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {
   BulletListStyled,
-  BulletListItemStyled
+  BulletListItemStyled,
 } from './styledComponents'
 import { Typo6 } from '../Typography/Typography'
 
-const BulletList = (props) => {
-  const {
-    itemsArray
-  } = props
+const BulletList = props => {
+  const { itemsArray } = props
   return (
     <BulletListStyled>
       {itemsArray.map(({ text }, key) => (
@@ -23,8 +21,8 @@ const BulletList = (props) => {
 
 BulletList.propTypes = {
   itemsArray: PropTypes.arrayOf(PropTypes.shape({
-    text: PropTypes.string,
-  }))
+    text: PropTypes.string.isRequired,
+  })).isRequired,
 }
 
 export default BulletList

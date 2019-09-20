@@ -4,13 +4,13 @@ import {
   SocialMediaListStyled,
   SocialMediaItemStyled,
   SocialMediaLinkStyled,
-  SocialMediaIconStyled
+  SocialMediaIconStyled,
 } from './styledComponents'
 
 const SocialMedia = ({ itemsArray }) => (
   <SocialMediaListStyled>
-    {itemsArray.map(({ href, icon }, key) => (
-      <SocialMediaItemStyled key={key}>
+    {itemsArray.map(({ href, icon }) => (
+      <SocialMediaItemStyled key={`id-${href}`}>
         <SocialMediaLinkStyled
           href={href}
           target="_blank"
@@ -26,9 +26,9 @@ const SocialMedia = ({ itemsArray }) => (
 
 SocialMedia.propTypes = {
   itemsArray: PropTypes.arrayOf(PropTypes.shape({
-    href: PropTypes.string,
-    icon: PropTypes.node,
-  }))
+    href: PropTypes.string.isRequired,
+    icon: PropTypes.node.isRequired,
+  })).isRequired,
 }
 
 export default SocialMedia

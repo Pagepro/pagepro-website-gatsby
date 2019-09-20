@@ -4,6 +4,4 @@ const LogoLinkStyled = styled.a`
   display: block;
 `
 
-export {
-  LogoLinkStyled
-}
+export default LogoLinkStyled
