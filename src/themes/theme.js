@@ -11,8 +11,8 @@ export default {
     blue: '#5d90ab',
   },
   opacities: {
-    opacity20: .2,
-    opacity60: .6,
+    opacity20: 0.2,
+    opacity60: 0.6,
   },
   gutter: {
     gutter8: '8px',
@@ -34,26 +34,26 @@ export default {
   // Visual TypeScale / Major Third (1.25) / Base Size: 15px
   textStyles: {
     typo1: {
-      fontSize: ['3.052rem'] // 45.78px
+      fontSize: ['3.052rem'], // 45.78px
     },
     typo2: {
-      fontSize: ['2.441rem'] // 36.62px
+      fontSize: ['2.441rem'], // 36.62px
     },
     typo3: {
-      fontSize: ['1.953rem'] // 29.30px
+      fontSize: ['1.953rem'], // 29.30px
     },
     typo4: {
-      fontSize: ['1.563rem'] // 23.44px
+      fontSize: ['1.563rem'], // 23.44px
     },
     typo5: {
-      fontSize: ['1.25rem'] // 18.75px
+      fontSize: ['1.25rem'], // 18.75px
     },
     typo6: {
-      fontSize: ['1rem'] // 15px
+      fontSize: ['1rem'], // 15px
     },
     typo7: {
-      fontSize: ['0.8rem'] // 12px
-    }
+      fontSize: ['0.8rem'], // 12px
+    },
   },
   fontSize: {
     fontSize15: '15px',

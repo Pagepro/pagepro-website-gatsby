@@ -10,8 +10,8 @@ const BulletList = props => {
   const { itemsArray } = props
   return (
     <BulletListStyled>
-      {itemsArray.map(({ text }, key) => (
-        <BulletListItemStyled key={key}>
+      {itemsArray.map(({ text }) => (
+        <BulletListItemStyled key={text}>
           <Typo6>{text}</Typo6>
         </BulletListItemStyled>
       ))}

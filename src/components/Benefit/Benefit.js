@@ -10,7 +10,7 @@ import {
 
 const Benefit = ({
   description,
-  title
+  title,
 }) => (
   <BenefitStyled>
     <BenefitTitleStyled>
@@ -30,8 +30,8 @@ const Benefit = ({
 )
 
 Benefit.propTypes = {
-  description: PropTypes.string,
-  title: PropTypes.string,
+  description: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 }
 
 export default Benefit
