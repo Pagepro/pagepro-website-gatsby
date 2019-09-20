@@ -33,9 +33,9 @@ const Step = ({
 )
 
 Step.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  desc: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
 }
 
 export default Step

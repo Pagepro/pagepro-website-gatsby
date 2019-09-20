@@ -8,7 +8,10 @@ storiesOf('Step', module)
     const defaultProps = {
       title: text('Title', 'Step 1'),
       subtitle: text('Subtitle', 'Materials gathering'),
-      desc: text('Description', 'At the beginning of our project, we received specification with design in Sketch. Our first move was to prepare a Style Guide for reusable components starting from Form Styles and plan for Grid system.'),
+      desc: text('Description', `At the beginning of our project, we 
+      received specification with design in Sketch. Our first move was 
+      to prepare a Style Guide for reusable components starting from 
+      Form Styles and plan for Grid system.`),
     }
 
     return (
