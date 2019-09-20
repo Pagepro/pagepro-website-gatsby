@@ -20,6 +20,7 @@ storiesOf('Project', module)
       technologies: text('Technologies', 'Technology: React, Sass'),
       reversed: boolean('isReversed', false),
     }
+
     return (
       <Project
         src={ProjectImg}
