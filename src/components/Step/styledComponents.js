@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 const variables = {
-  width: '400px',
+  stepWidth: '400px',
 }
 
 const StepStyled = styled.div`
-  max-width: ${variables.width};
+  max-width: ${variables.stepWidth};
   padding: ${props => props.theme.gutter.gutter32};
   border: 2px solid ${props => props.theme.color.lightGrey};
   font-weight: ${props => props.theme.fontWeight.semiBold};
