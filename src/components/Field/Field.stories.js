@@ -1,25 +1,27 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { storiesOf } from '@storybook/react'
-import darkWrapperDecorator from '../../../.storybook/decorators/darkWrapperDecorator'
+import darkWrapperDecorator
+  from '../../../.storybook/decorators/darkWrapperDecorator'
 import Input from './Input/Input'
 import Checkbox from './Checkbox/Checkbox'
 import Radio from './Radio/Radio'
 
 storiesOf('Field', module)
+  .addDecorator(darkWrapperDecorator)
   .add('input', () => (
     <Input
       placeholder="Your name"
       type="text"
     />
   ))
-  .addDecorator(darkWrapperDecorator)
   .add('checkbox', () => (
     <Checkbox
       inputId="chbx1"
       label={(
-        <Fragment>
-          I read and I accepted <a href="#">Privacy Policy</a>
-        </Fragment>
+        <>
+          I read and I accepted &nbsp;
+          <a href="#">Privacy Policy</a>
+        </>
       )}
     />
   ))

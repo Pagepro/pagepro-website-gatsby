@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 import {
   lineHeight,
   fontSize,
@@ -21,15 +22,23 @@ const StyledDynamicComponent = styled(tag)`
 `
 
 const DynamicComponent = ({
-  tag,
+  newTag,
   children,
-  ...props }) => {
-    const WithComponent = StyledDynamicComponent.withComponent(tag)
-    return <WithComponent {...props}>{children}</WithComponent>
+  ...props
+}) => {
+  const WithComponent = StyledDynamicComponent.withComponent(newTag)
+  return <WithComponent {...props}>{children}</WithComponent>
+}
+
+DynamicComponent.propTypes = {
+  tag: PropTypes.string,
+  newTag: PropTypes.string,
+  children: PropTypes.node.isRequired,
 }
 
 DynamicComponent.defaultProps = {
-  tag: 'p'
+  tag: 'p',
+  newTag: 'p',
 }
 
 export default DynamicComponent

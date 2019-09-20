@@ -1,19 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {
-  ButtonLinkStyled
-} from './styledComponents'
-
-export const types = {
-  primary: 'primary',
-  secondary: 'secondary',
-  outline: 'outline'
-}
-
-export const sizes = {
-  medium: 'medium',
-  big: 'big'
-}
+import ButtonLinkStyled, { types, sizes } from './styledComponents'
 
 const ButtonLink = ({
   btnLabel,
@@ -29,9 +16,13 @@ const ButtonLink = ({
 ButtonLink.propTypes = {
   type: PropTypes.oneOf(Object.keys(types)),
   size: PropTypes.oneOf(Object.keys(sizes)),
-  left: PropTypes.bool,
-  href: PropTypes.string,
-  btnLabel: PropTypes.string,
+  href: PropTypes.string.isRequired,
+  btnLabel: PropTypes.string.isRequired,
+}
+
+ButtonLink.defaultProps = {
+  type: 'primary',
+  size: 'medium',
 }
 
 export default ButtonLink

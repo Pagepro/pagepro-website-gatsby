@@ -1,6 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import darkWrapperDecorator from '../../../.storybook/decorators/darkWrapperDecorator'
+import darkWrapperDecorator
+  from '../../../.storybook/decorators/darkWrapperDecorator'
 import Logo from './Logo'
 
 storiesOf('Logo', module)

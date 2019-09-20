@@ -8,7 +8,7 @@ import {
   TestimonialsNameStyled,
   TestimonialsDetailsStyled,
   TestimonialsQuoteStyled,
-} from '../Testimonials/styledComponents'
+} from './styledComponents'
 import { Typo3, Typo5, Typo6 } from '../Typography/Typography'
 
 const Testimonials = ({
@@ -21,10 +21,10 @@ const Testimonials = ({
   <TestimonialsStyled>
     <TestimonialsHeaderStyled>
       <TestimonialsImgWrapperStyled>
-        <TestimonialsImgStyled  {...otherProps} />
+        <TestimonialsImgStyled {...otherProps} />
       </TestimonialsImgWrapperStyled>
-        <TestimonialsNameStyled>
-          <Typo3>{name}</Typo3>
+      <TestimonialsNameStyled>
+        <Typo3>{name}</Typo3>
       </TestimonialsNameStyled>
       <TestimonialsDetailsStyled>
         <Typo5>{profession}</Typo5>
@@ -40,12 +40,12 @@ const Testimonials = ({
 )
 
 Testimonials.propTypes = {
-  name: PropTypes.string,
-  profession: PropTypes.string,
-  agency: PropTypes.string,
-  src: PropTypes.string,
-  alt: PropTypes.string,
-  quote: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  profession: PropTypes.string.isRequired,
+  agency: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  quote: PropTypes.string.isRequired,
 }
 
 export default Testimonials

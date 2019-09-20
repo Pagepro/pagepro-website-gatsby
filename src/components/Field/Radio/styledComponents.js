@@ -1,6 +1,5 @@
-import styled from "styled-components"
-
-import { decorLink, checkbox } from "../../../common/mixins"
+import styled from 'styled-components'
+import { decorLink, checkbox } from '../../../common/mixins'
 
 const RadioGroupStyled = styled.div`
   ${checkbox}
@@ -43,5 +42,5 @@ const RadioInputStyled = styled.input`
 export {
   RadioGroupStyled,
   RadioInputStyled,
-  RadioLabelStyled
+  RadioLabelStyled,
 }

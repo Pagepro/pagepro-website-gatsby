@@ -1,8 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { text, select, boolean } from '@storybook/addon-knobs'
-
-import ButtonLink, { types, sizes } from './ButtonLink'
+import ButtonLink from './ButtonLink'
+import { types, sizes } from './styledComponents'
 
 storiesOf('ButtonLink', module)
   .add('default', () => {
@@ -17,12 +17,13 @@ storiesOf('ButtonLink', module)
         medium: sizes.medium,
         big: sizes.big,
       }, 'medium'),
-      left: boolean('isLeft', false)
+      left: boolean('isLeft', false),
     }
+
     return (
       <ButtonLink
-        { ...defaultProps }
-        href='#'
+        {...defaultProps}
+        href="#"
       />
     )
   })

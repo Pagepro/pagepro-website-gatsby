@@ -75,5 +75,5 @@ export default {
     heightBig: '60px',
     primaryBgHover: '#e72934',
     secondaryBgHover: '#e1ecF2',
-  }
+  },
 }
