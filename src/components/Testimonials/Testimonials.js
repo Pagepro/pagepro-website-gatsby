@@ -9,7 +9,7 @@ import {
   TestimonialsDetailsStyled,
   TestimonialsQuoteStyled,
 } from './styledComponents'
-import { Typo3, Typo5, Typo6 } from '../Typography/Typography'
+import { Typo3, Typo5, Typo6 } from '../Typography'
 
 const Testimonials = ({
   name,

@@ -5,7 +5,7 @@ import {
   StatNumberDescriptionStyled,
   StatNumberCountStyled,
 } from './styledComponents'
-import { Typo6 } from '../Typography/Typography'
+import { Typo6 } from '../Typography'
 
 const StatNumber = ({
   description,

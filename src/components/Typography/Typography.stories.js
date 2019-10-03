@@ -9,7 +9,7 @@ import {
   Typo5,
   Typo6,
   Typo7,
-} from './Typography'
+} from '.'
 
 storiesOf('Typography', module)
   .add('typo', () => (

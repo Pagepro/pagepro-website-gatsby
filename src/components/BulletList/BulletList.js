@@ -4,7 +4,7 @@ import {
   BulletListStyled,
   BulletListItemStyled,
 } from './styledComponents'
-import { Typo6 } from '../Typography/Typography'
+import { Typo6 } from '../Typography'
 
 const BulletList = props => {
   const { itemsArray } = props

@@ -6,7 +6,7 @@ import {
   StepSubtitleStyled,
   StepDescStyled,
 } from './styledComponents'
-import { Typo4, Typo6 } from '../Typography/Typography'
+import { Typo4, Typo6 } from '../Typography'
 
 const Step = ({
   title,

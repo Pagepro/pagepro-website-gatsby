@@ -12,7 +12,7 @@ import {
 } from './styledComponents'
 import theme from '../../themes/theme'
 import Link from '../Link/Link'
-import { Typo4 } from '../Typography/Typography'
+import { Typo4 } from '../Typography'
 
 const Project = ({
   reversed,

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Typo5, Typo6 } from '../Typography/Typography'
+import { Typo5, Typo6 } from '../Typography'
 import theme from '../../themes/theme'
 import {
   BenefitStyled,
@@ -15,7 +15,7 @@ const Benefit = ({
   <BenefitStyled>
     <BenefitTitleStyled>
       <Typo5
-        tag="h3"
+        as="h3"
         fontWeight={theme.fontWeight.semiBold}
       >
         {title}

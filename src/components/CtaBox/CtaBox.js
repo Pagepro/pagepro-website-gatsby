@@ -6,14 +6,14 @@ import {
   CtaBoxTextStyled,
   CtaBoxActionsStyled,
 } from './styledComponents'
-import { Typo2, Typo4 } from '../Typography/Typography'
+import { Typo2, Typo4 } from '../Typography'
 import ButtonLink from '../ButtonLink/ButtonLink'
 import { types, sizes } from '../ButtonLink/styledComponents'
 
 const CtaBox = () => (
   <CtaBoxStyled>
     <CtaBoxHeaderStyled>
-      <Typo2 tag="h1">
+      <Typo2 as="h1">
         React Developers
         <CtaBoxMarkStyled>who deliver.</CtaBoxMarkStyled>
       </Typo2>

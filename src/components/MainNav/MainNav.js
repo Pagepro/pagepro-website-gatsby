@@ -4,7 +4,7 @@ import {
   MainNavItemStyled,
   MainNavLinkStyled,
 } from './styledComponents'
-import { Typo7 } from '../Typography/Typography'
+import { Typo7 } from '../Typography'
 
 const MainNav = () => {
   const items = [

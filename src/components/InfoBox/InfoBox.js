@@ -11,7 +11,7 @@ import {
 } from './styledComponents'
 import theme from '../../themes/theme'
 import Link from '../Link/Link'
-import { Typo5, Typo6 } from '../Typography/Typography'
+import { Typo5, Typo6 } from '../Typography'
 
 const InfoBox = ({
   heading,
@@ -25,7 +25,7 @@ const InfoBox = ({
     </InfoBoxIconWrapperStyled>
     <InfoBoxHeadingStyled>
       <Typo5
-        tag="h3"
+        as="h3"
         fontWeight={theme.fontWeight.bold}
       >
         {heading}

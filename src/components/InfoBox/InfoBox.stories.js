@@ -8,7 +8,7 @@ import WordPressIcon from '../../assets/images/svg/word-press.svg'
 import BulletList from '../BulletList/BulletList'
 import Wrapper from '../Wrapper/Wrapper'
 import theme from '../../themes/theme'
-import { Typo6 } from '../Typography/Typography'
+import { Typo6 } from '../Typography'
 
 storiesOf('InfoBox', module)
   .addDecorator(
