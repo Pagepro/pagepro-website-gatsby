@@ -10,6 +10,7 @@ import {
 
 export interface ITypoStyles {
   fontSize?: string[]
+  fontWeight?: number
 }
 
 type IProps = ITypoStyles

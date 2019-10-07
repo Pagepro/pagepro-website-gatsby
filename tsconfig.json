@@ -5,10 +5,10 @@
     "target": "es5",
     "lib": ["es5", "es6", "es7", "es2017", "dom"],
     "sourceMap": true,
-    "allowJs": true,
+    "allowJs": false,
     "jsx": "react",
     "moduleResolution": "node",
-    "rootDir": "src",
+    "rootDirs": ["./src", "./.storybook"],
     "baseUrl": "src",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
@@ -21,13 +21,13 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*.stories.tsx"],
   "exclude": [
-    "node_modules",
     "build",
     "scripts",
     "public",
     ".storybook",
-    ".cache"
+    ".cache",
+    "node_modules"
   ]
 }

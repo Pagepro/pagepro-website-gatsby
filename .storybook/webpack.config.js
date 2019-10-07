@@ -1,4 +1,8 @@
-const storybookTsConfigPath = '../tsconfig.json'
+const path = require('path')
+
+const storybookTsConfigPath = path.resolve(__dirname, '../tsconfig.json')
+
+console.log(storybookTsConfigPath)
 
 module.exports = ({ config }) => {
   config.module.rules.push({
@@ -7,19 +11,23 @@ module.exports = ({ config }) => {
       {
         loader: require.resolve('awesome-typescript-loader'),
         options: {
-          configFileName: storybookTsConfigPath
+          configFileName: storybookTsConfigPath,
+          errorsAsWarnings: true,
+          reportFiles: [
+            'src/**/*.{ts,tsx}'
+          ]
         }
       },
       {
         loader: require.resolve('react-docgen-typescript-loader'),
         options: {
-          tsconfigPath: storybookTsConfigPath,
+          tsconfigPath: storybookTsConfigPath
         }
       }
     ]
   })
 
-  config.resolve.extensions.push('.ts', '.tsx');
+  config.resolve.extensions.push('.ts', '.tsx', 'd.ts');
 
   return config;
 }

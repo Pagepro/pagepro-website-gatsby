@@ -1,4 +1,4 @@
-export default {
+const theme = {
   color: {
     black: '#000',
     white: '#fff',
@@ -78,3 +78,9 @@ export default {
     secondaryBgHover: '#e1ecF2',
   },
 }
+
+export default theme
+
+export type Theme = typeof theme
+
+export type WithTheme<T = {}> = { theme: Theme } & T
