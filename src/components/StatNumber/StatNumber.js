@@ -10,8 +10,9 @@ import { Typo6 } from '../Typography/Typography'
 const StatNumber = ({
   description,
   count,
+  reversed,
 }) => (
-  <StatNumberStyled>
+  <StatNumberStyled reversed={reversed}>
     <StatNumberDescriptionStyled>
       <Typo6>
         {description}
@@ -23,9 +24,15 @@ const StatNumber = ({
   </StatNumberStyled>
 )
 
+
 StatNumber.propTypes = {
   description: PropTypes.string.isRequired,
   count: PropTypes.string.isRequired,
+  reversed: PropTypes.bool,
+}
+
+StatNumber.defaultProps = {
+  reversed: false,
 }
 
 export default StatNumber

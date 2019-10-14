@@ -1,9 +1,12 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const variables = {
   bgDecorWidth: '140px',
   bgDecorHeight: '114px',
+
   countFontSize: '68px',
+
+  bgReversedDecorHeight: '90px',
 }
 
 const StatNumberStyled = styled.div`
@@ -24,6 +27,18 @@ const StatNumberStyled = styled.div`
     content: '';
     background: ${props => props.theme.color.lightGrey};
   }
+
+  /* Reversed */
+  ${({ reversed }) => reversed && css`
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 0;
+
+    &::before {
+      min-height: ${variables.bgReversedDecorHeight};
+      height: ${variables.bgReversedDecorHeight};
+    }
+  `}
 `
 
 const StatNumberDescriptionStyled = styled.div`
