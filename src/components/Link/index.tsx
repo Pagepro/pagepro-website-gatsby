@@ -1,9 +1,10 @@
 import * as React from 'react'
+
 import {
   LinkLabelStyled,
   LinkIconStyled,
   LinkStyled,
-} from './styledComponents'
+} from './styles'
 import GitHub from '../../assets/svg/GitHub'
 import ArrowRight from '../../assets/svg/ArrowRight'
 
