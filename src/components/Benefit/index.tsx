@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 
 import { Typo5, Typo6 } from '../Typography'
 import theme from '../../themes/theme'

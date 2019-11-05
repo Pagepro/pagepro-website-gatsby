@@ -10,6 +10,7 @@
     "moduleResolution": "node",
     "rootDirs": ["./src", "./.storybook"],
     "baseUrl": "src",
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,

@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { configure, addDecorator } from '@storybook/react'
 import theme from '../src/themes/theme'
 import { action } from '@storybook/addon-actions'

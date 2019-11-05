@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { SvgComponent } from 'definitions/Svg'
 
 const GitHub: SvgComponent = props => (
