@@ -2,8 +2,6 @@ const path = require('path')
 
 const storybookTsConfigPath = path.resolve(__dirname, '../tsconfig.json')
 
-console.log(storybookTsConfigPath)
-
 module.exports = ({ config }) => {
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
