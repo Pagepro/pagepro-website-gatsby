@@ -17,4 +17,8 @@ const BulletList: React.FC<IProps> = ({ items }) => (
   </BulletListStyled>
 );
 
+BulletList.defaultProps = {
+  items: [],
+};
+
 export default BulletList;

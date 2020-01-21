@@ -4,12 +4,6 @@ type EnumLike = {
 };
 
 export function getMappedEnum(enumValue: EnumLike) {
-  const enumHasNumberValue = Object.values(enumValue).some(v => typeof v === 'number');
-
-  if (!enumHasNumberValue) {
-    return enumValue;
-  }
-
   return Object.entries(enumValue).reduce((result, [key, value]) => {
     if (typeof value !== 'number') {
       return result;

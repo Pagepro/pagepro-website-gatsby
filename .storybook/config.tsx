@@ -9,10 +9,8 @@ import GlobalStyles from '../src/common/GlobalStyles';
 
 addDecorator(story => (
   <ThemeProvider theme={theme}>
-    <>
-      <GlobalStyles />
-      {story()}
-    </>
+    <GlobalStyles />
+    {story()}
   </ThemeProvider>
 ));
 

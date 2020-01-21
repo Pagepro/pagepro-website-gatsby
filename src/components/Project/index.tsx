@@ -35,15 +35,9 @@ const Project: React.FC<IProps> = ({ reversed, label, desc, technologies, ...oth
         <ProjectImgStyled {...otherProps} />
       </ProjectMediaStyled>
       <ProjectActionStyled>
-        {reversed ? (
-          <Link light withArrow iconColor={theme.color.white} href="#">
-            Read more
-          </Link>
-        ) : (
-          <Link withArrow iconColor={theme.color.red} href="#">
-            Read more
-          </Link>
-        )}
+        <Link light={reversed} withArrow iconColor={reversed ? theme.color.white : theme.color.red} href="#">
+          Read more
+        </Link>
       </ProjectActionStyled>
     </ProjectContentStyled>
   </ProjectStyled>

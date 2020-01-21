@@ -33,7 +33,7 @@ const items = [
 const MainNav: React.FC = () => (
   <MainNavStyled>
     {items.map(({ label, href }) => (
-      <MainNavItemStyled key={`${href}${label}`}>
+      <MainNavItemStyled key={label}>
         <MainNavLinkStyled href={href}>
           <Typo7>{label}</Typo7>
         </MainNavLinkStyled>

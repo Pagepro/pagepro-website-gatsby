@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { transition } from '../../common/mixins';
+import { defaultTransition } from '../../common/mixins';
 import { WithTheme } from '../../themes/theme';
 
 export enum ButtonLinkSize {
@@ -33,7 +33,7 @@ const ButtonLinkStyled = styled.a`
   justify-content: center;
   padding: 0 calc(${({ theme }: ButtonLinkStyledProps) => theme.gutter.gutter24});
   cursor: pointer;
-  ${transition}
+  ${defaultTransition}
 
   /* Primary */
   ${({ buttonType, theme }: ButtonLinkStyledProps) =>

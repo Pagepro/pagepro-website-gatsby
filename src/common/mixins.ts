@@ -1,6 +1,6 @@
 import { WithTheme } from 'themes/theme';
 
-export const transition = `
+export const defaultTransition = `
   transition: 270ms ease;
 `;
 
@@ -74,7 +74,7 @@ export const checkbox = ({ theme }: WithTheme) => `
       display: flex;
       flex-shrink: 0;
       content: '';
-      ${transition}
+      ${defaultTransition}
     }
 
     &::before {

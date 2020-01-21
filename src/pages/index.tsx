@@ -14,7 +14,7 @@ const Page = styled.div`
 `;
 
 const Heading = styled.h1`
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #555;
   margin-top: 60px;
 `;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { transition } from '../../common/mixins';
+import { defaultTransition } from '../../common/mixins';
 
 const SocialMediaLinkStyled = styled.a`
   display: flex;
@@ -8,7 +8,7 @@ const SocialMediaLinkStyled = styled.a`
   color: ${props => props.theme.color.lightGrey};
   padding-left: calc(${props => props.theme.gutter.gutter8});
   padding-right: calc(${props => props.theme.gutter.gutter8});
-  ${transition}
+  ${defaultTransition}
 `;
 
 const SocialMediaListStyled = styled.ul`

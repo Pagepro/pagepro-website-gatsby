@@ -5,8 +5,8 @@ import { RenderFunction } from '@storybook/react';
 const darkWrapperDecorator = (story: RenderFunction) => (
   <div
     style={{
-      background: `${theme.background}`,
-      padding: `${theme.padding}`,
+      background: `${theme.colors.background}`,
+      padding: `${theme.spaces.space6}`,
     }}
   >
     {story()}
