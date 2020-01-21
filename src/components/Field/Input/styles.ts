@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import { fieldReset } from '../../../common/mixins'
+import { fieldReset } from '../../../common/mixins';
 
 const InputStyled = styled.input`
   ${fieldReset}
@@ -14,6 +14,6 @@ const InputStyled = styled.input`
   &::placeholder {
     color: ${props => props.theme.color.blue};
   }
-`
+`;
 
-export default InputStyled
+export default InputStyled;

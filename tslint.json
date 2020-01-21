@@ -1,0 +1,17 @@
+{
+  "extends": ["tslint-config-airbnb", "tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["config/**/*.js", "node_modules/**/*.ts"]
+  },
+  "rules": {
+    "max-line-length": [true, 120],
+    "import-name": false,
+    "object-literal-sort-keys": false,
+    "jsx-boolean-value": false,
+    "function-name": false,
+    "no-console": false,
+    "prefer-template": false,
+    "no-duplicate-imports": false,
+    "ordered-imports": false
+  }
+}

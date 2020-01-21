@@ -1,16 +1,15 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import { decorLink, checkbox } from '../../../common/mixins'
+import { decorLink, checkbox } from '../../../common/mixins';
 
 const CheckboxGroupStyled = styled.div`
   ${checkbox}
-`
+`;
 
 const CheckboxLabelStyled = styled.label`
   color: ${props => props.theme.color.blue};
   font-weight: ${props => props.theme.fontWeight.semiBold};
-  padding-left: calc(${props => props.theme.form.checkboxSize} * .95
-    + ${props => props.theme.gutter.gutter16});
+  padding-left: calc(${props => props.theme.form.checkboxSize} * 0.95 + ${props => props.theme.gutter.gutter16});
 
   a {
     color: ${props => props.theme.color.white};
@@ -32,16 +31,12 @@ const CheckboxLabelStyled = styled.label`
     border: solid transparent;
     border-width: 0 2px 2px 0;
   }
-`
+`;
 
 const CheckboxInputStyled = styled.input`
   &:checked + ${CheckboxLabelStyled}::after {
     border-color: ${props => props.theme.color.white};
   }
-`
+`;
 
-export {
-  CheckboxGroupStyled,
-  CheckboxInputStyled,
-  CheckboxLabelStyled,
-}
+export { CheckboxGroupStyled, CheckboxInputStyled, CheckboxLabelStyled };

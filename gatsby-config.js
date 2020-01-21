@@ -10,7 +10,8 @@ module.exports = {
         injectHTML: true,
         // WebApp Manifest Configuration
       },
-    }, {
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/`,
@@ -23,5 +24,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-typescript',
+    'gatsby-plugin-tslint',
   ],
-}
+};

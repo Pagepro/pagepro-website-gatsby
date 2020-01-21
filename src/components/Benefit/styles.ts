@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const variables = {
   borderColor: '#0E3145',
-}
+};
 
 const BenefitStyled = styled.div`
   width: 100%;
@@ -22,21 +22,18 @@ const BenefitStyled = styled.div`
     content: '';
     background: ${variables.borderColor};
   }
-`
+`;
+
 const BenefitTitleStyled = styled.div`
   position: relative;
   text-transform: uppercase;
   color: ${props => props.theme.color.red};
-`
+`;
 
 const BenefitDescriptionStyled = styled.div`
   position: relative;
   margin-top: ${props => props.theme.gutter.gutter16};
   color: ${props => props.theme.color.white};
-`
+`;
 
-export {
-  BenefitStyled,
-  BenefitDescriptionStyled,
-  BenefitTitleStyled,
-}
+export { BenefitStyled, BenefitDescriptionStyled, BenefitTitleStyled };

@@ -1,6 +1,6 @@
-const path = require('path')
+const path = require('path');
 
-const storybookTsConfigPath = path.resolve(__dirname, '../tsconfig.json')
+const storybookTsConfigPath = path.resolve(__dirname, '../tsconfig.json');
 
 module.exports = ({ config }) => {
   config.module.rules.push({
@@ -11,21 +11,19 @@ module.exports = ({ config }) => {
         options: {
           configFileName: storybookTsConfigPath,
           errorsAsWarnings: true,
-          reportFiles: [
-            'src/**/*.{ts,tsx}'
-          ]
-        }
+          reportFiles: ['src/**/*.{ts,tsx}'],
+        },
       },
       {
         loader: require.resolve('react-docgen-typescript-loader'),
         options: {
-          tsconfigPath: storybookTsConfigPath
-        }
-      }
-    ]
-  })
+          tsconfigPath: storybookTsConfigPath,
+        },
+      },
+    ],
+  });
 
   config.resolve.extensions.push('.ts', '.tsx', 'd.ts');
 
   return config;
-}
+};

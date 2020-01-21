@@ -1,36 +1,26 @@
-import React from 'react'
+import React from 'react';
 
-import {
-  SocialMediaListStyled,
-  SocialMediaItemStyled,
-  SocialMediaLinkStyled,
-  SocialMediaIconStyled,
-} from './styles'
+import { SocialMediaListStyled, SocialMediaItemStyled, SocialMediaLinkStyled, SocialMediaIconStyled } from './styles';
 
 interface ISocialMediaItem {
-  href: string
-  icon: React.ReactNode
+  href: string;
+  icon: React.ReactNode;
 }
 
 interface IProps {
-  items: ISocialMediaItem[]
+  items: ISocialMediaItem[];
 }
 
 const SocialMedia: React.FC<IProps> = ({ items }) => (
   <SocialMediaListStyled>
     {items.map(({ href, icon }) => (
       <SocialMediaItemStyled key={href}>
-        <SocialMediaLinkStyled
-          href={href}
-          target="_blank"
-        >
-          <SocialMediaIconStyled>
-            {icon}
-          </SocialMediaIconStyled>
+        <SocialMediaLinkStyled href={href} target="_blank">
+          <SocialMediaIconStyled>{icon}</SocialMediaIconStyled>
         </SocialMediaLinkStyled>
       </SocialMediaItemStyled>
     ))}
   </SocialMediaListStyled>
-)
+);
 
-export default SocialMedia
+export default SocialMedia;

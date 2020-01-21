@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const LogoLinkStyled = styled.a`
   display: block;
-`
+`;
 
-export default LogoLinkStyled
+export default LogoLinkStyled;

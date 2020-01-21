@@ -1,10 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const variables = {
   bgDecorWidth: '140px',
   bgDecorHeight: '114px',
   countFontSize: '68px',
-}
+};
 
 const StatNumberStyled = styled.div`
   position: relative;
@@ -24,21 +24,17 @@ const StatNumberStyled = styled.div`
     content: '';
     background: ${props => props.theme.color.lightGrey};
   }
-`
+`;
 
 const StatNumberDescriptionStyled = styled.div`
   line-height: ${props => props.theme.lineHeight.normal};
-`
+`;
 
 const StatNumberCountStyled = styled.div`
   font-size: ${variables.countFontSize};
   font-weight: ${props => props.theme.fontWeight.semiBold};
   line-height: ${props => props.theme.lineHeight.normal};
   color: ${props => props.theme.color.red};
-`
+`;
 
-export {
-  StatNumberStyled,
-  StatNumberDescriptionStyled,
-  StatNumberCountStyled,
-}
+export { StatNumberStyled, StatNumberDescriptionStyled, StatNumberCountStyled };

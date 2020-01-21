@@ -1,12 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Helmet } from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-import styled from 'styled-components'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
 
-import GlobalStyles from '../common/GlobalStyles'
+import GlobalStyles from '../common/GlobalStyles';
 
-const App = styled.div``
+const App = styled.div``;
 
 const Layout: React.FC = ({ children }) => (
   <StaticQuery
@@ -23,16 +23,14 @@ const Layout: React.FC = ({ children }) => (
       <>
         <Helmet title={data.site.siteMetadata.title} />
         <GlobalStyles />
-        <App>
-          {children}
-        </App>
+        <App>{children}</App>
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

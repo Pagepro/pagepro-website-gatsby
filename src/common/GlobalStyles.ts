@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 // @ts-ignore
-import reset from 'styled-reset-advanced'
+import reset from 'styled-reset-advanced';
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
@@ -26,6 +26,6 @@ const GlobalStyles = createGlobalStyle`
     display: block;
     max-width: 100%;
   }
-`
+`;
 
-export default GlobalStyles
+export default GlobalStyles;

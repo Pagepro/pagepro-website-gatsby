@@ -1,19 +1,12 @@
-import styled from 'styled-components'
-import {
-  lineHeight,
-  fontSize,
-  color,
-  textStyle,
-  fontWeight,
-  textAlign,
-} from 'styled-system'
+import styled from 'styled-components';
+import { lineHeight, fontSize, color, textStyle, fontWeight, textAlign } from 'styled-system';
 
 export interface ITypoStyles {
-  fontSize?: string[]
-  fontWeight?: number
+  fontSize?: string[];
+  fontWeight?: number;
 }
 
-type IProps = ITypoStyles
+type IProps = ITypoStyles;
 
 const StyledDynamicComponent = styled.p<IProps>`
   ${lineHeight}
@@ -22,6 +15,6 @@ const StyledDynamicComponent = styled.p<IProps>`
   ${textStyle}
   ${fontWeight}
   ${textAlign}
-`
+`;
 
-export default StyledDynamicComponent
+export default StyledDynamicComponent;

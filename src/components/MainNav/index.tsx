@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-import {
-  MainNavStyled,
-  MainNavItemStyled,
-  MainNavLinkStyled,
-} from './styles'
-import { Typo7 } from '../Typography'
+import { MainNavStyled, MainNavItemStyled, MainNavLinkStyled } from './styles';
+import { Typo7 } from '../Typography';
 
 const items = [
   {
@@ -32,7 +28,7 @@ const items = [
     label: 'Contact us',
     href: '#',
   },
-]
+];
 
 const MainNav: React.FC = () => (
   <MainNavStyled>
@@ -44,6 +40,6 @@ const MainNav: React.FC = () => (
       </MainNavItemStyled>
     ))}
   </MainNavStyled>
-)
+);
 
-export default MainNav
+export default MainNav;

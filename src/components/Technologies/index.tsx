@@ -1,19 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-import {
-  TechnologiesStyled,
-  TechnologiesItemStyled,
-} from './styles'
+import { TechnologiesStyled, TechnologiesItemStyled } from './styles';
 
 interface ITechnologiesItem {
-  src: string
-  alt: string
+  src: string;
+  alt: string;
 }
 
 interface IProps {
-  items: ITechnologiesItem[]
+  items: ITechnologiesItem[];
 }
-
 
 const Technologies: React.FC<IProps> = ({ items }) => (
   <TechnologiesStyled>
@@ -23,6 +19,6 @@ const Technologies: React.FC<IProps> = ({ items }) => (
       </TechnologiesItemStyled>
     ))}
   </TechnologiesStyled>
-)
+);
 
-export default Technologies
+export default Technologies;

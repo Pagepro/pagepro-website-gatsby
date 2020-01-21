@@ -1,5 +1,5 @@
-import WrapperStyled from './styles'
+import WrapperStyled from './styles';
 
-const Wrapper = WrapperStyled
+const Wrapper = WrapperStyled;
 
-export default Wrapper
+export default Wrapper;

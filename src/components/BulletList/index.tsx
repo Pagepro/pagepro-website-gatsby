@@ -1,13 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-import {
-  BulletListStyled,
-  BulletListItemStyled,
-} from './styles'
-import { Typo6 } from '../Typography'
+import { BulletListStyled, BulletListItemStyled } from './styles';
+import { Typo6 } from '../Typography';
 
 interface IProps {
-  items: string[]
+  items: string[];
 }
 
 const BulletList: React.FC<IProps> = ({ items }) => (
@@ -18,6 +15,6 @@ const BulletList: React.FC<IProps> = ({ items }) => (
       </BulletListItemStyled>
     ))}
   </BulletListStyled>
-)
+);
 
-export default BulletList
+export default BulletList;

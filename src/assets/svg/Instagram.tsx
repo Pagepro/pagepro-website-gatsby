@@ -1,11 +1,11 @@
-import React from 'react'
-import { SvgComponent } from 'definitions/Svg'
+import React from 'react';
+import { SvgComponent } from 'definitions/Svg';
 
 const Instagram: SvgComponent = props => (
   <svg width="1em" height="1em" viewBox="0 0 16 16" {...props}>
     <path d="M11.6 0H4.4C1.9 0 0 1.9 0 4.4v7.2C0 14 2 16 4.4 16h7.2c2.4 0 4.4-2 4.4-4.4V4.4C16 1.9 14.1 0 11.6 0zm3 11.6c0 1.7-1.4 3-3 3H4.4c-1.7 0-3-1.4-3-3V4.4c0-1.7 1.4-3 3-3h7.2c1.7 0 3 1.4 3 3v7.2z" />
     <path d="M8 3.9C5.7 3.9 3.9 5.7 3.9 8s1.9 4.1 4.1 4.1 4.1-1.9 4.1-4.1c0-2.3-1.8-4.1-4.1-4.1zm0 6.8c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.7 2.7-2.7s2.7 1.2 2.7 2.7c0 1.5-1.2 2.7-2.7 2.7zM12.3 2.6c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7 0 .3.1.5.3.7.2.2.5.3.7.3.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7 0-.3-.1-.5-.3-.7-.1-.1-.4-.3-.7-.3z" />
   </svg>
-)
+);
 
-export default Instagram
+export default Instagram;

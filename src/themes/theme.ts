@@ -77,10 +77,10 @@ const theme = {
     primaryBgHover: '#e72934',
     secondaryBgHover: '#e1ecF2',
   },
-}
+};
 
-export default theme
+export default theme;
 
-export type Theme = typeof theme
+export type Theme = typeof theme;
 
-export type WithTheme<T = {}> = { theme: Theme } & T
+export type WithTheme<T = {}> = { theme: Theme } & T;

@@ -1,9 +1,6 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
-import Color from '.'
+import Color from '.';
 
-storiesOf('Color', module)
-  .add('default', () => (
-    <Color />
-  ))
+storiesOf('Color', module).add('default', () => <Color />);

@@ -1,28 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-import {
-  CheckboxGroupStyled,
-  CheckboxInputStyled,
-  CheckboxLabelStyled,
-} from './styles'
+import { CheckboxGroupStyled, CheckboxInputStyled, CheckboxLabelStyled } from './styles';
 
 interface IProps {
-  id: string
+  id: string;
 }
 
-const Checkbox: React.FC<IProps> = ({
-  id,
-  children,
-}) => (
+const Checkbox: React.FC<IProps> = ({ id, children }) => (
   <CheckboxGroupStyled>
-    <CheckboxInputStyled
-      type="checkbox"
-      {...{ id }}
-    />
-    <CheckboxLabelStyled htmlFor={id}>
-      {children}
-    </CheckboxLabelStyled>
+    <CheckboxInputStyled type="checkbox" {...{ id }} />
+    <CheckboxLabelStyled htmlFor={id}>{children}</CheckboxLabelStyled>
   </CheckboxGroupStyled>
-)
+);
 
-export default Checkbox
+export default Checkbox;

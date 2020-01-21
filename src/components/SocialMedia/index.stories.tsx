@@ -1,20 +1,19 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
-import darkWrapperDecorator
-  from '../../../.storybook/decorators/darkWrapperDecorator'
-import SocialMedia from '.'
-import Instagram from '../../assets/svg/Instagram'
-import Twitter from '../../assets/svg/Twitter'
-import LinkedIn from '../../assets/svg/LinkedIn'
-import Facebook from '../../assets/svg/Facebook'
-import YouTube from '../../assets/svg/YouTube'
+import darkWrapperDecorator from '../../../.storybook/decorators/darkWrapperDecorator';
+import SocialMedia from '.';
+import Instagram from '../../assets/svg/Instagram';
+import Twitter from '../../assets/svg/Twitter';
+import LinkedIn from '../../assets/svg/LinkedIn';
+import Facebook from '../../assets/svg/Facebook';
+import YouTube from '../../assets/svg/YouTube';
 
 storiesOf('SocialMedia', module)
   .addDecorator(darkWrapperDecorator)
   .add('default', () => (
-    <SocialMedia items={
-      [
+    <SocialMedia
+      items={[
         {
           href: 'https://www.instagram.com/pagepro_/',
           icon: <Instagram />,
@@ -35,7 +34,6 @@ storiesOf('SocialMedia', module)
           href: '#',
           icon: <YouTube />,
         },
-      ]
-    }
+      ]}
     />
-  ))
+  ));

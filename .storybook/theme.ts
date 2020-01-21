@@ -1,4 +1,4 @@
 export default {
   background: '#000',
-  padding: '5px'
-}
+  padding: '5px',
+};

@@ -1,16 +1,15 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import { decorLink, checkbox } from '../../../common/mixins'
+import { decorLink, checkbox } from '../../../common/mixins';
 
 const RadioGroupStyled = styled.div`
   ${checkbox}
-`
+`;
 
 const RadioLabelStyled = styled.label`
   color: ${props => props.theme.color.blue};
   font-weight: ${props => props.theme.fontWeight.semiBold};
-  padding-left: calc(${props => props.theme.form.checkboxSize} * .95
-  + ${props => props.theme.gutter.gutter16});
+  padding-left: calc(${props => props.theme.form.checkboxSize} * 0.95 + ${props => props.theme.gutter.gutter16});
 
   a {
     color: ${props => props.theme.color.white};
@@ -32,16 +31,12 @@ const RadioLabelStyled = styled.label`
     background: transparent;
     border-radius: 50px;
   }
-`
+`;
 
 const RadioInputStyled = styled.input`
   &:checked + ${RadioLabelStyled}::after {
     background: ${props => props.theme.color.white};
   }
-`
+`;
 
-export {
-  RadioGroupStyled,
-  RadioInputStyled,
-  RadioLabelStyled,
-}
+export { RadioGroupStyled, RadioInputStyled, RadioLabelStyled };

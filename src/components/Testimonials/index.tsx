@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 import {
   TestimonialsStyled,
   TestimonialsImgWrapperStyled,
@@ -7,24 +8,18 @@ import {
   TestimonialsNameStyled,
   TestimonialsDetailsStyled,
   TestimonialsQuoteStyled,
-} from './styles'
-import { Typo3, Typo5, Typo6 } from '../Typography'
+} from './styles';
+import { Typo3, Typo5, Typo6 } from '../Typography';
 
 interface IProps {
-  name: string
-  profession: string
-  agency: string
-  src: string
-  alt: string
+  name: string;
+  profession: string;
+  agency: string;
+  src: string;
+  alt: string;
 }
 
-const Testimonials: React.FC<IProps> = ({
-  name,
-  profession,
-  agency,
-  children,
-  ...otherProps
-}) => (
+const Testimonials: React.FC<IProps> = ({ name, profession, agency, children, ...otherProps }) => (
   <TestimonialsStyled>
     <TestimonialsHeaderStyled>
       <TestimonialsImgWrapperStyled>
@@ -39,11 +34,9 @@ const Testimonials: React.FC<IProps> = ({
       </TestimonialsDetailsStyled>
     </TestimonialsHeaderStyled>
     <TestimonialsQuoteStyled>
-      <Typo6>
-        {children}
-      </Typo6>
+      <Typo6>{children}</Typo6>
     </TestimonialsQuoteStyled>
   </TestimonialsStyled>
-)
+);
 
-export default Testimonials
+export default Testimonials;

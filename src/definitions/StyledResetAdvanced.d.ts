@@ -1,7 +1,7 @@
-declare module "styled-reset-advanced" {
-  import { FlattenSimpleInterpolation } from "styled-components"
+declare module 'styled-reset-advanced' {
+  import { FlattenSimpleInterpolation } from 'styled-components';
 
-  const reset: FlattenSimpleInterpolation
+  const reset: FlattenSimpleInterpolation;
 
-  export default reset
+  export default reset;
 }

@@ -1,18 +1,15 @@
-import { WithTheme } from "themes/theme"
+import { WithTheme } from 'themes/theme';
 
 export const transition = `
   transition: 270ms ease;
-`
+`;
 
 interface IDecorLinkProps {
-  height?: string
-  hoverUnderlineBg?: string
+  height?: string;
+  hoverUnderlineBg?: string;
 }
 
-export const decorLink = ({
-  height = '1px',
-  hoverUnderlineBg = 'currentColor',
-}: WithTheme<IDecorLinkProps>) => `
+export const decorLink = ({ height = '1px', hoverUnderlineBg = 'currentColor' }: WithTheme<IDecorLinkProps>) => `
   position: relative;
 
   &::after {
@@ -37,7 +34,7 @@ export const decorLink = ({
       background: ${hoverUnderlineBg};
     }
   }
-`
+`;
 
 export const fieldReset = ({ theme }: WithTheme) => `
   width: 100%;
@@ -60,7 +57,7 @@ export const fieldReset = ({ theme }: WithTheme) => `
 
     -webkit-animation-fill-mode: both;
   }
-`
+`;
 
 export const checkbox = ({ theme }: WithTheme) => `
   display: flex;
@@ -91,15 +88,13 @@ export const checkbox = ({ theme }: WithTheme) => `
     opacity: 0;
     overflow: hidden;
   }
-`
+`;
 
 interface IDecorLineProps {
-  backgroundColor?: string
+  backgroundColor?: string;
 }
 
-export const decorLine = ({
-  backgroundColor = 'currentColor',
-}: WithTheme<IDecorLineProps>) => `
+export const decorLine = ({ backgroundColor = 'currentColor' }: WithTheme<IDecorLineProps>) => `
   position: relative;
 
   &::before {
@@ -112,4 +107,4 @@ export const decorLine = ({
     height: 1px;
     background: ${backgroundColor};
   }
-`
+`;

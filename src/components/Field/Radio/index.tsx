@@ -1,28 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-import {
-  RadioGroupStyled,
-  RadioInputStyled,
-  RadioLabelStyled,
-} from './styles'
+import { RadioGroupStyled, RadioInputStyled, RadioLabelStyled } from './styles';
 
 interface IProps {
-  id: string
+  id: string;
 }
 
-const Radio: React.FC<IProps> = ({
-  id,
-  children
-}) => (
+const Radio: React.FC<IProps> = ({ id, children }) => (
   <RadioGroupStyled>
-    <RadioInputStyled
-      type="radio"
-      {...{ id }}
-    />
-    <RadioLabelStyled htmlFor={id}>
-      {children}
-    </RadioLabelStyled>
+    <RadioInputStyled type="radio" {...{ id }} />
+    <RadioLabelStyled htmlFor={id}>{children}</RadioLabelStyled>
   </RadioGroupStyled>
-)
+);
 
-export default Radio
+export default Radio;

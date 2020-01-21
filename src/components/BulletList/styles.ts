@@ -1,16 +1,16 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const BulletListStyled = styled.ul`
-  padding-left: calc(${props => props.theme.gutter.gutter16} * .75);
-`
+  padding-left: calc(${props => props.theme.gutter.gutter16} * 0.75);
+`;
 
 const BulletListItemStyled = styled.li`
   position: relative;
 
   &::before {
     position: absolute;
-    top: .5rem;
-    left: calc(-${props => props.theme.gutter.gutter16} * .75);
+    top: 0.5rem;
+    left: calc(-${props => props.theme.gutter.gutter16} * 0.75);
     display: flex;
     flex-shrink: 0;
     content: '';
@@ -23,13 +23,8 @@ const BulletListItemStyled = styled.li`
   &:not(:last-child) {
     margin-bottom: ${props => props.theme.gutter.gutter16};
   }
-`
+`;
 
-const BulletListLabelStyled = styled.p`
-`
+const BulletListLabelStyled = styled.p``;
 
-export {
-  BulletListStyled,
-  BulletListItemStyled,
-  BulletListLabelStyled,
-}
+export { BulletListStyled, BulletListItemStyled, BulletListLabelStyled };

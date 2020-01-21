@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import Layout from '../components/Layout'
+import Layout from '../components/Layout';
 
 const Page = styled.div`
   width: 100%;
@@ -11,13 +11,13 @@ const Page = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`
+`;
 
 const Heading = styled.h1`
   font-size: 24px;
   color: #555;
   margin-top: 60px;
-`
+`;
 
 const IndexPage = () => (
   <Layout>
@@ -25,6 +25,6 @@ const IndexPage = () => (
       <Heading>Pagepro Website</Heading>
     </Page>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

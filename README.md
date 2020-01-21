@@ -10,16 +10,16 @@
   Gatsby starter that uses Storybook + additional set of tools listed bellow, and provides an easy to start structure to get you up and running with your Gatsby powered site.
 </p>
 
-##  What's inside?
+## What's inside?
 
 - Gatsby (v2)
 - Storybook (v4)
 - Styled Components (v4)
 - Styled Reset (Advanced)
 - Netlify Conf
-- Eslint
 
 ## Quick start
+
 ```bash
 $ gatsby new my-awesome-site https://github.com/markoradak/gatsby-starter-storybook
 
@@ -33,5 +33,5 @@ $ yarn start || yarn develop
 
 ## License
 
-Licensed under the MIT License, Copyright © 2018 Marko Radak.  
+Licensed under the MIT License, Copyright © 2018 Marko Radak.
 See [license](LICENSE) for more information.

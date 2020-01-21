@@ -1,15 +1,15 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 
-import { decorLink } from '../../common/mixins'
-import theme from '../../themes/theme'
+import { decorLink } from '../../common/mixins';
+import theme from '../../themes/theme';
 
 const LinkLabelStyled = styled.span`
   ${decorLink}
   font-size: ${props => props.theme.fontSize.fontSize15};
-`
+`;
 
 interface ILinkStyledProps {
-  light?: boolean
+  light?: boolean;
 }
 
 const LinkStyled = styled.a<ILinkStyledProps>`
@@ -21,9 +21,11 @@ const LinkStyled = styled.a<ILinkStyledProps>`
   font-weight: ${theme.fontWeight.medium};
   cursor: pointer;
 
-  ${props => props.light && css`
-    color: ${theme.color.white};
-  `}
+  ${props =>
+    props.light &&
+    css`
+      color: ${theme.color.white};
+    `}
 
   &:hover {
     ${LinkLabelStyled}::after {
@@ -31,7 +33,7 @@ const LinkStyled = styled.a<ILinkStyledProps>`
       transform-origin: bottom left;
     }
   }
-`
+`;
 
 const LinkIconStyled = styled.span`
   display: flex;
@@ -39,17 +41,13 @@ const LinkIconStyled = styled.span`
   flex-shrink: 0;
 
   & + ${LinkLabelStyled} {
-    margin-left: calc(${props => props.theme.gutter.gutter16} * .3);
+    margin-left: calc(${props => props.theme.gutter.gutter16} * 0.3);
   }
 
   ${LinkLabelStyled} + & {
-    margin-left: calc(${props => props.theme.gutter.gutter16} * .3);
+    margin-left: calc(${props => props.theme.gutter.gutter16} * 0.3);
     margin-top: 2px;
   }
-`
+`;
 
-export {
-  LinkLabelStyled,
-  LinkIconStyled,
-  LinkStyled,
-}
+export { LinkLabelStyled, LinkIconStyled, LinkStyled };

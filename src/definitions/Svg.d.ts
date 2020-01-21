@@ -1,5 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-export type SvgComponentProps = React.SVGAttributes<SVGSVGElement>
+export type SvgComponentProps = React.SVGAttributes<SVGSVGElement>;
 
-export type SvgComponent = React.FC<SvgComponentProps>
+export type SvgComponent = React.FC<SvgComponentProps>;

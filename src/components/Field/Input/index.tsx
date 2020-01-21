@@ -1,5 +1,5 @@
-import InputStyled from './styles'
+import InputStyled from './styles';
 
-const Input = InputStyled
+const Input = InputStyled;
 
-export default Input
+export default Input;

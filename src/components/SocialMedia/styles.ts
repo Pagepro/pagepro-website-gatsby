@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { transition } from '../../common/mixins'
+import styled from 'styled-components';
+import { transition } from '../../common/mixins';
 
 const SocialMediaLinkStyled = styled.a`
   display: flex;
@@ -9,7 +9,7 @@ const SocialMediaLinkStyled = styled.a`
   padding-left: calc(${props => props.theme.gutter.gutter8});
   padding-right: calc(${props => props.theme.gutter.gutter8});
   ${transition}
-`
+`;
 
 const SocialMediaListStyled = styled.ul`
   display: flex;
@@ -17,16 +17,16 @@ const SocialMediaListStyled = styled.ul`
 
   &:hover {
     ${SocialMediaLinkStyled} {
-      opacity: .5;
+      opacity: 0.5;
 
       &:hover {
         opacity: 1;
       }
     }
   }
-`
+`;
 
-const SocialMediaItemStyled = styled.li``
+const SocialMediaItemStyled = styled.li``;
 
 const SocialMediaIconStyled = styled.span`
   display: flex;
@@ -35,11 +35,6 @@ const SocialMediaIconStyled = styled.span`
   svg {
     fill: currentColor;
   }
-`
+`;
 
-export {
-  SocialMediaListStyled,
-  SocialMediaItemStyled,
-  SocialMediaLinkStyled,
-  SocialMediaIconStyled,
-}
+export { SocialMediaListStyled, SocialMediaItemStyled, SocialMediaLinkStyled, SocialMediaIconStyled };
