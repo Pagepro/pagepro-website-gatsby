@@ -9,7 +9,6 @@ import {
   InfoBoxDescStyled,
   InfoBoxActionStyled,
 } from './styles';
-import theme from '../../themes/theme';
 import Link from '../Link';
 import { Typo5, Typo6 } from '../Typography';
 
@@ -27,14 +26,14 @@ const InfoBox: React.FC<IProps> = ({ heading, title, children, ...otherProps }) 
       <InfoBoxIconStyled {...otherProps} />
     </InfoBoxIconWrapperStyled>
     <InfoBoxHeadingStyled>
-      <Typo5 as="h3" fontWeight={theme.fontWeight.bold}>
+      <Typo5 as="h3" fontWeight="bold">
         {heading}
       </Typo5>
     </InfoBoxHeadingStyled>
     <InfoBoxDescStyled>
       {title ? (
         <InfoBoxTitleStyled>
-          <Typo6 fontWeight={theme.fontWeight.bold} color={theme.color.mediumGrey}>
+          <Typo6 fontWeight="bold" color="mediumGrey">
             {title}
           </Typo6>
         </InfoBoxTitleStyled>
@@ -42,7 +41,7 @@ const InfoBox: React.FC<IProps> = ({ heading, title, children, ...otherProps }) 
       {children}
     </InfoBoxDescStyled>
     <InfoBoxActionStyled>
-      <Link withArrow iconColor={theme.color.red} href="#">
+      <Link withArrow iconColor="red" href="#">
         More
       </Link>
     </InfoBoxActionStyled>

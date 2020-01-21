@@ -15,7 +15,7 @@ export const decorLink = ({ height = '1px', hoverUnderlineBg = 'currentColor' }:
   &::after {
     position: absolute;
     right: 0;
-    bottom: -2px;
+    bottom: -0.125rem;
     left: 0;
     display: block;
     width: 100%;
@@ -36,14 +36,14 @@ export const decorLink = ({ height = '1px', hoverUnderlineBg = 'currentColor' }:
   }
 `;
 
-export const fieldReset = ({ theme }: WithTheme) => `
+export const fieldReset = () => `
   width: 100%;
   appearance: none;
   border: 0;
   border-radius: 0;
   background: transparent;
   box-shadow: none;
-  font-size: ${theme.fontSize.fontSize15};
+  font-size: 1rem;
 
   &::-ms-expand {
     display: none;
@@ -59,13 +59,13 @@ export const fieldReset = ({ theme }: WithTheme) => `
   }
 `;
 
-export const checkbox = ({ theme }: WithTheme) => `
+export const checkbox = () => `
   display: flex;
   flex-wrap: wrap;
 
   label {
     position: relative;
-    font-size: ${theme.fontSize.fontSize15};
+    font-size: 1rem;
     cursor: pointer;
 
     &::before,
@@ -103,8 +103,8 @@ export const decorLine = ({ backgroundColor = 'currentColor' }: WithTheme<IDecor
     left: 0;
     display: block;
     content: '';
-    width: 54px;
-    height: 1px;
+    width: 3.375rem;
+    height: 0.0625rem;
     background: ${backgroundColor};
   }
 `;

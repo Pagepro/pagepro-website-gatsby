@@ -6,18 +6,18 @@ const variables = {
 
 const BenefitStyled = styled.div`
   width: 100%;
-  padding-top: ${props => props.theme.gutter.gutter24};
-  padding-bottom: ${props => props.theme.gutter.gutter24};
-  padding-right: ${props => props.theme.gutter.gutter40};
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 2.5rem;
   position: relative;
 
   &::before {
     position: absolute;
     top: 0;
-    left: ${props => props.theme.gutter.gutter40};
+    left: 2.5rem;
     display: flex;
     height: 100%;
-    width: ${props => `calc(100% - ${props.theme.gutter.gutter40})`};
+    width: calc(100% - 2.5rem);
     z-index: 0;
     content: '';
     background: ${variables.borderColor};
@@ -27,13 +27,13 @@ const BenefitStyled = styled.div`
 const BenefitTitleStyled = styled.div`
   position: relative;
   text-transform: uppercase;
-  color: ${props => props.theme.color.red};
+  color: ${props => props.theme.colors.red};
 `;
 
 const BenefitDescriptionStyled = styled.div`
   position: relative;
-  margin-top: ${props => props.theme.gutter.gutter16};
-  color: ${props => props.theme.color.white};
+  margin-top: 1rem;
+  color: ${props => props.theme.colors.white};
 `;
 
 export { BenefitStyled, BenefitDescriptionStyled, BenefitTitleStyled };

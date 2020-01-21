@@ -3,7 +3,7 @@ import React from 'react';
 import theme from '../../themes/theme';
 
 const Color = () => {
-  const { color: colors } = theme;
+  const { colors } = theme;
 
   return (
     <ul
@@ -20,9 +20,9 @@ const Color = () => {
           style={{
             display: 'flex',
             alignItems: 'center',
-            margin: '16px',
+            margin: '1rem',
             textAlign: 'center',
-            fontSize: '12px',
+            fontSize: '0.75rem',
             textTransform: 'uppercase',
             fontWeight: 500,
             flexDirection: 'column',
@@ -33,21 +33,21 @@ const Color = () => {
             <div
               style={{
                 backgroundColor: colors[key],
-                width: '100px',
-                height: '64px',
+                width: '6.25rem',
+                height: '4rem',
                 border: '1px solid #eee',
-                marginBottom: '16px',
-                borderRadius: '6px',
+                marginBottom: '1rem',
+                borderRadius: '0.375rem',
               }}
             />
           ) : (
             <div
               style={{
                 backgroundColor: colors[key],
-                width: '100px',
-                height: '64px',
-                marginBottom: '16px',
-                borderRadius: '6px',
+                width: '6.25rem',
+                height: '4rem',
+                marginBottom: '1rem',
+                borderRadius: '0.375rem',
               }}
             />
           )}

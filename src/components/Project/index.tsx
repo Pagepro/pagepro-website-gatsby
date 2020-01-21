@@ -10,7 +10,6 @@ import {
   ProjectTechnologiesStyled,
   ProjectActionStyled,
 } from './styles';
-import theme from '../../themes/theme';
 import Link from '../Link';
 import { Typo4 } from '../Typography';
 
@@ -36,11 +35,11 @@ const Project: React.FC<IProps> = ({ reversed, label, desc, technologies, ...oth
       </ProjectMediaStyled>
       <ProjectActionStyled>
         {reversed ? (
-          <Link light withArrow iconColor={theme.color.white} href="#">
+          <Link light withArrow iconColor="white" href="#">
             Read more
           </Link>
         ) : (
-          <Link withArrow iconColor={theme.color.red} href="#">
+          <Link withArrow iconColor="red" href="#">
             Read more
           </Link>
         )}

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const variables = {
-  width: '560px',
+  width: '35rem',
 };
 
 const CtaBoxStyled = styled.div`
@@ -10,27 +10,27 @@ const CtaBoxStyled = styled.div`
 `;
 
 const CtaBoxHeaderStyled = styled.div`
-  color: ${props => props.theme.color.lightGrey};
-  font-weight: ${props => props.theme.fontWeight.semiBold};
-  line-height: ${props => props.theme.lineHeight.small};
-  margin-bottom: calc(${props => props.theme.gutter.gutter16} * 3.5);
+  color: ${props => props.theme.colors.lightGrey};
+  font-weight: ${props => props.theme.fontWeights.semiBold};
+  line-height: ${props => props.theme.lineHeights.small};
+  margin-bottom: 3.5rem;
 `;
 
 const CtaBoxMarkStyled = styled.span`
   display: block;
-  color: ${props => props.theme.color.red};
+  color: ${props => props.theme.colors.red};
 `;
 
 const CtaBoxTextStyled = styled.div`
-  color: ${props => props.theme.color.lightGrey};
-  line-height: ${props => props.theme.lineHeight.big};
-  margin-bottom: calc(${props => props.theme.gutter.gutter16} * 3.5);
+  color: ${props => props.theme.colors.lightGrey};
+  line-height: ${props => props.theme.lineHeights.big};
+  margin-bottom: 3.5rem;
 `;
 
 const CtaBoxActionsStyled = styled.div`
   display: flex;
   .button:not(:last-child) {
-    margin-right: calc(${props => props.theme.gutter.gutter32});
+    margin-right: 2rem;
   }
 `;
 

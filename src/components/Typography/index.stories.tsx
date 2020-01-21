@@ -8,79 +8,79 @@ storiesOf('Typography', module).add('typo', () => (
     <Typo4
       style={{
         fontWeight: 600,
-        marginBottom: '30px',
+        marginBottom: '1.875rem',
       }}
     >
-      Visual TypeScale / Major Third (1.25) / Base Size: 15px
+      Visual TypeScale / Major Third (1.25) / Base Size: 16px
     </Typo4>
     <Typo1>A Visual Type Scale</Typo1>
     <p
       style={{
-        marginBottom: '20px',
-        fontSize: '12px',
+        marginBottom: '1.25rem',
+        fontSize: '0.75rem',
       }}
     >
-      Typo 1: 3.052rem // 45.78px
+      Typo 1: 3.052rem // 48.83px
     </p>
 
     <Typo2>A Visual Type Scale</Typo2>
     <p
       style={{
-        marginBottom: '20px',
-        fontSize: '12px',
+        marginBottom: '1.25rem',
+        fontSize: '0.75rem',
       }}
     >
-      Typo 2: 2.441rem // 36.62px
+      Typo 2: 2.441rem // 39.06px
     </p>
 
     <Typo3>A Visual Type Scale</Typo3>
     <p
       style={{
-        marginBottom: '20px',
-        fontSize: '12px',
+        marginBottom: '1.25rem',
+        fontSize: '0.75rem',
       }}
     >
-      Typo 3: 1.953rem // 29.30px
+      Typo 3: 1.953rem // 31.25px
     </p>
 
     <Typo4>A Visual Type Scale</Typo4>
     <p
       style={{
-        marginBottom: '20px',
-        fontSize: '12px',
+        marginBottom: '1.25rem',
+        fontSize: '0.75rem',
       }}
     >
-      Typo 4: 1.563rem // 23.44px
+      Typo 4: 1.563rem // 25.00px
     </p>
 
     <Typo5>A Visual Type Scale</Typo5>
     <p
       style={{
-        marginBottom: '20px',
-        fontSize: '12px',
+        marginBottom: '1.25rem',
+        fontSize: '0.75rem',
       }}
     >
-      Typo 5: 1.25rem // 18.75px
+      Typo 5: 1.25rem // 20.00px
     </p>
 
     <Typo6>A Visual Type Scale</Typo6>
     <p
       style={{
-        marginBottom: '20px',
-        fontSize: '12px',
+        marginBottom: '1.25rem',
+        fontSize: '0.75rem',
       }}
     >
-      Typo 6: 1rem // 15px
+      Typo 6: 1rem // 16px
     </p>
 
     <Typo7>A Visual Type Scale</Typo7>
     <p
       style={{
-        marginBottom: '20px',
-        fontSize: '12px',
+        marginBottom: '1.25rem',
+        fontSize: '0.75rem',
       }}
     >
-      Typo 7: 0.8rem // 12px
+      Typo 7: 0.8rem // 12.8px
     </p>
   </>
 ));

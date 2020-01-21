@@ -17,59 +17,59 @@ storiesOf('Technologies', module).add('default', () => (
     items={[
       {
         src: Angular,
-        alt: 'Picture',
+        alt: 'Picture1',
       },
       {
         src: WordPress,
-        alt: 'Picture',
+        alt: 'Picture2',
       },
       {
         src: Html5,
-        alt: 'Picture',
+        alt: 'Picture3',
       },
       {
         src: ReactIcon,
-        alt: 'Picture',
+        alt: 'Picture4',
       },
       {
         src: Redux,
-        alt: 'Picture',
+        alt: 'Picture5',
       },
       {
         src: ReactNative,
-        alt: 'Picture',
+        alt: 'Picture6',
       },
       {
         src: Gulp,
-        alt: 'Picture',
+        alt: 'Picture7',
       },
       {
         src: Css3,
-        alt: 'Picture',
+        alt: 'Picture8',
       },
       {
         src: Angular,
-        alt: 'Picture',
+        alt: 'Picture9',
       },
       {
         src: WordPress,
-        alt: 'Picture',
+        alt: 'Picture10',
       },
       {
         src: Html5,
-        alt: 'Picture',
+        alt: 'Picture11',
       },
       {
         src: ReactIcon,
-        alt: 'Picture',
+        alt: 'Picture12',
       },
       {
         src: Redux,
-        alt: 'Picture',
+        alt: 'Picture13',
       },
       {
         src: ReactNative,
-        alt: 'Picture',
+        alt: 'Picture14',
       },
     ]}
   />

@@ -5,7 +5,7 @@ import theme from '../../themes/theme';
 
 const LinkLabelStyled = styled.span`
   ${decorLink}
-  font-size: ${props => props.theme.fontSize.fontSize15};
+  font-size: 1rem;
 `;
 
 interface ILinkStyledProps {
@@ -17,14 +17,14 @@ const LinkStyled = styled.a<ILinkStyledProps>`
   display: inline-flex;
   align-items: center;
   line-height: 1;
-  color: ${theme.color.darkNavy};
-  font-weight: ${theme.fontWeight.medium};
+  color: ${theme.colors.darkNavy};
+  font-weight: ${theme.fontWeights.medium};
   cursor: pointer;
 
   ${props =>
     props.light &&
     css`
-      color: ${theme.color.white};
+      color: ${theme.colors.white};
     `}
 
   &:hover {
@@ -41,12 +41,12 @@ const LinkIconStyled = styled.span`
   flex-shrink: 0;
 
   & + ${LinkLabelStyled} {
-    margin-left: calc(${props => props.theme.gutter.gutter16} * 0.3);
+    margin-left: 0.3125rem;
   }
 
   ${LinkLabelStyled} + & {
-    margin-left: calc(${props => props.theme.gutter.gutter16} * 0.3);
-    margin-top: 2px;
+    margin-left: 0.3125rem;
+    margin-top: 0.125rem;
   }
 `;
 
