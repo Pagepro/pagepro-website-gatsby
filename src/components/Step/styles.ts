@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
+import Container from '../Container';
+
 const variables = {
   stepWidth: '25rem',
 };
 
-const StepStyled = styled.div`
+const StepStyled = styled(Container)`
   max-width: ${variables.stepWidth};
-  padding: 2rem;
   border: 2px solid ${props => props.theme.colors.lightGrey};
   font-weight: ${props => props.theme.fontWeights.semiBold};
 `;

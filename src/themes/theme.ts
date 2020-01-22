@@ -49,6 +49,7 @@ export const theme: IThemeInterface = {
     small: 1.15,
     normal: 1,
   },
+  transitionDuration: 200,
 };
 
 export default theme;

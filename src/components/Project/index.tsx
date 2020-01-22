@@ -23,7 +23,7 @@ interface IProps {
 }
 
 const Project: React.FC<IProps> = ({ reversed, label, desc, technologies, ...otherProps }) => (
-  <ProjectStyled reversed={reversed}>
+  <ProjectStyled reversed={reversed} p="2rem 3rem" mt="1rem">
     <ProjectContentStyled>
       <ProjectHeaderStyled>
         <Typo4>{label}</Typo4>
@@ -34,15 +34,9 @@ const Project: React.FC<IProps> = ({ reversed, label, desc, technologies, ...oth
         <ProjectImgStyled {...otherProps} />
       </ProjectMediaStyled>
       <ProjectActionStyled>
-        {reversed ? (
-          <Link light withArrow iconColor="white" href="#">
-            Read more
-          </Link>
-        ) : (
-          <Link withArrow iconColor="red" href="#">
-            Read more
-          </Link>
-        )}
+        <Link light={reversed} withArrow iconColor={reversed ? 'white' : 'red'} href="#">
+          Read more
+        </Link>
       </ProjectActionStyled>
     </ProjectContentStyled>
   </ProjectStyled>

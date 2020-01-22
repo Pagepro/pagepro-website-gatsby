@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { rgba } from 'polished';
 
 import { decorLine } from '../../common/mixins';
+import Container from '../Container';
 
 interface IProjectStyledProps {
   reversed?: boolean;
@@ -44,11 +45,9 @@ const ProjectTechnologiesStyled = styled.div`
 
 const ProjectActionStyled = styled.div``;
 
-const ProjectStyled = styled.div<IProjectStyledProps>`
+const ProjectStyled = styled(Container)<IProjectStyledProps>`
   position: relative;
   width: 100%;
-  padding: 2rem 3rem;
-  margin-top: 1rem;
   min-height: ${variables.projectMinHeight};
   background: ${props => rgba(props.theme.colors.mediumGrey, 0.2)};
 

@@ -1,4 +1,8 @@
 export default {
-  background: '#000',
-  padding: '0.3125rem',
+  colors: {
+    background: '#000',
+  },
+  spaces: {
+    space6: '0.375rem',
+  },
 };

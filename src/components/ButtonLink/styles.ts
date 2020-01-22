@@ -1,7 +1,5 @@
 import styled, { css } from 'styled-components';
 
-import { transition } from '../../common/mixins';
-
 export enum ButtonLinkSize {
   medium,
   big,
@@ -38,7 +36,7 @@ const ButtonLinkStyled = styled.a<IProps>`
   justify-content: center;
   padding: 0 1.5rem;
   cursor: pointer;
-  ${transition}
+  transition: ${props => props.theme.transitionDuration}ms ease;
 
   /* Primary */
   ${({ buttonType, theme }) =>

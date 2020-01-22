@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 
+import Container from '../Container';
+
 const variables = {
   borderColor: '#0E3145',
 };
 
-const BenefitStyled = styled.div`
-  width: 100%;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-right: 2.5rem;
+const BenefitStyled = styled(Container)`
   position: relative;
+  width: 100%;
 
   &::before {
     position: absolute;

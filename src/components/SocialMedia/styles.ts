@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { transition } from '../../common/mixins';
 
 const SocialMediaLinkStyled = styled.a`
   display: flex;
@@ -8,7 +7,7 @@ const SocialMediaLinkStyled = styled.a`
   color: ${props => props.theme.colors.lightGrey};
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  ${transition}
+  transition: ${props => props.theme.transitionDuration}ms ease;
 `;
 
 const SocialMediaListStyled = styled.ul`

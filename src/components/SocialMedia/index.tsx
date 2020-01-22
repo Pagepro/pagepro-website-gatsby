@@ -23,4 +23,8 @@ const SocialMedia: React.FC<IProps> = ({ items }) => (
   </SocialMediaListStyled>
 );
 
+SocialMedia.defaultProps = {
+  items: [],
+};
+
 export default SocialMedia;

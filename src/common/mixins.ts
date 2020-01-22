@@ -1,9 +1,5 @@
 import { WithTheme } from 'themes/theme';
 
-export const transition = `
-  transition: 270ms ease;
-`;
-
 interface IDecorLinkProps {
   height?: string;
   hoverUnderlineBg?: string;
@@ -59,7 +55,7 @@ export const fieldReset = () => `
   }
 `;
 
-export const checkbox = () => `
+export const checkbox = ({ theme }: WithTheme) => `
   display: flex;
   flex-wrap: wrap;
 
@@ -74,7 +70,7 @@ export const checkbox = () => `
       display: flex;
       flex-shrink: 0;
       content: '';
-      ${transition}
+      transition: ${theme.transitionDuration}ms ease;
     }
 
     &::before {
