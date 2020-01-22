@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
 
 import { defaultTransition } from '../../common/mixins';
-import { WithTheme } from '../../themes/theme';
 
 export enum ButtonLinkSize {
   medium,
@@ -20,23 +19,21 @@ interface IProps {
   left?: boolean;
 }
 
-type ButtonLinkStyledProps = WithTheme<IProps>;
-
-const ButtonLinkStyled = styled.a`
+const ButtonLinkStyled = styled.a<IProps>`
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
   width: auto;
-  min-width: ${({ theme }: ButtonLinkStyledProps) => theme.btn.width};
-  font-size: ${({ theme }: ButtonLinkStyledProps) => theme.fontSize.fontSize15};
-  font-weight: ${({ theme }: ButtonLinkStyledProps) => theme.fontWeight.semiBold};
+  min-width: ${({ theme }) => theme.btn.width};
+  font-size: ${({ theme }) => theme.fontSize.fontSize15};
+  font-weight: ${({ theme }) => theme.fontWeight.semiBold};
   justify-content: center;
-  padding: 0 calc(${({ theme }: ButtonLinkStyledProps) => theme.gutter.gutter24});
+  padding: 0 calc(${({ theme }) => theme.gutter.gutter24});
   cursor: pointer;
   ${defaultTransition}
 
   /* Primary */
-  ${({ buttonType, theme }: ButtonLinkStyledProps) =>
+  ${({ buttonType, theme }) =>
     buttonType === ButtonLinkType.primary &&
     css`
       background-color: ${theme.color.red};
@@ -60,7 +57,7 @@ const ButtonLinkStyled = styled.a`
     `}
 
   /* Outline */
-  ${({ buttonType, theme }: ButtonLinkStyledProps) =>
+  ${({ buttonType, theme }) =>
     buttonType === ButtonLinkType.outline &&
     css`
       background-color: ${theme.color.white};
@@ -73,21 +70,21 @@ const ButtonLinkStyled = styled.a`
     `}
 
   /* Medium */
-  ${({ size, theme }: ButtonLinkStyledProps) =>
+  ${({ size, theme }) =>
     size === ButtonLinkSize.medium &&
     css`
       height: ${theme.btn.heightMedium};
     `}
 
   /* Big */
-  ${({ size, theme }: ButtonLinkStyledProps) =>
+  ${({ size, theme }) =>
     size === ButtonLinkSize.big &&
     css`
       height: ${theme.btn.heightBig};
     `}
 
   /* Left */
-  ${({ left }: ButtonLinkStyledProps) =>
+  ${({ left }) =>
     left &&
     css`
       justify-content: flex-start;
