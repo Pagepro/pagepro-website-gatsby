@@ -10,20 +10,20 @@ const CtaBoxStyled = styled.div`
 `;
 
 const CtaBoxHeaderStyled = styled.div`
-  color: ${props => props.theme.colors.lightGrey};
-  font-weight: ${props => props.theme.fontWeights.semiBold};
-  line-height: ${props => props.theme.lineHeights.small};
+  color: ${({ theme }) => theme.colors.lightGrey};
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
+  line-height: ${({ theme }) => theme.lineHeights.small};
   margin-bottom: 3.5rem;
 `;
 
 const CtaBoxMarkStyled = styled.span`
   display: block;
-  color: ${props => props.theme.colors.red};
+  color: ${({ theme }) => theme.colors.red};
 `;
 
 const CtaBoxTextStyled = styled.div`
-  color: ${props => props.theme.colors.lightGrey};
-  line-height: ${props => props.theme.lineHeights.big};
+  color: ${({ theme }) => theme.colors.lightGrey};
+  line-height: ${({ theme }) => theme.lineHeights.big};
   margin-bottom: 3.5rem;
 `;
 

@@ -20,8 +20,8 @@ const MainNavLinkStyled = styled.a`
       hoverUnderlineBg: theme.colors.red,
     })}
   display: block;
-  color: ${props => props.theme.colors.lightGrey};
-  font-weight: ${props => props.theme.fontWeights.semiBold};
+  color: ${({ theme }) => theme.colors.lightGrey};
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
 `;
 
 export { MainNavStyled, MainNavItemStyled, MainNavLinkStyled };

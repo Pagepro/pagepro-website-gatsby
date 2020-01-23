@@ -4,10 +4,10 @@ const SocialMediaLinkStyled = styled.a`
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  color: ${props => props.theme.colors.lightGrey};
+  color: ${({ theme }) => theme.colors.lightGrey};
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  transition: ${props => props.theme.transitionDuration}ms ease;
+  transition: ${({ theme }) => theme.transitionDuration}ms ease;
 `;
 
 const SocialMediaListStyled = styled.ul`

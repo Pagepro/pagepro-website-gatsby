@@ -29,7 +29,7 @@ const ProjectImgStyled = styled.img`
 
 const ProjectHeaderStyled = styled.div`
   text-transform: uppercase;
-  font-weight: ${props => props.theme.fontWeights.semiBold};
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   margin-bottom: 1rem;
 `;
 

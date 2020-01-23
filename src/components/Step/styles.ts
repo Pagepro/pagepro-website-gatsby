@@ -8,18 +8,18 @@ const variables = {
 
 const StepStyled = styled(Container)`
   max-width: ${variables.stepWidth};
-  border: 2px solid ${props => props.theme.colors.lightGrey};
-  font-weight: ${props => props.theme.fontWeights.semiBold};
+  border: 2px solid ${({ theme }) => theme.colors.lightGrey};
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
 `;
 
 const StepTitleStyled = styled.div`
   text-transform: uppercase;
-  line-height: ${props => props.theme.lineHeights.medium};
+  line-height: ${({ theme }) => theme.lineHeights.medium};
 `;
 
 const StepSubtitleStyled = styled.div`
   margin-top: 1.5rem;
-  color: ${props => props.theme.colors.red};
+  color: ${({ theme }) => theme.colors.red};
 `;
 
 const StepDescStyled = styled.div`

@@ -22,19 +22,19 @@ const StatNumberStyled = styled.div`
     width: ${variables.bgDecorWidth};
     min-height: ${variables.bgDecorHeight};
     content: '';
-    background: ${props => props.theme.colors.lightGrey};
+    background: ${({ theme }) => theme.colors.lightGrey};
   }
 `;
 
 const StatNumberDescriptionStyled = styled.div`
-  line-height: ${props => props.theme.lineHeights.normal};
+  line-height: ${({ theme }) => theme.lineHeights.normal};
 `;
 
 const StatNumberCountStyled = styled.div`
   font-size: ${variables.countFontSize};
-  font-weight: ${props => props.theme.fontWeights.semiBold};
-  line-height: ${props => props.theme.lineHeights.normal};
-  color: ${props => props.theme.colors.red};
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
+  line-height: ${({ theme }) => theme.lineHeights.normal};
+  color: ${({ theme }) => theme.colors.red};
 `;
 
 export { StatNumberStyled, StatNumberDescriptionStyled, StatNumberCountStyled };

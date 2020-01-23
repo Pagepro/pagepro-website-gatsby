@@ -26,13 +26,13 @@ const BenefitStyled = styled(Container)`
 const BenefitTitleStyled = styled.div`
   position: relative;
   text-transform: uppercase;
-  color: ${props => props.theme.colors.red};
+  color: ${({ theme }) => theme.colors.red};
 `;
 
 const BenefitDescriptionStyled = styled.div`
   position: relative;
   margin-top: 1rem;
-  color: ${props => props.theme.colors.white};
+  color: ${({ theme }) => theme.colors.white};
 `;
 
 export { BenefitStyled, BenefitDescriptionStyled, BenefitTitleStyled };

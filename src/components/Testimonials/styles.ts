@@ -30,20 +30,20 @@ const TestimonialsHeaderStyled = styled.div`
     content: '';
     width: ${variables.decorWidth};
     height: 0.0625rem;
-    background: ${props => props.theme.colors.red};
+    background: ${({ theme }) => theme.colors.red};
     margin: calc(1rem * 1.25) auto 0;
   }
 `;
 
 const TestimonialsNameStyled = styled.div`
-  font-weight: ${props => props.theme.fontWeights.semiBold};
-  color: ${props => props.theme.colors.darkGrey};
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
+  color: ${({ theme }) => theme.colors.darkGrey};
   margin: 1rem;
 `;
 
 const TestimonialsDetailsStyled = styled.div`
-  font-weight: ${props => props.theme.fontWeights.semiBold};
-  color: ${props => props.theme.colors.darkGrey};
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
+  color: ${({ theme }) => theme.colors.darkGrey};
 
   .agency {
     margin-top: calc(1rem / 8);

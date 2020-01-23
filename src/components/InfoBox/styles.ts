@@ -35,7 +35,7 @@ const InfoBoxIconStyled = styled.img`
 
 const InfoBoxHeadingStyled = styled.div`
   margin-bottom: 1.5rem;
-  color: ${props => props.theme.colors.darkGrey};
+  color: ${({ theme }) => theme.colors.darkGrey};
 `;
 
 const InfoBoxTitleStyled = styled.div`
@@ -44,7 +44,7 @@ const InfoBoxTitleStyled = styled.div`
 
 const InfoBoxDescStyled = styled.div`
   flex-grow: 1;
-  color: ${props => rgba(props.theme.colors.mediumGrey, 0.6)};
+  color: ${({ theme }) => rgba(theme.colors.mediumGrey, 0.6)};
   margin-bottom: 1.5rem;
 `;
 

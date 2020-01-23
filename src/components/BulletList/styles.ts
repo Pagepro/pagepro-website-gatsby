@@ -16,7 +16,7 @@ const BulletListItemStyled = styled.li`
     content: '';
     width: 0.1875rem;
     height: 0.1875rem;
-    background: ${props => props.theme.colors.red};
+    background: ${({ theme }) => theme.colors.red};
     border-radius: 50%;
   }
 

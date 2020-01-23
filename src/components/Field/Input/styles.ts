@@ -8,15 +8,15 @@ const variables = {
 
 const InputStyled = styled.input`
   ${fieldReset}
-  color: ${props => props.theme.colors.white};
+  color: ${({ theme }) => theme.colors.white};
   font-size: 0.875rem;
-  font-weight: ${props => props.theme.fontWeights.regular};
+  font-weight: ${({ theme }) => theme.fontWeights.regular};
   padding: 1rem;
-  background: ${props => props.theme.colors.navy};
+  background: ${({ theme }) => theme.colors.navy};
   height: ${variables.fieldHeight};
 
   &::placeholder {
-    color: ${props => props.theme.colors.blue};
+    color: ${({ theme }) => theme.colors.blue};
   }
 `;
 

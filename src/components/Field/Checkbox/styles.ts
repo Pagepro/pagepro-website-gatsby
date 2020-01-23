@@ -13,17 +13,17 @@ const CheckboxGroupStyled = styled.div`
 `;
 
 const CheckboxLabelStyled = styled.label`
-  color: ${props => props.theme.colors.blue};
-  font-weight: ${props => props.theme.fontWeights.semiBold};
+  color: ${({ theme }) => theme.colors.blue};
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   padding-left: calc(${variables.checkboxSize} * 0.95 + 1rem);
 
   a {
-    color: ${props => props.theme.colors.white};
+    color: ${({ theme }) => theme.colors.white};
     ${decorLink}
   }
 
   &::before {
-    border: 2px solid ${props => props.theme.colors.navy};
+    border: 2px solid ${({ theme }) => theme.colors.navy};
     width: ${variables.checkboxSize};
     height: ${variables.checkboxSize};
   }
@@ -41,7 +41,7 @@ const CheckboxLabelStyled = styled.label`
 
 const CheckboxInputStyled = styled.input`
   &:checked + ${CheckboxLabelStyled}::after {
-    border-color: ${props => props.theme.colors.white};
+    border-color: ${({ theme }) => theme.colors.white};
   }
 `;
 

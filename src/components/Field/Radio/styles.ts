@@ -12,12 +12,12 @@ const RadioGroupStyled = styled.div`
 `;
 
 const RadioLabelStyled = styled.label`
-  color: ${props => props.theme.colors.blue};
-  font-weight: ${props => props.theme.fontWeights.semiBold};
+  color: ${({ theme }) => theme.colors.blue};
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   padding-left: calc(${variables.checkboxSize} * 0.95 + 1rem);
 
   a {
-    color: ${props => props.theme.colors.white};
+    color: ${({ theme }) => theme.colors.white};
     ${decorLink}
   }
 
@@ -27,7 +27,7 @@ const RadioLabelStyled = styled.label`
   }
 
   &::before {
-    border: 2px solid ${props => props.theme.colors.navy};
+    border: 2px solid ${({ theme }) => theme.colors.navy};
     width: ${variables.checkboxSize};
     height: ${variables.checkboxSize};
   }
@@ -43,7 +43,7 @@ const RadioLabelStyled = styled.label`
 
 const RadioInputStyled = styled.input`
   &:checked + ${RadioLabelStyled}::after {
-    background: ${props => props.theme.colors.white};
+    background: ${({ theme }) => theme.colors.white};
   }
 `;
 
