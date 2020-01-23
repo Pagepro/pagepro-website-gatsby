@@ -31,7 +31,7 @@ storiesOf('InfoBox', module)
     </InfoBox>
   ))
   .add('with white bg and paddings', () => (
-    <Container background="white" p="1.5rem">
+    <Container p="1.5rem" bg="white">
       <InfoBox heading="React Development" src={ReactNativeIcon} alt="React">
         <Typo7>
           Gain access to our senior leaders and benefit from their insights into the technology and business domains.

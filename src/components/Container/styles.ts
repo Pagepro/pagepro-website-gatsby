@@ -1,43 +1,56 @@
 import styled from 'styled-components';
 
+import {
+  color,
+  backgroundColor as bg,
+  marginTop as mt,
+  marginBottom as mb,
+  marginLeft as ml,
+  marginRight as mr,
+  margin as m,
+  paddingTop as pt,
+  paddingBottom as pb,
+  paddingLeft as pl,
+  paddingRight as pr,
+  padding as p,
+  BackgroundColorProps,
+  MarginProps,
+  PaddingProps,
+} from 'styled-system';
 import { IColor } from 'themes/variables';
 
-interface IContainerStyledProps {
-  background?: IColor;
+interface IContainerStyledProps extends BackgroundColorProps, MarginProps, PaddingProps {
+  bg?: IColor;
+  color?: IColor;
   mt?: string;
   mb?: string;
   ml?: string;
   mr?: string;
-  mx?: string;
-  my?: string;
   pt?: string;
   pb?: string;
   pl?: string;
   pr?: string;
-  px?: string;
-  py?: string;
   p?: string;
   m?: string;
 }
 
-const ContainerStyled = styled.div<IContainerStyledProps>`
-  ${({ m }) => (m ? `margin: ${m}` : '')};
-  ${({ mb }) => (mb ? `margin-bottom: ${mb}` : '')};
-  ${({ mt }) => (mt ? `margin-top: ${mt}` : '')};
-  ${({ ml }) => (ml ? `margin-left: ${ml}` : '')};
-  ${({ mr }) => (mr ? `margin-right: ${mr}` : '')};
-  ${({ mx }) => (mx ? `margin-left: ${mx}; margin-right: ${mx};` : '')};
-  ${({ my }) => (my ? `margin-top: ${my}; margin-bottom: ${my};` : '')};
+type IProps = IContainerStyledProps;
 
-  ${({ p }) => (p ? `padding: ${p}` : '')};
-  ${({ pt }) => (pt ? `padding-top: ${pt}` : '')};
-  ${({ pb }) => (pb ? `padding-bottom: ${pb}` : '')};
-  ${({ pl }) => (pl ? `padding-left: ${pl}` : '')};
-  ${({ pr }) => (pr ? `padding-right: ${pr}` : '')};
-  ${({ px }) => (px ? `padding-left: ${px}; padding-right: ${px};` : '')};
-  ${({ py }) => (py ? `padding-top: ${py}; padding-bottom: ${py};` : '')};
+const ContainerStyled = styled.div<IProps>`
+  ${bg}
+  ${color}
 
-  ${({ background }) => background && `background: ${background}`}
+  ${m}
+  ${mt}
+  ${mb}
+  ${ml}
+  ${mr}
+
+  ${p}
+  ${pt}
+  ${pb}
+  ${pl}
+  ${pr}
 `;
 
 export default ContainerStyled;
