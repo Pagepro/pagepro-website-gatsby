@@ -17,7 +17,6 @@ const BenefitStyled = styled(Container)`
     display: flex;
     height: 100%;
     width: calc(100% - 2.5rem);
-    z-index: 0;
     content: '';
     background: ${variables.borderColor};
   }

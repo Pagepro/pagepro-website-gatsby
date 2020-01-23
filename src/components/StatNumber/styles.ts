@@ -14,7 +14,7 @@ const StatNumberStyled = styled.div`
 
   &::before {
     position: absolute;
-    z-index: -1;
+    z-index: ${({ theme }) => theme.zIndexes.statNumberDecor};
     top: 0;
     left: 0.375rem;
     display: block;

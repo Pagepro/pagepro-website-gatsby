@@ -49,7 +49,17 @@ export const theme: IThemeInterface = {
     small: 1.15,
     normal: 1,
   },
+  buttons: {
+    width: '10.5rem',
+    heightMedium: '3.375rem',
+    heightBig: '3.75rem',
+    primaryBgHover: '#e72934',
+    secondaryBgHover: '#e1ecF2',
+  },
   transitionDuration: 200,
+  zIndexes: {
+    statNumberDecor: -1,
+  },
 };
 
 export default theme;

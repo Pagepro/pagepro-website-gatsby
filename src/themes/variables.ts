@@ -13,4 +13,6 @@ export interface IThemeInterface {
   fontWeights: { [fontWeight in IFontWeight]: number };
   lineHeights: { [lineHeight in ILineHeight]: number };
   transitionDuration: number;
+  buttons: {};
+  zIndexes: {};
 }
