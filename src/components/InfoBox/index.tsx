@@ -10,7 +10,7 @@ import {
   InfoBoxActionStyled,
 } from './styles';
 import Link from '../Link';
-import { Typo5, Typo6 } from '../Typography';
+import { Typo6, Typo7 } from '../Typography';
 
 interface IProps {
   heading: string;
@@ -26,9 +26,9 @@ const InfoBox: React.FC<IProps> = ({ heading, title, children, ...otherProps }) 
       <InfoBoxIconStyled {...otherProps} />
     </InfoBoxIconWrapperStyled>
     <InfoBoxHeadingStyled>
-      <Typo5 as="h3" fontWeight="bold">
+      <Typo6 as="h3" fontWeight="bold">
         {heading}
-      </Typo5>
+      </Typo6>
     </InfoBoxHeadingStyled>
     <InfoBoxDescStyled>
       {title ? (
@@ -42,7 +42,7 @@ const InfoBox: React.FC<IProps> = ({ heading, title, children, ...otherProps }) 
     </InfoBoxDescStyled>
     <InfoBoxActionStyled>
       <Link withArrow iconColor="red" href="#">
-        More
+        <Typo7>More</Typo7>
       </Link>
     </InfoBoxActionStyled>
   </InfoBoxStyled>

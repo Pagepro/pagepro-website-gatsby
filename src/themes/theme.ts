@@ -17,6 +17,7 @@ export const theme: IThemeInterface = {
   textStyles: {
     typo1: {
       fontSize: ['3.052rem'], // 48.83px
+      fontWeight: 'semiBold',
     },
     typo2: {
       fontSize: ['2.441rem'], // 39.06px
@@ -34,6 +35,9 @@ export const theme: IThemeInterface = {
       fontSize: ['1rem'], // 16px
     },
     typo7: {
+      fontSize: ['0.875rem'], // 14px
+    },
+    typo8: {
       fontSize: ['0.8rem'], // 12.8px
     },
   },

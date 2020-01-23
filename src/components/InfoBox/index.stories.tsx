@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import InfoBox from '.';
 import BulletList from '../BulletList';
 import Container from '../Container';
-import { Typo6 } from '../Typography';
+import { Typo7 } from '../Typography';
 
 const ReactIcon = require('../../assets/images/svg/react.svg') as string;
 const ReactNativeIcon = require('../../assets/images/svg/react-native.svg') as string;
@@ -14,9 +14,9 @@ storiesOf('InfoBox', module)
   .addDecorator(story => <div style={{ maxWidth: '15rem' }}>{story()}</div>)
   .add('default', () => (
     <InfoBox heading="Web & Mobile Development" src={ReactIcon} alt="React">
-      <Typo6>
+      <Typo7>
         Gain access to our senior leaders and benefit from their insights into the technology and business domains.
-      </Typo6>
+      </Typo7>
     </InfoBox>
   ))
   .add('with list', () => (
@@ -33,16 +33,16 @@ storiesOf('InfoBox', module)
   .add('with white bg and paddings', () => (
     <Container background="white" p="1.5rem">
       <InfoBox heading="React Development" src={ReactNativeIcon} alt="React">
-        <Typo6>
+        <Typo7>
           Gain access to our senior leaders and benefit from their insights into the technology and business domains.
-        </Typo6>
+        </Typo7>
       </InfoBox>
     </Container>
   ))
   .add('centered', () => (
     <InfoBox centered heading="Web & Mobile Development" src={WordPressIcon} alt="React">
-      <Typo6>
+      <Typo7>
         Gain access to our senior leaders and benefit from their insights into the technology and business domains.
-      </Typo6>
+      </Typo7>
     </InfoBox>
   ));

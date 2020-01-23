@@ -41,6 +41,9 @@ storiesOf('Typography', module).add('typo', () => (
     <TypographyContainer>Typo 6: 1rem // 16px</TypographyContainer>
 
     <Typo7>A Visual Type Scale</Typo7>
-    <TypographyContainer>Typo 7: 0.8rem // 12.8px</TypographyContainer>
+    <TypographyContainer>Typo 7: 0.875rem // 14px</TypographyContainer>
+
+    <Typo7>A Visual Type Scale</Typo7>
+    <TypographyContainer>Typo 8: 0.8rem // 12.8px</TypographyContainer>
   </>
 ));

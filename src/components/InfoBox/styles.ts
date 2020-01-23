@@ -1,10 +1,6 @@
 import styled, { css } from 'styled-components';
 import { rgba } from 'polished';
 
-const variables = {
-  iconFontSize: '3.625rem',
-};
-
 interface IInfoBoxStyledProps {
   centered?: boolean;
 }
@@ -25,7 +21,7 @@ const InfoBoxStyled = styled.div<IInfoBoxStyledProps>`
 const InfoBoxIconWrapperStyled = styled.figure`
   display: inline-block;
   line-height: 1em;
-  font-size: ${variables.iconFontSize};
+  font-size: 3.625rem;
   margin-bottom: 2rem;
 `;
 
