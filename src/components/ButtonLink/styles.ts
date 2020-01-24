@@ -14,7 +14,6 @@ export enum ButtonLinkType {
 interface IProps {
   size?: ButtonLinkSize;
   buttonType?: ButtonLinkType;
-  left?: boolean;
 }
 
 const ButtonLinkStyled = styled.a<IProps>`
@@ -79,13 +78,6 @@ const ButtonLinkStyled = styled.a<IProps>`
     size === ButtonLinkSize.big &&
     css`
       height: ${({ theme }) => theme.buttons.heightBig};
-    `}
-
-  /* Left */
-  ${({ left }) =>
-    left &&
-    css`
-      justify-content: flex-start;
     `}
 `;
 
