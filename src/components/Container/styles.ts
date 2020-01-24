@@ -13,25 +13,14 @@ import {
   paddingLeft as pl,
   paddingRight as pr,
   padding as p,
-  BackgroundColorProps,
   MarginProps,
   PaddingProps,
 } from 'styled-system';
 import { IColor } from 'themes/variables';
 
-interface IContainerStyledProps extends BackgroundColorProps, MarginProps, PaddingProps {
+interface IContainerStyledProps extends MarginProps, PaddingProps {
   bg?: IColor;
   color?: IColor;
-  mt?: string;
-  mb?: string;
-  ml?: string;
-  mr?: string;
-  pt?: string;
-  pb?: string;
-  pl?: string;
-  pr?: string;
-  p?: string;
-  m?: string;
 }
 
 type IProps = IContainerStyledProps;

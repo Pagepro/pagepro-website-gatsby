@@ -1,5 +1,12 @@
 import styled from 'styled-components';
-import { lineHeight, fontWeight, color, fontSize, textStyle, textAlign } from 'styled-system';
+import {
+  lineHeight,
+  fontWeight,
+  color,
+  fontSize,
+  textStyle,
+  textAlign,
+} from 'styled-system';
 
 import { IColor, IFontWeight, ILineHeight } from 'themes/variables';
 
@@ -10,9 +17,7 @@ export interface ITypoStyles {
   lineHeight?: ILineHeight;
 }
 
-type IProps = ITypoStyles;
-
-const StyledDynamicComponent = styled.p<IProps>`
+const StyledDynamicComponent = styled.p<ITypoStyles>`
   ${color}
   ${fontWeight}
   ${lineHeight}

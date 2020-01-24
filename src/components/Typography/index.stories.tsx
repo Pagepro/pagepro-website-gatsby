@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Typo1, Typo2, Typo3, Typo4, Typo5, Typo6, Typo7 } from '.';
+import { Typo1, Typo2, Typo3, Typo4, Typo5, Typo6, Typo7, Typo8 } from '.';
 
 const TypographyContainer: React.FC = () => (
   <div
@@ -43,7 +43,7 @@ storiesOf('Typography', module).add('typo', () => (
     <Typo7>A Visual Type Scale</Typo7>
     <TypographyContainer>Typo 7: 0.875rem // 14px</TypographyContainer>
 
-    <Typo7>A Visual Type Scale</Typo7>
+    <Typo8>A Visual Type Scale</Typo8>
     <TypographyContainer>Typo 8: 0.8rem // 12.8px</TypographyContainer>
   </>
 ));
