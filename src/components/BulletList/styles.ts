@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const BulletListStyled = styled.ul`
-  padding-left: calc(${props => props.theme.gutter.gutter16} * 0.75);
+  padding-left: calc(1rem * 0.75);
 `;
 
 const BulletListItemStyled = styled.li`
@@ -10,18 +10,18 @@ const BulletListItemStyled = styled.li`
   &::before {
     position: absolute;
     top: 0.5rem;
-    left: calc(-${props => props.theme.gutter.gutter16} * 0.75);
+    left: calc(-1rem * 0.75);
     display: flex;
     flex-shrink: 0;
     content: '';
-    width: 3px;
-    height: 3px;
-    background: ${props => props.theme.color.red};
+    width: 0.1875rem;
+    height: 0.1875rem;
+    background: ${({ theme }) => theme.colors.red};
     border-radius: 50%;
   }
 
   &:not(:last-child) {
-    margin-bottom: ${props => props.theme.gutter.gutter16};
+    margin-bottom: 1rem;
   }
 `;
 

@@ -1,19 +1,18 @@
 import styled from 'styled-components';
-import { defaultTransition } from '../../common/mixins';
 
 const SocialMediaLinkStyled = styled.a`
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  color: ${props => props.theme.color.lightGrey};
-  padding-left: calc(${props => props.theme.gutter.gutter8});
-  padding-right: calc(${props => props.theme.gutter.gutter8});
-  ${defaultTransition}
+  color: ${({ theme }) => theme.colors.lightGrey};
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  transition: ${({ theme }) => theme.transitionDuration}ms ease;
 `;
 
 const SocialMediaListStyled = styled.ul`
   display: flex;
-  margin-left: calc(-${props => props.theme.gutter.gutter8});
+  margin-left: -0.5rem;
 
   &:hover {
     ${SocialMediaLinkStyled} {
@@ -30,7 +29,7 @@ const SocialMediaItemStyled = styled.li``;
 
 const SocialMediaIconStyled = styled.span`
   display: flex;
-  font-size: ${props => props.theme.fontSize.fontSize15};
+  font-size: 1rem;
 
   svg {
     fill: currentColor;

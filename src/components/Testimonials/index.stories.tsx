@@ -6,7 +6,7 @@ import Testimonials from '.';
 const Avatar1 = require('../../assets/images/avatar-1.png');
 
 storiesOf('Testimonials', module)
-  .addDecorator(story => <div style={{ maxWidth: '232px' }}>{story()}</div>)
+  .addDecorator(story => <div style={{ maxWidth: '14.5rem' }}>{story()}</div>)
   .add('default', () => (
     <Testimonials name="Ilona Filipi" src={Avatar1} alt="Picture" profession="Managing Director" agency="Moove, London">
       “Chris and his team are very talented front-end developers them as a trusted partner. The level of commitment,

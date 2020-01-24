@@ -2,17 +2,21 @@ import styled from 'styled-components';
 
 import { fieldReset } from '../../../common/mixins';
 
+const variables = {
+  fieldHeight: '3.375rem',
+};
+
 const InputStyled = styled.input`
   ${fieldReset}
-  color: ${props => props.theme.color.white};
-  font-size: ${props => props.theme.fontSize14};
-  font-weight: ${props => props.theme.fontWeight.regular};
-  padding: ${props => props.theme.gutter.gutter16};
-  background: ${props => props.theme.color.navy};
-  height: ${props => props.theme.form.fieldHeight};
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 0.875rem;
+  font-weight: ${({ theme }) => theme.fontWeights.regular};
+  padding: 1rem;
+  background: ${({ theme }) => theme.colors.navy};
+  height: ${variables.fieldHeight};
 
   &::placeholder {
-    color: ${props => props.theme.color.blue};
+    color: ${({ theme }) => theme.colors.blue};
   }
 `;
 

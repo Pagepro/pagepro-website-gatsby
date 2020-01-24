@@ -10,7 +10,6 @@ import {
   ProjectTechnologiesStyled,
   ProjectActionStyled,
 } from './styles';
-import theme from '../../themes/theme';
 import Link from '../Link';
 import { Typo4 } from '../Typography';
 
@@ -24,7 +23,7 @@ interface IProps {
 }
 
 const Project: React.FC<IProps> = ({ reversed, label, desc, technologies, ...otherProps }) => (
-  <ProjectStyled reversed={reversed}>
+  <ProjectStyled reversed={reversed} p="2rem 3rem" mt="1rem">
     <ProjectContentStyled>
       <ProjectHeaderStyled>
         <Typo4>{label}</Typo4>
@@ -35,7 +34,7 @@ const Project: React.FC<IProps> = ({ reversed, label, desc, technologies, ...oth
         <ProjectImgStyled {...otherProps} />
       </ProjectMediaStyled>
       <ProjectActionStyled>
-        <Link light={reversed} withArrow iconColor={reversed ? theme.color.white : theme.color.red} href="#">
+        <Link light={reversed} withArrow iconColor={reversed ? 'white' : 'red'} href="#">
           Read more
         </Link>
       </ProjectActionStyled>

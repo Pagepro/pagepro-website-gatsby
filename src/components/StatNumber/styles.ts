@@ -1,40 +1,40 @@
 import styled from 'styled-components';
 
 const variables = {
-  bgDecorWidth: '140px',
-  bgDecorHeight: '114px',
-  countFontSize: '68px',
+  bgDecorWidth: '8.75rem',
+  bgDecorHeight: '7.125rem',
+  countFontSize: '4.25rem',
 };
 
 const StatNumberStyled = styled.div`
   position: relative;
   width: 100%;
-  padding-top: ${props => props.theme.gutter.gutter24};
-  padding-bottom: ${props => props.theme.gutter.gutter8};
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
 
   &::before {
     position: absolute;
-    z-index: -1;
+    z-index: ${({ theme }) => theme.zIndexes.statNumberDecor};
     top: 0;
-    left: 10px;
+    left: 0.375rem;
     display: block;
     height: 100%;
     width: ${variables.bgDecorWidth};
     min-height: ${variables.bgDecorHeight};
     content: '';
-    background: ${props => props.theme.color.lightGrey};
+    background: ${({ theme }) => theme.colors.lightGrey};
   }
 `;
 
 const StatNumberDescriptionStyled = styled.div`
-  line-height: ${props => props.theme.lineHeight.normal};
+  line-height: ${({ theme }) => theme.lineHeights.normal};
 `;
 
 const StatNumberCountStyled = styled.div`
   font-size: ${variables.countFontSize};
-  font-weight: ${props => props.theme.fontWeight.semiBold};
-  line-height: ${props => props.theme.lineHeight.normal};
-  color: ${props => props.theme.color.red};
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
+  line-height: ${({ theme }) => theme.lineHeights.normal};
+  color: ${({ theme }) => theme.colors.red};
 `;
 
 export { StatNumberStyled, StatNumberDescriptionStyled, StatNumberCountStyled };

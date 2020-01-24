@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Typo5, Typo6 } from '../Typography';
-import theme from '../../themes/theme';
 import { BenefitStyled, BenefitDescriptionStyled, BenefitTitleStyled } from './styles';
 
 interface IProps {
@@ -10,9 +9,9 @@ interface IProps {
 }
 
 const Benefit: React.FC<IProps> = ({ description, title }) => (
-  <BenefitStyled>
+  <BenefitStyled pt="1.5rem" pr="2.5rem" pb="1.5rem">
     <BenefitTitleStyled>
-      <Typo5 as="h3" fontWeight={theme.fontWeight.semiBold}>
+      <Typo5 as="h3" fontWeight="semiBold">
         {title}
       </Typo5>
     </BenefitTitleStyled>

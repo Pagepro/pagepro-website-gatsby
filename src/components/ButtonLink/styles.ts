@@ -1,7 +1,5 @@
 import styled, { css } from 'styled-components';
 
-import { defaultTransition } from '../../common/mixins';
-
 export enum ButtonLinkSize {
   medium,
   big,
@@ -24,63 +22,63 @@ const ButtonLinkStyled = styled.a<IProps>`
   align-items: center;
   flex-shrink: 0;
   width: auto;
-  min-width: ${({ theme }) => theme.btn.width};
-  font-size: ${({ theme }) => theme.fontSize.fontSize15};
-  font-weight: ${({ theme }) => theme.fontWeight.semiBold};
+  min-width: ${({ theme }) => theme.buttons.width};
+  font-size: 1rem;
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
   justify-content: center;
-  padding: 0 calc(${({ theme }) => theme.gutter.gutter24});
+  padding: 0 1.5rem;
   cursor: pointer;
-  ${defaultTransition}
+  transition: ${({ theme }) => theme.transitionDuration}ms ease;
 
   /* Primary */
-  ${({ buttonType, theme }) =>
+  ${({ buttonType }) =>
     buttonType === ButtonLinkType.primary &&
     css`
-      background-color: ${theme.color.red};
-      color: ${theme.color.white};
+      background-color: ${({ theme }) => theme.colors.red};
+      color: ${({ theme }) => theme.colors.white};
 
       &:hover {
-        background-color: ${theme.btn.primaryBgHover};
+        background-color: ${({ theme }) => theme.buttons.primaryBgHover};
       }
     `}
 
   /* Secondary */
-  ${({ buttonType, theme }) =>
+  ${({ buttonType }) =>
     buttonType === ButtonLinkType.secondary &&
     css`
-      background-color: ${theme.color.white};
-      color: ${theme.color.red};
+      background-color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }) => theme.colors.red};
 
       &:hover {
-        background-color: ${theme.btn.secondaryBgHover};
+        background-color: ${({ theme }) => theme.buttons.secondaryBgHover};
       }
     `}
 
   /* Outline */
-  ${({ buttonType, theme }) =>
+  ${({ buttonType }) =>
     buttonType === ButtonLinkType.outline &&
     css`
-      background-color: ${theme.color.white};
-      border: 2px solid ${theme.color.lightGrey};
+      background-color: ${({ theme }) => theme.colors.white};
+      border: 2px solid ${({ theme }) => theme.colors.lightGrey};
       min-width: 100%;
 
       &:hover {
-        background-color: ${theme.color.lightGrey};
+        background-color: ${({ theme }) => theme.colors.lightGrey};
       }
     `}
 
   /* Medium */
-  ${({ size, theme }) =>
+  ${({ size }) =>
     size === ButtonLinkSize.medium &&
     css`
-      height: ${theme.btn.heightMedium};
+      height: ${({ theme }) => theme.buttons.heightMedium};
     `}
 
   /* Big */
-  ${({ size, theme }) =>
+  ${({ size }) =>
     size === ButtonLinkSize.big &&
     css`
-      height: ${theme.btn.heightBig};
+      height: ${({ theme }) => theme.buttons.heightBig};
     `}
 
   /* Left */

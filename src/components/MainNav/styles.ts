@@ -8,20 +8,20 @@ const MainNavStyled = styled.ul`
 
 const MainNavItemStyled = styled.li`
   &:not(:last-child) {
-    margin-right: ${props => props.theme.gutter.gutter32};
+    margin-right: 2rem;
   }
 `;
 
 const MainNavLinkStyled = styled.a`
   ${({ theme }) =>
     decorLink({
-      height: '2px',
-      hoverUnderlineBg: theme.color.red,
       theme,
+      height: '0.125rem',
+      hoverUnderlineBg: theme.colors.red,
     })}
   display: block;
-  color: ${props => props.theme.color.lightGrey};
-  font-weight: ${props => props.theme.fontWeight.semiBold};
+  color: ${({ theme }) => theme.colors.lightGrey};
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
 `;
 
 export { MainNavStyled, MainNavItemStyled, MainNavLinkStyled };

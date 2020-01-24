@@ -7,7 +7,7 @@ import Project from '.';
 const ProjectImg = require('../../assets/images/project-1.jpg') as string;
 
 storiesOf('Project', module)
-  .addDecorator(story => <div style={{ maxWidth: '942px' }}>{story()}</div>)
+  .addDecorator(story => <div style={{ maxWidth: '58.875rem' }}>{story()}</div>)
   .add('default', () => {
     const defaultProps = {
       label: text('Label', 'Gated Talent'),

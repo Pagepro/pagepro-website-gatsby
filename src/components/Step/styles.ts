@@ -1,28 +1,29 @@
 import styled from 'styled-components';
 
+import Container from '../Container';
+
 const variables = {
-  stepWidth: '400px',
+  stepWidth: '25rem',
 };
 
-const StepStyled = styled.div`
+const StepStyled = styled(Container)`
   max-width: ${variables.stepWidth};
-  padding: ${props => props.theme.gutter.gutter32};
-  border: 2px solid ${props => props.theme.color.lightGrey};
-  font-weight: ${props => props.theme.fontWeight.semiBold};
+  border: 2px solid ${({ theme }) => theme.colors.lightGrey};
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
 `;
 
 const StepTitleStyled = styled.div`
   text-transform: uppercase;
-  line-height: ${props => props.theme.lineHeight.medium};
+  line-height: ${({ theme }) => theme.lineHeights.medium};
 `;
 
 const StepSubtitleStyled = styled.div`
-  margin-top: ${props => props.theme.gutter.gutter24};
-  color: ${props => props.theme.color.red};
+  margin-top: 1.5rem;
+  color: ${({ theme }) => theme.colors.red};
 `;
 
 const StepDescStyled = styled.div`
-  margin-top: ${props => props.theme.gutter.gutter32};
+  margin-top: 2rem;
 `;
 
 export { StepStyled, StepTitleStyled, StepSubtitleStyled, StepDescStyled };

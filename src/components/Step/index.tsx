@@ -9,7 +9,7 @@ interface IProps {
 }
 
 const Step: React.FC<IProps> = ({ title, subtitle, desc }) => (
-  <StepStyled>
+  <StepStyled p="2rem">
     <StepTitleStyled>
       <Typo4>{title}</Typo4>
     </StepTitleStyled>

@@ -3,21 +3,20 @@ import { storiesOf } from '@storybook/react';
 
 import InfoBox from '.';
 import BulletList from '../BulletList';
-import Wrapper from '../Wrapper';
-import theme from '../../themes/theme';
-import { Typo6 } from '../Typography';
+import Container from '../Container';
+import { Typo7 } from '../Typography';
 
 const ReactIcon = require('../../assets/images/svg/react.svg') as string;
 const ReactNativeIcon = require('../../assets/images/svg/react-native.svg') as string;
 const WordPressIcon = require('../../assets/images/svg/word-press.svg') as string;
 
 storiesOf('InfoBox', module)
-  .addDecorator(story => <div style={{ maxWidth: '240px' }}>{story()}</div>)
+  .addDecorator(story => <div style={{ maxWidth: '15rem' }}>{story()}</div>)
   .add('default', () => (
     <InfoBox heading="Web & Mobile Development" src={ReactIcon} alt="React">
-      <Typo6>
+      <Typo7>
         Gain access to our senior leaders and benefit from their insights into the technology and business domains.
-      </Typo6>
+      </Typo7>
     </InfoBox>
   ))
   .add('with list', () => (
@@ -31,19 +30,19 @@ storiesOf('InfoBox', module)
       />
     </InfoBox>
   ))
-  .add('with wrapper (bg and padding)', () => (
-    <Wrapper background={theme.color.white} padding={theme.gutter.gutter24}>
+  .add('with white bg and paddings', () => (
+    <Container p="1.5rem" bg="white">
       <InfoBox heading="React Development" src={ReactNativeIcon} alt="React">
-        <Typo6>
+        <Typo7>
           Gain access to our senior leaders and benefit from their insights into the technology and business domains.
-        </Typo6>
+        </Typo7>
       </InfoBox>
-    </Wrapper>
+    </Container>
   ))
   .add('centered', () => (
     <InfoBox centered heading="Web & Mobile Development" src={WordPressIcon} alt="React">
-      <Typo6>
+      <Typo7>
         Gain access to our senior leaders and benefit from their insights into the technology and business domains.
-      </Typo6>
+      </Typo7>
     </InfoBox>
   ));

@@ -1,10 +1,6 @@
 import styled, { css } from 'styled-components';
 import { rgba } from 'polished';
 
-const variables = {
-  iconFontSize: '58px',
-};
-
 interface IInfoBoxStyledProps {
   centered?: boolean;
 }
@@ -25,8 +21,8 @@ const InfoBoxStyled = styled.div<IInfoBoxStyledProps>`
 const InfoBoxIconWrapperStyled = styled.figure`
   display: inline-block;
   line-height: 1em;
-  font-size: ${variables.iconFontSize};
-  margin-bottom: calc(${props => props.theme.gutter.gutter32});
+  font-size: 3.625rem;
+  margin-bottom: 2rem;
 `;
 
 const InfoBoxIconStyled = styled.img`
@@ -34,18 +30,18 @@ const InfoBoxIconStyled = styled.img`
 `;
 
 const InfoBoxHeadingStyled = styled.div`
-  margin-bottom: calc(${props => props.theme.gutter.gutter24});
-  color: ${props => props.theme.color.darkGrey};
+  margin-bottom: 1.5rem;
+  color: ${({ theme }) => theme.colors.darkGrey};
 `;
 
 const InfoBoxTitleStyled = styled.div`
-  margin-bottom: calc(${props => props.theme.gutter.gutter16} * 0.75);
+  margin-bottom: 0.75rem;
 `;
 
 const InfoBoxDescStyled = styled.div`
   flex-grow: 1;
-  color: ${props => rgba(props.theme.color.mediumGrey, props.theme.opacities.opacity60)};
-  margin-bottom: ${props => props.theme.gutter.gutter24};
+  color: ${({ theme }) => rgba(theme.colors.mediumGrey, 0.6)};
+  margin-bottom: 1.5rem;
 `;
 
 const InfoBoxActionStyled = styled.div``;

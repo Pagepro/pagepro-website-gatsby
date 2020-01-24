@@ -1,6 +1,7 @@
 import React from 'react';
-import theme from '../theme';
 import { RenderFunction } from '@storybook/react';
+
+import theme from '../theme';
 
 const darkWrapperDecorator = (story: RenderFunction) => (
   <div

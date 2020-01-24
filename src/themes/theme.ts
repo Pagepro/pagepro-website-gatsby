@@ -1,5 +1,7 @@
-const theme = {
-  color: {
+import { IThemeInterface } from './variables';
+
+export const theme: IThemeInterface = {
+  colors: {
     black: '#000',
     white: '#fff',
     darkGrey: '#171717',
@@ -10,72 +12,57 @@ const theme = {
     navy: '#19425a',
     blue: '#5d90ab',
   },
-  opacities: {
-    opacity20: 0.2,
-    opacity60: 0.6,
-  },
-  gutter: {
-    gutter8: '8px',
-    gutter16: '16px',
-    gutter24: '24px',
-    gutter32: '32px',
-    gutter40: '40px',
-    gutter48: '48px',
-    gutter64: '64px',
-  },
-  form: {
-    fieldHeight: '54px',
-    checkboxSize: '20px',
-    checkboxMarkWidth: '6px',
-    checkboxMarkHeight: '11px',
-    radioMarkSize: '8px',
-  },
   breakpoints: ['768px', '1025px'],
-  // Visual TypeScale / Major Third (1.25) / Base Size: 15px
+  // Visual TypeScale / Major Third (1.25) / Base Size: 16px
   textStyles: {
     typo1: {
-      fontSize: ['3.052rem'], // 45.78px
+      fontSize: ['3.052rem'], // 48.83px
+      fontWeight: 'semiBold',
     },
     typo2: {
-      fontSize: ['2.441rem'], // 36.62px
+      fontSize: ['2.441rem'], // 39.06px
     },
     typo3: {
-      fontSize: ['1.953rem'], // 29.30px
+      fontSize: ['1.953rem'], // 31.25px
     },
     typo4: {
-      fontSize: ['1.563rem'], // 23.44px
+      fontSize: ['1.563rem'], // 25.00px
     },
     typo5: {
-      fontSize: ['1.25rem'], // 18.75px
+      fontSize: ['1.25rem'], // 20.00px
     },
     typo6: {
-      fontSize: ['1rem'], // 15px
+      fontSize: ['1rem'], // 16px
     },
     typo7: {
-      fontSize: ['0.8rem'], // 12px
+      fontSize: ['0.875rem'], // 14px
+    },
+    typo8: {
+      fontSize: ['0.8rem'], // 12.8px
     },
   },
-  fontSize: {
-    fontSize15: '15px',
-  },
-  fontWeight: {
+  fontWeights: {
     regular: 400,
     medium: 500,
     semiBold: 600,
     bold: 700,
   },
-  lineHeight: {
+  lineHeights: {
     big: 1.5,
     medium: 1.25,
     small: 1.15,
     normal: 1,
   },
-  btn: {
-    width: '168px',
-    heightMedium: '54px',
-    heightBig: '60px',
+  buttons: {
+    width: '10.5rem',
+    heightMedium: '3.375rem',
+    heightBig: '3.75rem',
     primaryBgHover: '#e72934',
     secondaryBgHover: '#e1ecF2',
+  },
+  transitionDuration: 200,
+  zIndexes: {
+    statNumberDecor: -1,
   },
 };
 
