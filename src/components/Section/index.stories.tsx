@@ -5,12 +5,13 @@ import Section from './';
 import Container from '../Container';
 import Flex from '../Flex';
 import InfoBox from '../InfoBox';
+import Slider from '../Slider';
 import { Typo3, Typo7 } from '../Typography';
-
+import { specialities } from '../../mocks/specialitiesMock';
 const ReactIcon = require('../../assets/images/svg/react.svg') as string;
 
-storiesOf('Section', module).add('we are', () => {
-  return (
+storiesOf('Section', module)
+  .add('we are', () => (
     <Section
       heading={
         <Typo3 as="h2" color="darkGrey" fontWeight="semiBold" lineHeight="medium">
@@ -56,5 +57,25 @@ storiesOf('Section', module).add('we are', () => {
         </Flex>
       </Flex>
     </Section>
-  );
-});
+  ))
+  .add('specialities', () => (
+    <Section
+      overflow="hidden"
+      alt
+      bg="lightGrey"
+      heading={
+        <Typo3 as="h2" color="darkGrey" fontWeight="semiBold" lineHeight="medium">
+          Specialities
+        </Typo3>
+      }
+      desc={
+        <Typo7 color="darkNavy">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. <br />
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+        </Typo7>
+      }
+    >
+      <Slider specialities={specialities} />
+    </Section>
+  ));

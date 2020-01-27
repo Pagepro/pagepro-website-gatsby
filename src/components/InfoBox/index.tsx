@@ -12,13 +12,16 @@ import {
 import Link from '../Link';
 import { Typo6, Typo7 } from '../Typography';
 
-interface IProps {
+export interface IInfoBox {
   heading: string;
+  title?: string;
   src: string;
   alt: string;
-  title?: string;
   centered?: boolean;
+  children: React.ReactNode;
 }
+
+type IProps = IInfoBox;
 
 const InfoBox: React.FC<IProps> = ({ heading, title, children, ...otherProps }) => (
   <InfoBoxStyled {...otherProps}>

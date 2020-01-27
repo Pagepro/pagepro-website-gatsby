@@ -10,7 +10,7 @@ const InfoBoxStyled = styled.div<IInfoBoxStyledProps>`
   width: 100%;
   height: 100%;
 
-  ${({ centered }: IInfoBoxStyledProps) =>
+  ${({ centered }) =>
     centered &&
     css`
       align-items: center;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const variables = {
+export const variables = {
   inner: '60.75rem',
 };
 
