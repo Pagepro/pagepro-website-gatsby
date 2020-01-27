@@ -25,7 +25,7 @@ const CtaBox = () => (
         <Typo5 fontWeight="semiBold">Hire us</Typo5>
       </ButtonLink>
       <ButtonLink type={ButtonLinkType.secondary} size={ButtonLinkSize.big} href="#">
-        <Typo5 fontWeight="bold">Join us</Typo5>
+        <Typo5 fontWeight="semiBold">Join us</Typo5>
       </ButtonLink>
     </CtaBoxActionsStyled>
   </CtaBoxStyled>
