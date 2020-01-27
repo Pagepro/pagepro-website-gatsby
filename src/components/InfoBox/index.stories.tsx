@@ -13,14 +13,20 @@ const WordPressIcon = require('../../assets/images/svg/word-press.svg') as strin
 storiesOf('InfoBox', module)
   .addDecorator(story => <div style={{ maxWidth: '15rem' }}>{story()}</div>)
   .add('default', () => (
-    <InfoBox heading="Web & Mobile Development" src={ReactIcon} alt="React">
+    <InfoBox heading="Web &amp; Mobile Development" src={ReactIcon} alt="React">
       <Typo7>
         Gain access to our senior leaders and benefit from their insights into the technology and business domains.
       </Typo7>
     </InfoBox>
   ))
   .add('with list', () => (
-    <InfoBox heading="Web & Mobile Development" src={ReactIcon} alt="React" title="In our portfolio you can find:">
+    <InfoBox
+      action={false}
+      heading="Web &amp; Mobile Development"
+      src={ReactIcon}
+      alt="React"
+      title="In our portfolio you can find:"
+    >
       <BulletList
         items={[
           'we organize internal training courses and workshops',
@@ -40,7 +46,7 @@ storiesOf('InfoBox', module)
     </Container>
   ))
   .add('centered', () => (
-    <InfoBox centered heading="Web & Mobile Development" src={WordPressIcon} alt="React">
+    <InfoBox centered heading="Web &amp; Mobile Development" src={WordPressIcon} alt="React">
       <Typo7>
         Gain access to our senior leaders and benefit from their insights into the technology and business domains.
       </Typo7>
