@@ -11,12 +11,12 @@ interface IProps extends OverflowProps {
   heading?: React.ReactNode;
   desc?: React.ReactNode;
   children?: React.ReactNode;
-  alt?: boolean;
+  hasCustomInner?: boolean;
 }
 
-const Section = ({ bg, overflow, heading, desc, children, alt }: IProps) => (
+const Section = ({ bg, overflow, heading, desc, children, hasCustomInner }: IProps) => (
   <Container overflow={overflow} pt="3.75rem" pb="3.75rem" bg={bg}>
-    {alt ? (
+    {hasCustomInner ? (
       <>
         <Inner>
           <SectionHeadingStyled>{heading}</SectionHeadingStyled>

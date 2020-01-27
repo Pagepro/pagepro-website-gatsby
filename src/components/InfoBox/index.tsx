@@ -19,12 +19,12 @@ export interface IInfoBox {
   alt: string;
   centered?: boolean;
   children: React.ReactNode;
-  action?: boolean;
+  shouldDisplayAction?: boolean;
 }
 
 type IProps = IInfoBox;
 
-const InfoBox: React.FC<IProps> = ({ heading, title, children, action = true, ...otherProps }) => (
+const InfoBox: React.FC<IProps> = ({ heading, title, children, shouldDisplayAction = true, ...otherProps }) => (
   <InfoBoxStyled {...otherProps}>
     <InfoBoxIconWrapperStyled>
       <InfoBoxIconStyled {...otherProps} />
@@ -44,7 +44,7 @@ const InfoBox: React.FC<IProps> = ({ heading, title, children, action = true, ..
       ) : null}
       {children}
     </InfoBoxDescStyled>
-    {action && (
+    {shouldDisplayAction && (
       <InfoBoxActionStyled>
         <Link withArrow iconColor="red" href="#">
           More
