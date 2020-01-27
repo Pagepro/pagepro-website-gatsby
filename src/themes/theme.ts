@@ -1,11 +1,12 @@
 import { IThemeInterface } from './variables';
 
-export const theme: IThemeInterface = {
+const theme: IThemeInterface = {
   colors: {
     black: '#000',
     white: '#fff',
     darkGrey: '#171717',
     mediumGrey: '#585858',
+    grey: '#9e9e9e',
     lightGrey: '#f4f4f4',
     red: '#f33540',
     darkNavy: '#061F2d',

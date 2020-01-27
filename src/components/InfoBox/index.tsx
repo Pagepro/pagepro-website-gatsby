@@ -33,9 +33,9 @@ const InfoBox: React.FC<IProps> = ({ heading, title, children, ...otherProps }) 
     <InfoBoxDescStyled>
       {title ? (
         <InfoBoxTitleStyled>
-          <Typo6 fontWeight="bold" color="mediumGrey">
+          <Typo7 fontWeight="bold" color="mediumGrey">
             {title}
-          </Typo6>
+          </Typo7>
         </InfoBoxTitleStyled>
       ) : null}
       {children}

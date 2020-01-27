@@ -3,13 +3,15 @@ import { storiesOf } from '@storybook/react';
 
 import { Typo1, Typo2, Typo3, Typo4, Typo5, Typo6, Typo7, Typo8 } from '.';
 
-const TypographyContainer: React.FC = () => (
+const TypographyContainer: React.FC = ({ children }) => (
   <div
     style={{
       marginBottom: '1rem',
       fontSize: '0.75rem',
     }}
-  />
+  >
+    {children}
+  </div>
 );
 
 storiesOf('Typography', module).add('typo', () => (

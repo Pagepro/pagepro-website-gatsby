@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { rgba } from 'polished';
 
 interface IInfoBoxStyledProps {
   centered?: boolean;
@@ -9,6 +8,7 @@ const InfoBoxStyled = styled.div<IInfoBoxStyledProps>`
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
 
   ${({ centered }: IInfoBoxStyledProps) =>
     centered &&
@@ -30,7 +30,7 @@ const InfoBoxIconStyled = styled.img`
 `;
 
 const InfoBoxHeadingStyled = styled.div`
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   color: ${({ theme }) => theme.colors.darkGrey};
 `;
 
@@ -40,7 +40,7 @@ const InfoBoxTitleStyled = styled.div`
 
 const InfoBoxDescStyled = styled.div`
   flex-grow: 1;
-  color: ${({ theme }) => rgba(theme.colors.mediumGrey, 0.6)};
+  color: ${({ theme }) => theme.colors.grey};
   margin-bottom: 1.5rem;
 `;
 

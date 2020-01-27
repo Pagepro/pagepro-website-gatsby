@@ -3,11 +3,11 @@ import { storiesOf } from '@storybook/react';
 
 import darkWrapperDecorator from '../../../.storybook/decorators/darkWrapperDecorator';
 import SocialMedia from '.';
-import Instagram from '../../assets/svg/Instagram';
-import Twitter from '../../assets/svg/Twitter';
-import LinkedIn from '../../assets/svg/LinkedIn';
-import Facebook from '../../assets/svg/Facebook';
-import YouTube from '../../assets/svg/YouTube';
+import Instagram from '../Icons/Instagram';
+import Twitter from '../Icons/Twitter';
+import LinkedIn from '../Icons/LinkedIn';
+import Facebook from '../Icons/Facebook';
+import YouTube from '../Icons/YouTube';
 
 storiesOf('SocialMedia', module)
   .addDecorator(darkWrapperDecorator)

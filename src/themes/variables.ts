@@ -1,4 +1,14 @@
-export type IColor = 'black' | 'white' | 'darkGrey' | 'mediumGrey' | 'lightGrey' | 'red' | 'darkNavy' | 'navy' | 'blue';
+export type IColor =
+  | 'black'
+  | 'white'
+  | 'darkGrey'
+  | 'mediumGrey'
+  | 'grey'
+  | 'lightGrey'
+  | 'red'
+  | 'darkNavy'
+  | 'navy'
+  | 'blue';
 
 export type IFontWeight = 'regular' | 'medium' | 'semiBold' | 'bold';
 

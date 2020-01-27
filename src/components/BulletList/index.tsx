@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { BulletListStyled, BulletListItemStyled } from './styles';
-import { Typo6 } from '../Typography';
+import { Typo7 } from '../Typography';
 
 interface IProps {
   items: string[];
@@ -11,7 +11,7 @@ const BulletList: React.FC<IProps> = ({ items }) => (
   <BulletListStyled>
     {items.map(item => (
       <BulletListItemStyled key={item}>
-        <Typo6>{item}</Typo6>
+        <Typo7>{item}</Typo7>
       </BulletListItemStyled>
     ))}
   </BulletListStyled>
