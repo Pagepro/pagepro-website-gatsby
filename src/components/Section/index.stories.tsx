@@ -95,7 +95,7 @@ storiesOf('Section', module)
       <Flex>
         <Flex flex="1">
           <Container pr="5rem">
-            <InfoBox action={false} heading="Experienced Consultants" src={ReactIcon} alt="React">
+            <InfoBox shouldDisplayAction={false} heading="Experienced Consultants" src={ReactIcon} alt="React">
               <BulletList
                 items={[
                   'we are experienced in building advanced corporate systems and challenging, innovative products',
@@ -108,7 +108,7 @@ storiesOf('Section', module)
         </Flex>
         <Flex flex="1">
           <Container pr="5rem">
-            <InfoBox action={false} heading="Front-end Specialisation " src={ReactIcon} alt="React">
+            <InfoBox shouldDisplayAction={false} heading="Front-end Specialisation " src={ReactIcon} alt="React">
               <BulletList
                 items={[
                   'we organize internal training courses and workshops',
@@ -122,7 +122,7 @@ storiesOf('Section', module)
         <Flex flex="1">
           <Container pr="5rem">
             <InfoBox
-              action={false}
+              shouldDisplayAction={false}
               heading="Complex Projects"
               title=" In our portfolio you can find:"
               src={ReactIcon}
