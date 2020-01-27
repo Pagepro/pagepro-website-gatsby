@@ -15,9 +15,9 @@ import {
   padding as p,
   overflow,
   width,
+  OverflowProps,
   MarginProps,
   PaddingProps,
-  OverflowProps,
   WidthProps,
 } from 'styled-system';
 import { IColor } from 'themes/variables';
@@ -29,7 +29,7 @@ interface IContainerStyledProps extends MarginProps, PaddingProps, OverflowProps
 
 type IProps = IContainerStyledProps;
 
-const Container = styled.div<IProps>`
+const ContainerStyled = styled.div<IProps>`
   ${bg}
   ${color}
 
@@ -46,7 +46,8 @@ const Container = styled.div<IProps>`
   ${pr}
 
   ${width}
+
   ${overflow}
 `;
 
-export default Container;
+export default ContainerStyled;

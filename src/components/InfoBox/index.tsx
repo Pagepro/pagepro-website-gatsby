@@ -12,15 +12,19 @@ import {
 import Link from '../Link';
 import { Typo6, Typo7 } from '../Typography';
 
-interface IProps {
+export interface IInfoBox {
   heading: string;
+  title?: string;
   src: string;
   alt: string;
-  title?: string;
   centered?: boolean;
+  children: React.ReactNode;
+  shouldDisplayAction?: boolean;
 }
 
-const InfoBox: React.FC<IProps> = ({ heading, title, children, ...otherProps }) => (
+type IProps = IInfoBox;
+
+const InfoBox: React.FC<IProps> = ({ heading, title, children, shouldDisplayAction = true, ...otherProps }) => (
   <InfoBoxStyled {...otherProps}>
     <InfoBoxIconWrapperStyled>
       <InfoBoxIconStyled {...otherProps} />
@@ -40,11 +44,13 @@ const InfoBox: React.FC<IProps> = ({ heading, title, children, ...otherProps }) 
       ) : null}
       {children}
     </InfoBoxDescStyled>
-    <InfoBoxActionStyled>
-      <Link withArrow iconColor="red" href="#">
-        <Typo7>More</Typo7>
-      </Link>
-    </InfoBoxActionStyled>
+    {shouldDisplayAction && (
+      <InfoBoxActionStyled>
+        <Link withArrow iconColor="red" href="#">
+          <Typo7>More</Typo7>
+        </Link>
+      </InfoBoxActionStyled>
+    )}
   </InfoBoxStyled>
 );
 

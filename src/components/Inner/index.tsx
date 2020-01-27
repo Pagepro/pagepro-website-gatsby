@@ -1,7 +1,5 @@
-import React from 'react';
-
 import { InnerStyled } from './styles';
 
-const Inner: React.FC = ({ children }) => <InnerStyled>{children}</InnerStyled>;
+const Inner = InnerStyled;
 
 export default Inner;
