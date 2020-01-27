@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { LinkLabelStyled, LinkIconStyled, LinkStyled } from './styles';
-import GitHub from '../../assets/svg/GitHub';
-import ArrowRight from '../../assets/svg/ArrowRight';
+import GitHub from '../Icons/GitHub';
+import ArrowRight from '../Icons/ArrowRight';
 import { IColor } from '../../themes/variables';
 
 interface IProps {

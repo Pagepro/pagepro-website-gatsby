@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { rgba } from 'polished';
 
 const variables = {
   decorWidth: '1.25rem',
@@ -47,13 +46,13 @@ const TestimonialsDetailsStyled = styled.div`
 
   .agency {
     margin-top: calc(1rem / 8);
-    color: ${props => rgba(props.theme.colors.mediumGrey, 0.6)};
+    color: ${({ theme }) => theme.colors.grey};
   }
 `;
 
 const TestimonialsQuoteStyled = styled.blockquote`
   font-style: italic;
-  color: ${props => rgba(props.theme.colors.mediumGrey, 0.6)};
+  color: ${({ theme }) => theme.colors.grey};
 `;
 
 export {
