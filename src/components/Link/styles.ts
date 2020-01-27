@@ -2,10 +2,10 @@ import styled, { css } from 'styled-components';
 
 import { decorLink } from '../../common/mixins';
 import theme from '../../themes/theme';
+import { Typo7 } from '../Typography';
 
-const LinkLabelStyled = styled.span`
+const LinkLabelStyled = styled(Typo7)`
   ${decorLink}
-  font-size: 1rem;
 `;
 
 interface ILinkStyledProps {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Typo5, Typo6 } from '../Typography';
+import { Typo5, Typo7 } from '../Typography';
 import { BenefitStyled, BenefitDescriptionStyled, BenefitTitleStyled } from './styles';
 
 interface IProps {
@@ -16,7 +16,7 @@ const Benefit: React.FC<IProps> = ({ description, title }) => (
       </Typo5>
     </BenefitTitleStyled>
     <BenefitDescriptionStyled>
-      <Typo6>{description}</Typo6>
+      <Typo7>{description}</Typo7>
     </BenefitDescriptionStyled>
   </BenefitStyled>
 );
