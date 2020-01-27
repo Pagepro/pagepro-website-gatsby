@@ -20,14 +20,14 @@ const Section = ({ bg, overflow, heading, desc, children, hasCustomInner }: IPro
       <>
         <Inner>
           <Container mb="1.5rem">{heading}</Container>
-          <Container mb="2.5rem">{desc}</Container>
+          {desc && <Container mb="2.5rem">{desc}</Container>}
         </Inner>
         <SectionInnerStyled>{children}</SectionInnerStyled>
       </>
     ) : (
       <Inner>
         <Container mb="1.5rem">{heading}</Container>
-        <Container mb="2.5rem">{desc}</Container>
+        {desc && <Container mb="2.5rem">{desc}</Container>}
         {children}
       </Inner>
     )}
