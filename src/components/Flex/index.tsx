@@ -1,5 +1,17 @@
-import FlexStyled from './styles';
+import styled from 'styled-components';
 
-const Flex = FlexStyled;
+import { flex, flexDirection, flexWrap, justifyContent, alignItems, alignContent, FlexboxProps } from 'styled-system';
 
-export default Flex;
+type IFlexboxProp = FlexboxProps;
+
+const FlexStyled = styled('div')<IFlexboxProp>`
+  display: flex;
+  ${flex}
+  ${flexDirection}
+  ${alignItems}
+  ${alignContent}
+  ${justifyContent}
+  ${flexWrap}
+`;
+
+export default FlexStyled;
