@@ -65,6 +65,9 @@ const theme: IThemeInterface = {
   zIndexes: {
     statNumberDecor: -1,
   },
+  shadows: {
+    shadow1: 'box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);',
+  },
 };
 
 export default theme;

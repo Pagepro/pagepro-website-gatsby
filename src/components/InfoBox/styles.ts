@@ -41,10 +41,11 @@ const InfoBoxTitleStyled = styled.div`
 const InfoBoxDescStyled = styled.div`
   flex-grow: 1;
   color: ${({ theme }) => theme.colors.grey};
-  margin-bottom: 1.5rem;
 `;
 
-const InfoBoxActionStyled = styled.div``;
+const InfoBoxActionStyled = styled.div`
+  margin-top: 1.5rem;
+`;
 
 export {
   InfoBoxStyled,
