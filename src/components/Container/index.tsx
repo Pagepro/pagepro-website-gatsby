@@ -13,12 +13,16 @@ import {
   paddingLeft as pl,
   paddingRight as pr,
   padding as p,
+  overflow,
+  width,
   MarginProps,
   PaddingProps,
+  OverflowProps,
+  WidthProps,
 } from 'styled-system';
 import { IColor } from 'themes/variables';
 
-interface IContainerStyledProps extends MarginProps, PaddingProps {
+interface IContainerStyledProps extends MarginProps, PaddingProps, OverflowProps, WidthProps {
   bg?: IColor;
   color?: IColor;
 }
@@ -40,6 +44,9 @@ const Container = styled.div<IProps>`
   ${pb}
   ${pl}
   ${pr}
+
+  ${width}
+  ${overflow}
 `;
 
 export default Container;

@@ -6,6 +6,7 @@ import InfoBox, { IInfoBox } from '../InfoBox';
 interface IProps {
   specialities: IInfoBox[];
 }
+
 const Slider = ({ specialities }: IProps) => (
   <SliderStyled overflow="auto">
     {specialities.map(infoBox => (
