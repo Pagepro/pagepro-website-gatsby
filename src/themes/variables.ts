@@ -25,4 +25,5 @@ export interface IThemeInterface {
   transitionDuration: number;
   buttons: {};
   zIndexes: {};
+  shadows: any;
 }

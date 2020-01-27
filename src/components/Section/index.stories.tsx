@@ -6,10 +6,14 @@ import Container from '../Container';
 import Flex from '../Flex';
 import BulletList from '../BulletList';
 import InfoBox from '../InfoBox';
+import Story from '../Story';
 import Slider from '../Slider';
+import Link from '../Link';
 import { Typo3, Typo7 } from '../Typography';
 import { specialities } from '../../mocks/specialitiesMock';
+
 const ReactIcon = require('../../assets/images/svg/react.svg') as string;
+const GatedTalent = require('../../assets/images/gated-talent.jpg') as string;
 
 storiesOf('Section', module)
   .add('we are', () => (
@@ -137,6 +141,33 @@ storiesOf('Section', module)
             </InfoBox>
           </Container>
         </Flex>
+      </Flex>
+    </Section>
+  ))
+  .add('success stories', () => (
+    <Section
+      bg="darkNavy"
+      heading={
+        <Flex alignItems="center" justifyContent="space-between">
+          <Typo3 as="h2" color="white" fontWeight="semiBold" lineHeight="medium">
+            Success Stories
+          </Typo3>
+          <Link light withArrow iconColor="red" href="#">
+            more
+          </Link>
+        </Flex>
+      }
+    >
+      <Flex>
+        <Container mt="2.5rem" mr="1.25rem" width="18.75rem">
+          <Story bg="blue" reversed projectName="Gated Talent" src={GatedTalent} technologies="React, Sass" />
+        </Container>
+        <Container mr="1.25rem" width="18.75rem">
+          <Story bg="red" projectName="Gated Talent" src={GatedTalent} technologies="React, Sass" />
+        </Container>
+        <Container mt="2.5rem" width="18.75rem">
+          <Story bg="blue" reversed projectName="Gated Talent" src={GatedTalent} technologies="React, Sass" />
+        </Container>
       </Flex>
     </Section>
   ));
