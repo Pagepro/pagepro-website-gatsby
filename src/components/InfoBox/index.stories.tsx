@@ -21,7 +21,7 @@ storiesOf('InfoBox', module)
   ))
   .add('with list', () => (
     <InfoBox
-      action={false}
+      shouldDisplayAction={false}
       heading="Web &amp; Mobile Development"
       src={ReactIcon}
       alt="React"
