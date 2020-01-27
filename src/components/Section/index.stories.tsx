@@ -61,7 +61,7 @@ storiesOf('Section', module)
   .add('specialities', () => (
     <Section
       overflow="hidden"
-      alt
+      hasCustomInner
       bg="lightGrey"
       heading={
         <Typo3 as="h2" color="darkGrey" fontWeight="semiBold" lineHeight="medium">
