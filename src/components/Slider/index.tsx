@@ -4,12 +4,12 @@ import { SliderStyled, SliderItemStyled } from './styles';
 import InfoBox, { IInfoBox } from '../InfoBox';
 
 interface IProps {
-  specialities: IInfoBox[];
+  items: IInfoBox[];
 }
 
-const Slider = ({ specialities }: IProps) => (
+const Slider = ({ items }: IProps) => (
   <SliderStyled overflow="auto">
-    {specialities.map(infoBox => (
+    {items.map(infoBox => (
       <SliderItemStyled width="15rem" p="1.5rem" bg="white" key={infoBox.alt}>
         <InfoBox {...infoBox}>{infoBox.children}</InfoBox>
       </SliderItemStyled>

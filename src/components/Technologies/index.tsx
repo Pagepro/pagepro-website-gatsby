@@ -2,13 +2,13 @@ import React from 'react';
 
 import { TechnologiesStyled, TechnologiesItemStyled } from './styles';
 
-interface ITechnologiesItem {
+interface ITechnologyItem {
   src: string;
   alt: string;
 }
 
 interface IProps {
-  items: ITechnologiesItem[];
+  items: ITechnologyItem[];
 }
 
 const Technologies: React.FC<IProps> = ({ items }) => (

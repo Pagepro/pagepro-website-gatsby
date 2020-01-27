@@ -47,7 +47,7 @@ const InfoBox: React.FC<IProps> = ({ heading, title, children, action = true, ..
     {action && (
       <InfoBoxActionStyled>
         <Link withArrow iconColor="red" href="#">
-          <Typo7>More</Typo7>
+          More
         </Link>
       </InfoBoxActionStyled>
     )}
