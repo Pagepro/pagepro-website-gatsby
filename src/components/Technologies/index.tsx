@@ -1,8 +1,9 @@
 import React from 'react';
 
 import { TechnologiesStyled, TechnologiesItemStyled } from './styles';
+import { IImage } from '../../interfaces/IImage';
 
-interface ITechnologyItem {
+export interface ITechnologyItem extends IImage {
   src: string;
   alt: string;
 }
