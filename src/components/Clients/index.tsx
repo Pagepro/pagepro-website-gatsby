@@ -3,16 +3,11 @@ import React from 'react';
 import { ClientsStyled, ClientsItemStyled } from './styles';
 import { IImage } from '../../interfaces/IImage';
 
-export interface IClientItem extends IImage {
-  src: string;
-  alt: string;
+export interface IClientItem {
+  items: IImage[];
 }
 
-interface IProps {
-  items: IClientItem[];
-}
-
-const Clients: React.FC<IProps> = ({ items }) => (
+const Clients: React.FC<IClientItem> = ({ items }) => (
   <ClientsStyled>
     {items.map(({ src, alt }) => (
       <ClientsItemStyled key={src}>
