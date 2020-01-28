@@ -1,17 +1,13 @@
 import React from 'react';
 
 import { TechnologiesStyled, TechnologiesItemStyled } from './styles';
+import { IImage } from '../../interfaces/IImage';
 
-interface ITechnologiesItem {
-  src: string;
-  alt: string;
+export interface ITechnologyItem {
+  items: IImage[];
 }
 
-interface IProps {
-  items: ITechnologiesItem[];
-}
-
-const Technologies: React.FC<IProps> = ({ items }) => (
+const Technologies: React.FC<ITechnologyItem> = ({ items }) => (
   <TechnologiesStyled>
     {items.map(({ src, alt }) => (
       <TechnologiesItemStyled key={alt}>

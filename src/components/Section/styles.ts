@@ -8,4 +8,17 @@ const SectionInnerStyled = styled(Inner)`
   margin-left: calc(50% - ${variables.inner} / 2);
 `;
 
-export { SectionInnerStyled };
+const SectionDescStyled = styled.div`
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+`;
+
+const SectionContentStyled = styled.div``;
+
+const SectionHeadingStyled = styled.div`
+  & + ${SectionContentStyled} {
+    margin-top: 3rem;
+  }
+`;
+
+export { SectionInnerStyled, SectionHeadingStyled, SectionContentStyled, SectionDescStyled };
