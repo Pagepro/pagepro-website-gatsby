@@ -4,7 +4,7 @@ import { OverflowProps } from 'styled-system';
 import Container from '../Container';
 import Inner from '../Inner';
 import { IColor } from 'themes/variables';
-import { SectionInnerStyled } from './styles';
+import { SectionInnerStyled, SectionHeadingStyled, SectionDescStyled, SectionContentStyled } from './styles';
 
 interface IProps extends OverflowProps {
   bg?: IColor;
@@ -19,16 +19,16 @@ const Section = ({ bg, overflow, heading, desc, children, hasCustomInner }: IPro
     {hasCustomInner ? (
       <>
         <Inner>
-          <Container mb="1.5rem">{heading}</Container>
-          {desc && <Container mb="2.5rem">{desc}</Container>}
+          <SectionHeadingStyled>{heading}</SectionHeadingStyled>
+          {desc && <SectionDescStyled>{desc}</SectionDescStyled>}
         </Inner>
         <SectionInnerStyled>{children}</SectionInnerStyled>
       </>
     ) : (
       <Inner>
-        <Container mb="1.5rem">{heading}</Container>
-        {desc && <Container mb="2.5rem">{desc}</Container>}
-        {children}
+        <SectionHeadingStyled>{heading}</SectionHeadingStyled>
+        {desc && <SectionDescStyled>{desc}</SectionDescStyled>}
+        <SectionContentStyled>{children}</SectionContentStyled>
       </Inner>
     )}
   </Container>
