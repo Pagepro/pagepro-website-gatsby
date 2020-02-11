@@ -2,7 +2,6 @@ import React from 'react';
 
 import {
   InfoBoxStyled,
-  InfoBoxIconWrapperStyled,
   InfoBoxIconStyled,
   InfoBoxHeadingStyled,
   InfoBoxTitleStyled,
@@ -15,20 +14,17 @@ import { Typo6, Typo7 } from '../Typography';
 export interface IInfoBox {
   heading: string;
   title?: string;
-  src: string;
-  alt: string;
   centered?: boolean;
   children: React.ReactNode;
   shouldDisplayAction?: boolean;
+  icon?: React.ReactNode;
 }
 
 type IProps = IInfoBox;
 
-const InfoBox: React.FC<IProps> = ({ heading, title, children, shouldDisplayAction = true, ...otherProps }) => (
+const InfoBox: React.FC<IProps> = ({ heading, title, children, shouldDisplayAction = true, icon, ...otherProps }) => (
   <InfoBoxStyled {...otherProps}>
-    <InfoBoxIconWrapperStyled>
-      <InfoBoxIconStyled {...otherProps} />
-    </InfoBoxIconWrapperStyled>
+    <InfoBoxIconStyled>{icon}</InfoBoxIconStyled>
     <InfoBoxHeadingStyled>
       <Typo6 as="h3" fontWeight="bold">
         {heading}
@@ -47,7 +43,7 @@ const InfoBox: React.FC<IProps> = ({ heading, title, children, shouldDisplayActi
     {shouldDisplayAction && (
       <InfoBoxActionStyled>
         <Link withArrow iconColor="red" href="#">
-          <Typo7>More</Typo7>
+          More
         </Link>
       </InfoBoxActionStyled>
     )}

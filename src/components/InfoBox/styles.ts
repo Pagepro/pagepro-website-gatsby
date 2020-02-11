@@ -18,15 +18,13 @@ const InfoBoxStyled = styled.div<IInfoBoxStyledProps>`
     `}
 `;
 
-const InfoBoxIconWrapperStyled = styled.figure`
-  display: inline-block;
-  line-height: 1em;
-  font-size: 3.625rem;
+const InfoBoxIconStyled = styled.div`
+  display: inline-flex;
   margin-bottom: 2rem;
-`;
 
-const InfoBoxIconStyled = styled.img`
-  height: 1em;
+  svg {
+    font-size: 3.625rem;
+  }
 `;
 
 const InfoBoxHeadingStyled = styled.div`
@@ -49,7 +47,6 @@ const InfoBoxActionStyled = styled.div`
 
 export {
   InfoBoxStyled,
-  InfoBoxIconWrapperStyled,
   InfoBoxIconStyled,
   InfoBoxHeadingStyled,
   InfoBoxTitleStyled,
