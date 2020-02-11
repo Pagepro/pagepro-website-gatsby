@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ButtonLinkStyled from '../ButtonLink/styles';
 
 const variables = {
-  width: '35rem',
+  width: '45rem',
 };
 
 const CtaBoxStyled = styled.div`
@@ -18,11 +18,6 @@ const CtaBoxHeaderStyled = styled.div`
   margin-bottom: 3.25rem;
 `;
 
-const CtaBoxMarkStyled = styled.span`
-  display: block;
-  color: ${({ theme }) => theme.colors.red};
-`;
-
 const CtaBoxTextStyled = styled.div`
   color: ${({ theme }) => theme.colors.lightGrey};
   line-height: ${({ theme }) => theme.lineHeights.big};
@@ -30,6 +25,7 @@ const CtaBoxTextStyled = styled.div`
 
   span {
     font-weight: ${({ theme }) => theme.fontWeights.semiBold};
+    color: ${({ theme }) => theme.colors.red};
   }
 `;
 
@@ -41,4 +37,4 @@ const CtaBoxActionsStyled = styled.div`
   }
 `;
 
-export { CtaBoxStyled, CtaBoxHeaderStyled, CtaBoxMarkStyled, CtaBoxTextStyled, CtaBoxActionsStyled };
+export { CtaBoxStyled, CtaBoxHeaderStyled, CtaBoxTextStyled, CtaBoxActionsStyled };
