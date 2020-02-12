@@ -94,9 +94,9 @@ storiesOf('Section', module)
         </Typo3>
       }
     >
-      <Flex>
+      <Flex flexDirection={['column', 'row']}>
         <Flex flex="1">
-          <Container pr="5rem">
+          <Container pr={[0, '2rem', '5rem']} pb={['3.5rem', '0']}>
             <InfoBox shouldDisplayAction={false} heading="Experienced Consultants" src={ReactIcon} alt="React">
               <BulletList
                 items={[
@@ -109,7 +109,7 @@ storiesOf('Section', module)
           </Container>
         </Flex>
         <Flex flex="1">
-          <Container pr="5rem">
+          <Container pr={[0, '2rem', '5rem']} pb={['3.5rem', '0']}>
             <InfoBox shouldDisplayAction={false} heading="Front-end Specialisation " src={ReactIcon} alt="React">
               <BulletList
                 items={[
@@ -122,7 +122,7 @@ storiesOf('Section', module)
           </Container>
         </Flex>
         <Flex flex="1">
-          <Container pr="5rem">
+          <Container pr={[0, '2rem', '5rem']}>
             <InfoBox
               shouldDisplayAction={false}
               heading="Complex Projects"

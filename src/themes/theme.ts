@@ -13,7 +13,7 @@ const theme: IThemeInterface = {
     navy: '#19425a',
     blue: '#5d90ab',
   },
-  breakpoints: ['768px', '1025px'],
+  breakpoints: ['768px', '1025px', '1440px'],
   // Visual TypeScale / Major Third (1.25) / Base Size: 16px
   textStyles: {
     typo1: {
