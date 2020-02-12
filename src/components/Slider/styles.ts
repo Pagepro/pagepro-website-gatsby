@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
-import { variables } from '../Inner/styles';
 import Container from '../Container';
+import { customMedia } from '../../common/MediaQueries';
 
 const SliderStyled = styled(Container)`
   display: flex;
-  width: calc(100vw - ((100vw - ${variables.inner}) / 2) - 1rem);
+
+  @media ${customMedia.inner} {
+    width: calc(100vw - ((100vw - ${({ theme }) => theme.sizes.inner}) / 2) - 1rem);
+  }
 `;
 
 const SliderItemStyled = styled(Container)`

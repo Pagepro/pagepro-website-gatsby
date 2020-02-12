@@ -26,4 +26,5 @@ export interface IThemeInterface {
   buttons: {};
   zIndexes: {};
   shadows: any;
+  sizes: any;
 }
