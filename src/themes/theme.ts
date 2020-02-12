@@ -17,20 +17,20 @@ const theme: IThemeInterface = {
   // Visual TypeScale / Major Third (1.25) / Base Size: 16px
   textStyles: {
     typo1: {
-      fontSize: ['3.052rem'], // 48.83px
+      fontSize: ['2.011rem', '3.052rem'], // 23.18px / 48.83px
       fontWeight: 'semiBold',
     },
     typo2: {
-      fontSize: ['2.441rem'], // 39.06px
+      fontSize: ['1.749em', '2.441rem'], // 27.98px / 39.06px
     },
     typo3: {
-      fontSize: ['1.953rem'], // 31.25px
+      fontSize: ['1.521rem', '1.953rem'], // 24.33px / 31.25px
     },
     typo4: {
-      fontSize: ['1.563rem'], // 25.00px
+      fontSize: ['1.322rem', '1.563rem'], // 21.16px / 25.00px
     },
     typo5: {
-      fontSize: ['1.25rem'], // 20.00px
+      fontSize: ['1.15rem', '1.25rem'], // 18.40px / 20.00px
     },
     typo6: {
       fontSize: ['1rem'], // 16px

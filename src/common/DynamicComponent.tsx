@@ -1,9 +1,18 @@
 import styled from 'styled-components';
-import { lineHeight, fontWeight, color, fontSize, textStyle, textAlign, TextAlignProps } from 'styled-system';
+import {
+  lineHeight,
+  fontWeight,
+  color,
+  fontSize,
+  textStyle,
+  textAlign,
+  TextAlignProps,
+  TextStyleProps,
+} from 'styled-system';
 
 import { IColor, IFontWeight, ILineHeight } from 'themes/variables';
 
-export interface ITypoStyles extends TextAlignProps {
+export interface ITypoStyles extends TextAlignProps, TextStyleProps {
   fontSize?: string[];
   color?: IColor;
   fontWeight?: IFontWeight;

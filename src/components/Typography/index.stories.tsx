@@ -25,19 +25,19 @@ storiesOf('Typography', module).add('typo', () => (
       Visual TypeScale / Major Third (1.25) / Base Size: 16px
     </Typo4>
     <Typo1>A Visual Type Scale</Typo1>
-    <TypographyContainer>Typo 1: 3.052rem // 48.83px</TypographyContainer>
+    <TypographyContainer>Typo 1: 2.011rem / 3.052rem // 23.18px / 48.83px</TypographyContainer>
 
     <Typo2>A Visual Type Scale</Typo2>
-    <TypographyContainer>Typo 2: 2.441rem // 39.06px</TypographyContainer>
+    <TypographyContainer>Typo 2: 1.749em / 2.441rem // 27.98px / 39.06px</TypographyContainer>
 
     <Typo3>A Visual Type Scale</Typo3>
-    <TypographyContainer>Typo 3: 1.953rem // 31.25px</TypographyContainer>
+    <TypographyContainer>Typo 3: 1.521rem / 1.953rem // 24.33px / 31.25px</TypographyContainer>
 
     <Typo4>A Visual Type Scale</Typo4>
-    <TypographyContainer>Typo 4: 1.563rem // 25.00px</TypographyContainer>
+    <TypographyContainer>Typo 4: 1.322rem / 1.563rem // 21.16px / 25.00px</TypographyContainer>
 
     <Typo5>A Visual Type Scale</Typo5>
-    <TypographyContainer>Typo 5: 1.25rem // 20.00px</TypographyContainer>
+    <TypographyContainer>Typo 5: 1.15rem / 1.25rem // 18.40px / 20.00px</TypographyContainer>
 
     <Typo6>A Visual Type Scale</Typo6>
     <TypographyContainer>Typo 6: 1rem // 16px</TypographyContainer>
