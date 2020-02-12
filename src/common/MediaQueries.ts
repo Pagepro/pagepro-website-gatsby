@@ -1,8 +1,8 @@
 import theme from '../themes/theme';
 
-const [tablet, phone] = theme.breakpoints;
+const [phone, tablet] = theme.breakpoints;
 
-export default {
-  tablet: `min-width: ${tablet}`,
-  phone: `min-width: ${phone}`,
+export const media = {
+  phone: `(min-width: ${phone})`,
+  tablet: `(min-width: ${tablet})`,
 };

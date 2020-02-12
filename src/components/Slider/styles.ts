@@ -5,7 +5,7 @@ import Container from '../Container';
 
 const SliderStyled = styled(Container)`
   display: flex;
-  width: calc(100vw - ((100vw - ${variables.inner}) / 2));
+  width: calc(100vw - ((100vw - ${variables.inner}) / 2) - 1rem);
 `;
 
 const SliderItemStyled = styled(Container)`
