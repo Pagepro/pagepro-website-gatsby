@@ -9,7 +9,7 @@ const ReactNative = require('../assets/images/svg/react-native-2.svg') as string
 const Gulp = require('../assets/images/svg/gulp.svg') as string;
 const Css3 = require('../assets/images/svg/css3.svg') as string;
 
-export const technologies: ITechnologyItem[] = [
+export const technologies: ITechnologyItem['items'] = [
   {
     src: Angular,
     alt: 'Picture1',

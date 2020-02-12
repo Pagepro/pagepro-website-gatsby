@@ -1,5 +1,5 @@
 import React from 'react';
-import { configure, addDecorator } from '@storybook/react';
+import { configure, addDecorator, addParameters } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs } from '@storybook/addon-knobs';
 import { ThemeProvider } from 'styled-components';
@@ -35,3 +35,5 @@ function loadStories() {
 }
 
 configure(loadStories, module);
+
+addParameters({ viewport: { viewports: 'responsive' } });

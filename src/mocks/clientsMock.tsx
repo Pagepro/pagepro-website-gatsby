@@ -7,7 +7,7 @@ const HuntScanion = require('../assets/images/logo-hunt-scanion.png') as string;
 const WESC = require('../assets/images/logo-wesc.png') as string;
 const SIA = require('../assets/images/logo-sia.png') as string;
 
-export const clients: IClientItem[] = [
+export const clients: IClientItem['items'] = [
   {
     src: FinancialTimes,
     alt: 'Financial Times',
