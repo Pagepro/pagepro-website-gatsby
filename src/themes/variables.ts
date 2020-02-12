@@ -26,5 +26,5 @@ export interface IThemeInterface {
   buttons: {};
   zIndexes: {};
   shadows: any;
-  sizes: any;
+  sizes: Record<string, string | number>;
 }
