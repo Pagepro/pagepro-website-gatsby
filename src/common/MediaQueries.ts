@@ -7,3 +7,7 @@ export const media = {
   tablet: `(min-width: ${tablet})`,
   desktop: `(min-width: ${desktop})`,
 };
+
+export const customMedia = {
+  inner: `(min-width: ${theme.sizes.inner})`,
+};
