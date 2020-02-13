@@ -25,6 +25,6 @@ export interface IThemeInterface {
   transitionDuration: number;
   buttons: {};
   zIndexes: {};
-  shadows: any;
+  shadows: Record<string, string>;
   sizes: Record<string, string | number>;
 }
